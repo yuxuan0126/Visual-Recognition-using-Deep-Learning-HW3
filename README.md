@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This project tackles **instance segmentation** on colored medical cell images, targeting four cell types (class1–class4). The model is required to produce per-instance segmentation masks evaluated by **AP50** (COCO-style Average Precision at IoU threshold 0.50).
+This project tackles **instance segmentation** on colored medical cell images, targeting four cell types (class1–class4). The model is required to produce per-instance segmentation masks evaluated by **AP50**.
 
 **Architecture: Mask R-CNN** 
 - **Backbone**: ResNet-101 + FPN 

@@ -76,13 +76,6 @@ nohup python train.py \
     --lr 1e-4 > train.log 2>&1 &
 ```
 
-> ⚠️ `--batch_size 2` or above will OOM on GPUs with < 16GB VRAM. Use `--batch_size 1`.
-
-Monitor training:
-```bash
-tail -f train.log
-```
-
 ### 2. Evaluate (local AP50)
 
 **Full mode** — evaluate on all training images (for checking the model learned):

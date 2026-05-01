@@ -123,4 +123,5 @@ python plot_loss.py \
 ---
 
 ## Performance Snapshot
+![pic](title.png)
 ![pic](snapshot.png)

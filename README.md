@@ -4,8 +4,8 @@
 
 This project tackles **instance segmentation** on colored medical cell images, targeting four cell types (class1–class4). The model is required to produce per-instance segmentation masks evaluated by **AP50** (COCO-style Average Precision at IoU threshold 0.50).
 
-**Architecture: Mask R-CNN** [He et al., ICCV 2017]
-- **Backbone**: ResNet-101 + FPN [Lin et al., CVPR 2017]
+**Architecture: Mask R-CNN** 
+- **Backbone**: ResNet-101 + FPN 
 - **Anchor sizes**: `(8, 16, 32, 64, 128)` per FPN level — smaller than defaults to better capture small cells
 - **Aspect ratios**: `(0.5, 1.0, 2.0)` × 5 levels
 - **RoI Align**: 7×7 for box head, 14×14 for mask head
@@ -106,12 +106,6 @@ python inference.py \
     --use_tta
 ```
 
-To pick the best checkpoint, run inference on multiple and compare uploaded scores:
-```bash
-python inference.py --checkpoint ./checkpoints/ckpt_ep30.pth --output result_ep30.json --use_tta
-python inference.py --checkpoint ./checkpoints/ckpt_ep40.pth --output result_ep40.json --use_tta
-python inference.py --checkpoint ./checkpoints/last_model.pth --output result_ep50.json --use_tta
-```
 
 ### 4. Re-plot Loss Curves (optional)
 ```bash

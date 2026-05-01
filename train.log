@@ -1,0 +1,1220 @@
+nohup: ignoring input
+/home/eclab314/miniconda3/envs/314706009/lib/python3.10/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+/home/eclab314/314706009/dataset.py:38: UserWarning: Argument(s) 'max_holes, max_height, max_width, min_holes, fill_value' are not valid for transform CoarseDropout
+  A.CoarseDropout(
+/home/eclab314/314706009/train.py:170: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler(enabled=device.type == "cuda")
+Device: cuda
+GPU: NVIDIA GeForce RTX 4090  VRAM: 25.3GB
+[Dataset] Loaded 209 images from ./data/train
+Training on ALL 209 images (no val split)
+Total params: 62.9M  |  Trainable: 62.7M
+
+=== Epoch 1/50 ===
+/home/eclab314/314706009/train.py:54: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(enabled=device.type == "cuda"):
+  [1][10/209] loss=3.3979 (loss_classifier:0.216  loss_box_reg:0.033  loss_mask:2.432  loss_objectness:0.444  loss_rpn_box_reg:0.272)  GPU=1.0GB  8.0s
+  [1][20/209] loss=2.8398 (loss_classifier:0.894  loss_box_reg:0.488  loss_mask:0.740  loss_objectness:0.504  loss_rpn_box_reg:0.214)  GPU=1.3GB  2.5s
+  [1][30/209] loss=3.7153 (loss_classifier:1.515  loss_box_reg:0.554  loss_mask:0.836  loss_objectness:0.353  loss_rpn_box_reg:0.457)  GPU=1.0GB  6.8s
+  [1][40/209] loss=1.4675 (loss_classifier:0.477  loss_box_reg:0.194  loss_mask:0.542  loss_objectness:0.233  loss_rpn_box_reg:0.022)  GPU=1.0GB  0.8s
+  [1][50/209] loss=2.2850 (loss_classifier:0.832  loss_box_reg:0.470  loss_mask:0.477  loss_objectness:0.318  loss_rpn_box_reg:0.189)  GPU=1.1GB  2.6s
+  [1][60/209] loss=2.1302 (loss_classifier:0.697  loss_box_reg:0.378  loss_mask:0.518  loss_objectness:0.352  loss_rpn_box_reg:0.185)  GPU=1.3GB  1.8s
+  [1][70/209] loss=1.1100 (loss_classifier:0.369  loss_box_reg:0.180  loss_mask:0.312  loss_objectness:0.213  loss_rpn_box_reg:0.037)  GPU=1.0GB  1.5s
+  [1][80/209] loss=2.0559 (loss_classifier:0.699  loss_box_reg:0.221  loss_mask:0.403  loss_objectness:0.536  loss_rpn_box_reg:0.196)  GPU=1.6GB  7.0s
+  [1][90/209] loss=0.6403 (loss_classifier:0.065  loss_box_reg:0.011  loss_mask:0.357  loss_objectness:0.202  loss_rpn_box_reg:0.007)  GPU=1.0GB  11.5s
+  [1][100/209] loss=2.0972 (loss_classifier:0.674  loss_box_reg:0.292  loss_mask:0.439  loss_objectness:0.395  loss_rpn_box_reg:0.297)  GPU=1.5GB  2.5s
+  [1][110/209] loss=2.2639 (loss_classifier:0.841  loss_box_reg:0.590  loss_mask:0.482  loss_objectness:0.218  loss_rpn_box_reg:0.133)  GPU=1.1GB  3.8s
+  [1][120/209] loss=1.9534 (loss_classifier:0.525  loss_box_reg:0.069  loss_mask:0.421  loss_objectness:0.726  loss_rpn_box_reg:0.213)  GPU=2.4GB  6.3s
+  [1][130/209] loss=0.7389 (loss_classifier:0.137  loss_box_reg:0.090  loss_mask:0.360  loss_objectness:0.115  loss_rpn_box_reg:0.036)  GPU=1.0GB  0.8s
+  [1][140/209] loss=1.4137 (loss_classifier:0.289  loss_box_reg:0.440  loss_mask:0.308  loss_objectness:0.179  loss_rpn_box_reg:0.199)  GPU=1.1GB  4.5s
+  [1][150/209] loss=1.6325 (loss_classifier:0.481  loss_box_reg:0.257  loss_mask:0.360  loss_objectness:0.242  loss_rpn_box_reg:0.292)  GPU=1.2GB  5.6s
+  [1][160/209] loss=1.6562 (loss_classifier:0.447  loss_box_reg:0.531  loss_mask:0.361  loss_objectness:0.135  loss_rpn_box_reg:0.181)  GPU=1.1GB  3.1s
+  [1][170/209] loss=3.7709 (loss_classifier:0.727  loss_box_reg:0.063  loss_mask:0.587  loss_objectness:2.036  loss_rpn_box_reg:0.359)  GPU=1.8GB  4.3s
+  [1][180/209] loss=0.7799 (loss_classifier:0.127  loss_box_reg:0.089  loss_mask:0.461  loss_objectness:0.097  loss_rpn_box_reg:0.006)  GPU=1.0GB  0.7s
+  [1][190/209] loss=2.0925 (loss_classifier:0.819  loss_box_reg:0.175  loss_mask:0.409  loss_objectness:0.479  loss_rpn_box_reg:0.211)  GPU=1.5GB  2.6s
+  [1][200/209] loss=1.9016 (loss_classifier:0.610  loss_box_reg:0.343  loss_mask:0.395  loss_objectness:0.304  loss_rpn_box_reg:0.251)  GPU=1.1GB  3.4s
+  Train: 2.0301  LR: 9.99e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 2/50 ===
+  [2][10/209] loss=0.6099 (loss_classifier:0.104  loss_box_reg:0.012  loss_mask:0.372  loss_objectness:0.064  loss_rpn_box_reg:0.057)  GPU=1.0GB  11.8s
+  [2][20/209] loss=0.6228 (loss_classifier:0.160  loss_box_reg:0.029  loss_mask:0.292  loss_objectness:0.126  loss_rpn_box_reg:0.015)  GPU=1.0GB  3.7s
+  [2][30/209] loss=2.0621 (loss_classifier:0.843  loss_box_reg:0.423  loss_mask:0.473  loss_objectness:0.203  loss_rpn_box_reg:0.120)  GPU=1.1GB  1.7s
+  [2][40/209] loss=1.8321 (loss_classifier:0.622  loss_box_reg:0.249  loss_mask:0.457  loss_objectness:0.302  loss_rpn_box_reg:0.202)  GPU=1.3GB  7.4s
+  [2][50/209] loss=1.1952 (loss_classifier:0.467  loss_box_reg:0.203  loss_mask:0.436  loss_objectness:0.062  loss_rpn_box_reg:0.028)  GPU=1.0GB  0.7s
+  [2][60/209] loss=1.2067 (loss_classifier:0.355  loss_box_reg:0.410  loss_mask:0.338  loss_objectness:0.077  loss_rpn_box_reg:0.027)  GPU=1.0GB  1.3s
+  [2][70/209] loss=2.1651 (loss_classifier:0.802  loss_box_reg:0.522  loss_mask:0.422  loss_objectness:0.239  loss_rpn_box_reg:0.180)  GPU=1.1GB  1.5s
+  [2][80/209] loss=1.8179 (loss_classifier:0.693  loss_box_reg:0.551  loss_mask:0.396  loss_objectness:0.086  loss_rpn_box_reg:0.092)  GPU=1.0GB  1.7s
+  [2][90/209] loss=1.7387 (loss_classifier:0.516  loss_box_reg:0.282  loss_mask:0.476  loss_objectness:0.262  loss_rpn_box_reg:0.202)  GPU=1.4GB  2.5s
+  [2][100/209] loss=0.8950 (loss_classifier:0.198  loss_box_reg:0.132  loss_mask:0.422  loss_objectness:0.124  loss_rpn_box_reg:0.019)  GPU=1.0GB  7.3s
+  [2][110/209] loss=1.8330 (loss_classifier:0.557  loss_box_reg:0.611  loss_mask:0.359  loss_objectness:0.143  loss_rpn_box_reg:0.164)  GPU=1.1GB  0.8s
+  [2][120/209] loss=1.7752 (loss_classifier:0.600  loss_box_reg:0.393  loss_mask:0.414  loss_objectness:0.196  loss_rpn_box_reg:0.173)  GPU=1.1GB  1.2s
+  [2][130/209] loss=2.0644 (loss_classifier:0.696  loss_box_reg:0.375  loss_mask:0.418  loss_objectness:0.398  loss_rpn_box_reg:0.177)  GPU=1.1GB  2.9s
+  [2][140/209] loss=1.7746 (loss_classifier:0.647  loss_box_reg:0.149  loss_mask:0.373  loss_objectness:0.448  loss_rpn_box_reg:0.158)  GPU=2.5GB  8.3s
+  [2][150/209] loss=1.9640 (loss_classifier:0.578  loss_box_reg:0.604  loss_mask:0.252  loss_objectness:0.265  loss_rpn_box_reg:0.265)  GPU=1.0GB  0.8s
+  [2][160/209] loss=1.7095 (loss_classifier:0.369  loss_box_reg:0.515  loss_mask:0.382  loss_objectness:0.251  loss_rpn_box_reg:0.192)  GPU=1.3GB  6.7s
+  [2][170/209] loss=1.1503 (loss_classifier:0.406  loss_box_reg:0.315  loss_mask:0.279  loss_objectness:0.105  loss_rpn_box_reg:0.044)  GPU=1.0GB  1.8s
+  [2][180/209] loss=1.7814 (loss_classifier:0.684  loss_box_reg:0.398  loss_mask:0.354  loss_objectness:0.161  loss_rpn_box_reg:0.184)  GPU=1.0GB  5.6s
+  [2][190/209] loss=1.5164 (loss_classifier:0.377  loss_box_reg:0.535  loss_mask:0.261  loss_objectness:0.156  loss_rpn_box_reg:0.186)  GPU=1.1GB  2.8s
+  [2][200/209] loss=0.5685 (loss_classifier:0.130  loss_box_reg:0.020  loss_mask:0.289  loss_objectness:0.128  loss_rpn_box_reg:0.001)  GPU=1.0GB  1.1s
+  Train: 1.5123  LR: 9.96e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 3/50 ===
+  [3][10/209] loss=0.7624 (loss_classifier:0.147  loss_box_reg:0.106  loss_mask:0.475  loss_objectness:0.029  loss_rpn_box_reg:0.006)  GPU=1.0GB  3.0s
+  [3][20/209] loss=0.4623 (loss_classifier:0.043  loss_box_reg:0.030  loss_mask:0.303  loss_objectness:0.046  loss_rpn_box_reg:0.040)  GPU=1.0GB  3.8s
+  [3][30/209] loss=1.4842 (loss_classifier:0.294  loss_box_reg:0.488  loss_mask:0.301  loss_objectness:0.226  loss_rpn_box_reg:0.176)  GPU=1.1GB  2.9s
+  [3][40/209] loss=0.9984 (loss_classifier:0.316  loss_box_reg:0.187  loss_mask:0.335  loss_objectness:0.130  loss_rpn_box_reg:0.030)  GPU=1.0GB  3.3s
+  [3][50/209] loss=2.2788 (loss_classifier:0.726  loss_box_reg:0.294  loss_mask:0.390  loss_objectness:0.629  loss_rpn_box_reg:0.241)  GPU=1.1GB  0.7s
+  [3][60/209] loss=2.3165 (loss_classifier:0.958  loss_box_reg:0.790  loss_mask:0.452  loss_objectness:0.065  loss_rpn_box_reg:0.052)  GPU=1.0GB  6.7s
+  [3][70/209] loss=1.4576 (loss_classifier:0.310  loss_box_reg:0.190  loss_mask:0.370  loss_objectness:0.081  loss_rpn_box_reg:0.507)  GPU=1.0GB  1.5s
+  [3][80/209] loss=1.5998 (loss_classifier:0.351  loss_box_reg:0.475  loss_mask:0.366  loss_objectness:0.234  loss_rpn_box_reg:0.174)  GPU=1.6GB  3.4s
+  [3][90/209] loss=1.9824 (loss_classifier:0.592  loss_box_reg:0.617  loss_mask:0.361  loss_objectness:0.190  loss_rpn_box_reg:0.223)  GPU=1.1GB  3.4s
+  [3][100/209] loss=1.8665 (loss_classifier:0.635  loss_box_reg:0.537  loss_mask:0.319  loss_objectness:0.158  loss_rpn_box_reg:0.218)  GPU=1.1GB  2.4s
+  [3][110/209] loss=1.4906 (loss_classifier:0.458  loss_box_reg:0.451  loss_mask:0.303  loss_objectness:0.118  loss_rpn_box_reg:0.160)  GPU=1.1GB  6.0s
+  [3][120/209] loss=2.7129 (loss_classifier:0.767  loss_box_reg:0.341  loss_mask:0.351  loss_objectness:1.016  loss_rpn_box_reg:0.238)  GPU=1.2GB  3.9s
+  [3][130/209] loss=1.7333 (loss_classifier:0.475  loss_box_reg:0.452  loss_mask:0.400  loss_objectness:0.235  loss_rpn_box_reg:0.171)  GPU=1.4GB  1.9s
+  [3][140/209] loss=2.0897 (loss_classifier:0.811  loss_box_reg:0.623  loss_mask:0.321  loss_objectness:0.185  loss_rpn_box_reg:0.150)  GPU=1.3GB  1.7s
+  [3][150/209] loss=1.7539 (loss_classifier:0.450  loss_box_reg:0.309  loss_mask:0.439  loss_objectness:0.320  loss_rpn_box_reg:0.236)  GPU=2.5GB  6.9s
+  [3][160/209] loss=1.7009 (loss_classifier:0.489  loss_box_reg:0.573  loss_mask:0.372  loss_objectness:0.081  loss_rpn_box_reg:0.187)  GPU=1.1GB  0.8s
+  [3][170/209] loss=1.9224 (loss_classifier:0.568  loss_box_reg:0.587  loss_mask:0.369  loss_objectness:0.244  loss_rpn_box_reg:0.154)  GPU=1.2GB  6.6s
+  [3][180/209] loss=1.7996 (loss_classifier:0.871  loss_box_reg:0.413  loss_mask:0.346  loss_objectness:0.099  loss_rpn_box_reg:0.071)  GPU=1.0GB  8.4s
+  [3][190/209] loss=1.5207 (loss_classifier:0.319  loss_box_reg:0.603  loss_mask:0.263  loss_objectness:0.145  loss_rpn_box_reg:0.190)  GPU=1.1GB  10.1s
+  [3][200/209] loss=1.4930 (loss_classifier:0.358  loss_box_reg:0.540  loss_mask:0.273  loss_objectness:0.128  loss_rpn_box_reg:0.194)  GPU=1.0GB  3.5s
+  Train: 1.5168  LR: 9.92e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 4/50 ===
+  [4][10/209] loss=1.9224 (loss_classifier:0.537  loss_box_reg:0.560  loss_mask:0.425  loss_objectness:0.204  loss_rpn_box_reg:0.196)  GPU=1.3GB  2.0s
+  [4][20/209] loss=0.4744 (loss_classifier:0.100  loss_box_reg:0.045  loss_mask:0.319  loss_objectness:0.009  loss_rpn_box_reg:0.001)  GPU=1.0GB  4.0s
+  [4][30/209] loss=1.8145 (loss_classifier:0.511  loss_box_reg:0.479  loss_mask:0.421  loss_objectness:0.210  loss_rpn_box_reg:0.193)  GPU=1.4GB  6.2s
+  [4][40/209] loss=1.4204 (loss_classifier:0.282  loss_box_reg:0.439  loss_mask:0.383  loss_objectness:0.196  loss_rpn_box_reg:0.120)  GPU=1.2GB  1.1s
+  [4][50/209] loss=0.6397 (loss_classifier:0.158  loss_box_reg:0.133  loss_mask:0.329  loss_objectness:0.014  loss_rpn_box_reg:0.005)  GPU=1.0GB  4.5s
+  [4][60/209] loss=1.5018 (loss_classifier:0.307  loss_box_reg:0.524  loss_mask:0.376  loss_objectness:0.129  loss_rpn_box_reg:0.166)  GPU=1.1GB  1.8s
+  [4][70/209] loss=1.7308 (loss_classifier:0.729  loss_box_reg:0.600  loss_mask:0.279  loss_objectness:0.068  loss_rpn_box_reg:0.056)  GPU=1.0GB  6.9s
+  [4][80/209] loss=1.6055 (loss_classifier:0.318  loss_box_reg:0.495  loss_mask:0.397  loss_objectness:0.192  loss_rpn_box_reg:0.204)  GPU=1.6GB  6.0s
+  [4][90/209] loss=1.6709 (loss_classifier:0.427  loss_box_reg:0.432  loss_mask:0.347  loss_objectness:0.260  loss_rpn_box_reg:0.205)  GPU=1.9GB  6.2s
+  [4][100/209] loss=1.6977 (loss_classifier:0.532  loss_box_reg:0.621  loss_mask:0.263  loss_objectness:0.141  loss_rpn_box_reg:0.140)  GPU=1.0GB  1.5s
+  [4][110/209] loss=1.5627 (loss_classifier:0.452  loss_box_reg:0.709  loss_mask:0.312  loss_objectness:0.062  loss_rpn_box_reg:0.027)  GPU=1.0GB  0.8s
+  [4][120/209] loss=0.7489 (loss_classifier:0.189  loss_box_reg:0.306  loss_mask:0.237  loss_objectness:0.008  loss_rpn_box_reg:0.009)  GPU=1.0GB  6.3s
+  [4][130/209] loss=0.9660 (loss_classifier:0.217  loss_box_reg:0.258  loss_mask:0.452  loss_objectness:0.014  loss_rpn_box_reg:0.025)  GPU=1.0GB  5.2s
+  [4][140/209] loss=1.4515 (loss_classifier:0.676  loss_box_reg:0.543  loss_mask:0.209  loss_objectness:0.010  loss_rpn_box_reg:0.014)  GPU=1.0GB  3.9s
+  [4][150/209] loss=0.8847 (loss_classifier:0.263  loss_box_reg:0.203  loss_mask:0.269  loss_objectness:0.129  loss_rpn_box_reg:0.021)  GPU=1.0GB  1.3s
+  [4][160/209] loss=1.8426 (loss_classifier:0.626  loss_box_reg:0.678  loss_mask:0.479  loss_objectness:0.029  loss_rpn_box_reg:0.031)  GPU=1.0GB  1.1s
+  [4][170/209] loss=1.3783 (loss_classifier:0.344  loss_box_reg:0.593  loss_mask:0.314  loss_objectness:0.047  loss_rpn_box_reg:0.080)  GPU=1.0GB  1.4s
+  [4][180/209] loss=0.7258 (loss_classifier:0.182  loss_box_reg:0.179  loss_mask:0.323  loss_objectness:0.024  loss_rpn_box_reg:0.017)  GPU=1.0GB  13.2s
+  [4][190/209] loss=0.5824 (loss_classifier:0.064  loss_box_reg:0.081  loss_mask:0.300  loss_objectness:0.046  loss_rpn_box_reg:0.092)  GPU=1.0GB  2.3s
+  [4][200/209] loss=1.6803 (loss_classifier:0.410  loss_box_reg:0.630  loss_mask:0.257  loss_objectness:0.182  loss_rpn_box_reg:0.201)  GPU=1.0GB  3.8s
+  Train: 1.4861  LR: 9.86e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 5/50 ===
+  [5][10/209] loss=1.7471 (loss_classifier:0.384  loss_box_reg:0.495  loss_mask:0.405  loss_objectness:0.283  loss_rpn_box_reg:0.181)  GPU=1.2GB  2.9s
+  [5][20/209] loss=1.6512 (loss_classifier:0.549  loss_box_reg:0.509  loss_mask:0.337  loss_objectness:0.121  loss_rpn_box_reg:0.136)  GPU=1.0GB  0.8s
+  [5][30/209] loss=1.7767 (loss_classifier:0.525  loss_box_reg:0.461  loss_mask:0.393  loss_objectness:0.197  loss_rpn_box_reg:0.200)  GPU=1.3GB  2.9s
+  [5][40/209] loss=1.3431 (loss_classifier:0.482  loss_box_reg:0.410  loss_mask:0.287  loss_objectness:0.100  loss_rpn_box_reg:0.064)  GPU=1.0GB  4.1s
+  [5][50/209] loss=0.9880 (loss_classifier:0.358  loss_box_reg:0.251  loss_mask:0.296  loss_objectness:0.064  loss_rpn_box_reg:0.018)  GPU=1.0GB  1.4s
+  [5][60/209] loss=0.7830 (loss_classifier:0.093  loss_box_reg:0.167  loss_mask:0.506  loss_objectness:0.007  loss_rpn_box_reg:0.010)  GPU=1.0GB  3.0s
+  [5][70/209] loss=1.5382 (loss_classifier:0.639  loss_box_reg:0.499  loss_mask:0.240  loss_objectness:0.092  loss_rpn_box_reg:0.068)  GPU=1.0GB  4.4s
+  [5][80/209] loss=1.3834 (loss_classifier:0.331  loss_box_reg:0.517  loss_mask:0.294  loss_objectness:0.112  loss_rpn_box_reg:0.130)  GPU=1.1GB  1.8s
+  [5][90/209] loss=1.0405 (loss_classifier:0.293  loss_box_reg:0.409  loss_mask:0.313  loss_objectness:0.016  loss_rpn_box_reg:0.009)  GPU=1.0GB  6.0s
+  [5][100/209] loss=1.4648 (loss_classifier:0.309  loss_box_reg:0.347  loss_mask:0.387  loss_objectness:0.086  loss_rpn_box_reg:0.337)  GPU=1.0GB  7.0s
+  [5][110/209] loss=1.1755 (loss_classifier:0.312  loss_box_reg:0.602  loss_mask:0.227  loss_objectness:0.012  loss_rpn_box_reg:0.022)  GPU=1.0GB  0.8s
+  [5][120/209] loss=1.2131 (loss_classifier:0.353  loss_box_reg:0.495  loss_mask:0.280  loss_objectness:0.031  loss_rpn_box_reg:0.055)  GPU=1.0GB  1.5s
+  [5][130/209] loss=1.8075 (loss_classifier:0.447  loss_box_reg:0.614  loss_mask:0.355  loss_objectness:0.237  loss_rpn_box_reg:0.155)  GPU=1.1GB  1.5s
+  [5][140/209] loss=1.2730 (loss_classifier:0.527  loss_box_reg:0.435  loss_mask:0.234  loss_objectness:0.041  loss_rpn_box_reg:0.035)  GPU=1.0GB  3.4s
+  [5][150/209] loss=1.5677 (loss_classifier:0.352  loss_box_reg:0.507  loss_mask:0.371  loss_objectness:0.175  loss_rpn_box_reg:0.163)  GPU=1.5GB  5.7s
+  [5][160/209] loss=2.6828 (loss_classifier:0.953  loss_box_reg:0.453  loss_mask:0.478  loss_objectness:0.586  loss_rpn_box_reg:0.213)  GPU=3.1GB  11.7s
+  [5][170/209] loss=1.3182 (loss_classifier:0.372  loss_box_reg:0.442  loss_mask:0.431  loss_objectness:0.033  loss_rpn_box_reg:0.039)  GPU=1.0GB  0.9s
+  [5][180/209] loss=0.7630 (loss_classifier:0.210  loss_box_reg:0.201  loss_mask:0.289  loss_objectness:0.048  loss_rpn_box_reg:0.015)  GPU=1.0GB  3.1s
+  [5][190/209] loss=1.5487 (loss_classifier:0.445  loss_box_reg:0.531  loss_mask:0.273  loss_objectness:0.186  loss_rpn_box_reg:0.114)  GPU=1.3GB  4.3s
+  [5][200/209] loss=1.9398 (loss_classifier:0.489  loss_box_reg:0.646  loss_mask:0.322  loss_objectness:0.274  loss_rpn_box_reg:0.209)  GPU=1.9GB  9.4s
+  Train: 1.4359  LR: 9.78e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 6/50 ===
+  [6][10/209] loss=1.8535 (loss_classifier:0.552  loss_box_reg:0.568  loss_mask:0.367  loss_objectness:0.205  loss_rpn_box_reg:0.162)  GPU=1.2GB  2.3s
+  [6][20/209] loss=1.8649 (loss_classifier:0.755  loss_box_reg:0.565  loss_mask:0.389  loss_objectness:0.089  loss_rpn_box_reg:0.067)  GPU=1.0GB  9.9s
+  [6][30/209] loss=0.5772 (loss_classifier:0.100  loss_box_reg:0.006  loss_mask:0.295  loss_objectness:0.038  loss_rpn_box_reg:0.139)  GPU=1.0GB  3.6s
+  [6][40/209] loss=0.3414 (loss_classifier:0.060  loss_box_reg:0.093  loss_mask:0.136  loss_objectness:0.051  loss_rpn_box_reg:0.001)  GPU=1.0GB  2.1s
+  [6][50/209] loss=1.8065 (loss_classifier:0.440  loss_box_reg:0.122  loss_mask:0.321  loss_objectness:0.699  loss_rpn_box_reg:0.224)  GPU=2.5GB  7.8s
+  [6][60/209] loss=1.5853 (loss_classifier:0.364  loss_box_reg:0.524  loss_mask:0.341  loss_objectness:0.197  loss_rpn_box_reg:0.159)  GPU=1.3GB  1.4s
+  [6][70/209] loss=1.2927 (loss_classifier:0.491  loss_box_reg:0.482  loss_mask:0.232  loss_objectness:0.049  loss_rpn_box_reg:0.039)  GPU=1.0GB  0.9s
+  [6][80/209] loss=1.5987 (loss_classifier:0.503  loss_box_reg:0.591  loss_mask:0.313  loss_objectness:0.103  loss_rpn_box_reg:0.089)  GPU=1.0GB  1.1s
+  [6][90/209] loss=1.1047 (loss_classifier:0.411  loss_box_reg:0.351  loss_mask:0.268  loss_objectness:0.055  loss_rpn_box_reg:0.019)  GPU=1.0GB  5.0s
+  [6][100/209] loss=1.4196 (loss_classifier:0.512  loss_box_reg:0.557  loss_mask:0.261  loss_objectness:0.073  loss_rpn_box_reg:0.016)  GPU=1.0GB  1.6s
+  [6][110/209] loss=2.0157 (loss_classifier:0.590  loss_box_reg:0.619  loss_mask:0.389  loss_objectness:0.271  loss_rpn_box_reg:0.147)  GPU=2.2GB  5.2s
+  [6][120/209] loss=1.4663 (loss_classifier:0.397  loss_box_reg:0.549  loss_mask:0.319  loss_objectness:0.086  loss_rpn_box_reg:0.116)  GPU=1.1GB  0.6s
+  [6][130/209] loss=1.4283 (loss_classifier:0.344  loss_box_reg:0.572  loss_mask:0.313  loss_objectness:0.057  loss_rpn_box_reg:0.142)  GPU=1.0GB  3.2s
+  [6][140/209] loss=1.7527 (loss_classifier:0.501  loss_box_reg:0.618  loss_mask:0.371  loss_objectness:0.128  loss_rpn_box_reg:0.134)  GPU=1.1GB  7.1s
+  [6][150/209] loss=1.0629 (loss_classifier:0.337  loss_box_reg:0.398  loss_mask:0.255  loss_objectness:0.063  loss_rpn_box_reg:0.010)  GPU=1.0GB  4.6s
+  [6][160/209] loss=1.6779 (loss_classifier:0.476  loss_box_reg:0.457  loss_mask:0.338  loss_objectness:0.218  loss_rpn_box_reg:0.189)  GPU=1.7GB  9.2s
+  [6][170/209] loss=1.6246 (loss_classifier:0.418  loss_box_reg:0.641  loss_mask:0.323  loss_objectness:0.109  loss_rpn_box_reg:0.133)  GPU=1.2GB  3.6s
+  [6][180/209] loss=1.6502 (loss_classifier:0.522  loss_box_reg:0.517  loss_mask:0.311  loss_objectness:0.151  loss_rpn_box_reg:0.149)  GPU=1.2GB  1.3s
+  [6][190/209] loss=1.3839 (loss_classifier:0.441  loss_box_reg:0.511  loss_mask:0.277  loss_objectness:0.097  loss_rpn_box_reg:0.059)  GPU=1.0GB  5.9s
+  [6][200/209] loss=1.0723 (loss_classifier:0.360  loss_box_reg:0.405  loss_mask:0.244  loss_objectness:0.047  loss_rpn_box_reg:0.016)  GPU=1.0GB  1.1s
+  Train: 1.4269  LR: 9.68e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 7/50 ===
+  [7][10/209] loss=1.8677 (loss_classifier:0.532  loss_box_reg:0.546  loss_mask:0.403  loss_objectness:0.224  loss_rpn_box_reg:0.162)  GPU=2.1GB  5.9s
+  [7][20/209] loss=1.7478 (loss_classifier:0.623  loss_box_reg:0.649  loss_mask:0.399  loss_objectness:0.021  loss_rpn_box_reg:0.056)  GPU=1.0GB  1.5s
+  [7][30/209] loss=1.6497 (loss_classifier:0.380  loss_box_reg:0.558  loss_mask:0.397  loss_objectness:0.132  loss_rpn_box_reg:0.182)  GPU=1.5GB  7.3s
+  [7][40/209] loss=1.2897 (loss_classifier:0.385  loss_box_reg:0.542  loss_mask:0.271  loss_objectness:0.042  loss_rpn_box_reg:0.050)  GPU=1.0GB  5.9s
+  [7][50/209] loss=2.3879 (loss_classifier:0.900  loss_box_reg:0.682  loss_mask:0.445  loss_objectness:0.135  loss_rpn_box_reg:0.226)  GPU=1.1GB  2.7s
+  [7][60/209] loss=1.1169 (loss_classifier:0.353  loss_box_reg:0.424  loss_mask:0.242  loss_objectness:0.035  loss_rpn_box_reg:0.063)  GPU=1.0GB  0.9s
+  [7][70/209] loss=0.6972 (loss_classifier:0.153  loss_box_reg:0.264  loss_mask:0.202  loss_objectness:0.012  loss_rpn_box_reg:0.067)  GPU=1.0GB  1.4s
+  [7][80/209] loss=1.5905 (loss_classifier:0.456  loss_box_reg:0.572  loss_mask:0.294  loss_objectness:0.118  loss_rpn_box_reg:0.150)  GPU=1.3GB  5.4s
+  [7][90/209] loss=1.3889 (loss_classifier:0.287  loss_box_reg:0.668  loss_mask:0.305  loss_objectness:0.021  loss_rpn_box_reg:0.108)  GPU=1.0GB  4.7s
+  [7][100/209] loss=1.3744 (loss_classifier:0.589  loss_box_reg:0.494  loss_mask:0.244  loss_objectness:0.023  loss_rpn_box_reg:0.024)  GPU=1.0GB  0.9s
+  [7][110/209] loss=1.5363 (loss_classifier:0.260  loss_box_reg:0.557  loss_mask:0.294  loss_objectness:0.264  loss_rpn_box_reg:0.161)  GPU=1.3GB  2.1s
+  [7][120/209] loss=1.3998 (loss_classifier:0.512  loss_box_reg:0.514  loss_mask:0.280  loss_objectness:0.044  loss_rpn_box_reg:0.048)  GPU=1.0GB  1.3s
+  [7][130/209] loss=1.5524 (loss_classifier:0.436  loss_box_reg:0.557  loss_mask:0.284  loss_objectness:0.143  loss_rpn_box_reg:0.131)  GPU=1.2GB  4.0s
+  [7][140/209] loss=1.3532 (loss_classifier:0.727  loss_box_reg:0.393  loss_mask:0.182  loss_objectness:0.040  loss_rpn_box_reg:0.011)  GPU=1.0GB  0.8s
+  [7][150/209] loss=1.4043 (loss_classifier:0.311  loss_box_reg:0.542  loss_mask:0.267  loss_objectness:0.145  loss_rpn_box_reg:0.139)  GPU=1.2GB  6.5s
+  [7][160/209] loss=1.9989 (loss_classifier:0.545  loss_box_reg:0.583  loss_mask:0.411  loss_objectness:0.254  loss_rpn_box_reg:0.205)  GPU=1.3GB  2.0s
+  [7][170/209] loss=0.9110 (loss_classifier:0.222  loss_box_reg:0.356  loss_mask:0.274  loss_objectness:0.022  loss_rpn_box_reg:0.036)  GPU=1.0GB  5.1s
+  [7][180/209] loss=1.4623 (loss_classifier:0.443  loss_box_reg:0.466  loss_mask:0.287  loss_objectness:0.106  loss_rpn_box_reg:0.159)  GPU=1.1GB  1.7s
+  [7][190/209] loss=1.6234 (loss_classifier:0.441  loss_box_reg:0.366  loss_mask:0.365  loss_objectness:0.288  loss_rpn_box_reg:0.163)  GPU=2.4GB  7.4s
+  [7][200/209] loss=1.7325 (loss_classifier:0.452  loss_box_reg:0.616  loss_mask:0.338  loss_objectness:0.133  loss_rpn_box_reg:0.194)  GPU=1.5GB  1.9s
+  Train: 1.3748  LR: 9.57e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 8/50 ===
+  [8][10/209] loss=0.4834 (loss_classifier:0.103  loss_box_reg:0.145  loss_mask:0.226  loss_objectness:0.006  loss_rpn_box_reg:0.004)  GPU=1.0GB  2.1s
+  [8][20/209] loss=1.0303 (loss_classifier:0.266  loss_box_reg:0.332  loss_mask:0.416  loss_objectness:0.008  loss_rpn_box_reg:0.007)  GPU=1.0GB  0.5s
+  [8][30/209] loss=1.2927 (loss_classifier:0.500  loss_box_reg:0.419  loss_mask:0.251  loss_objectness:0.093  loss_rpn_box_reg:0.030)  GPU=1.0GB  9.2s
+  [8][40/209] loss=1.1846 (loss_classifier:0.340  loss_box_reg:0.408  loss_mask:0.246  loss_objectness:0.096  loss_rpn_box_reg:0.095)  GPU=1.2GB  3.5s
+  [8][50/209] loss=1.0133 (loss_classifier:0.372  loss_box_reg:0.347  loss_mask:0.268  loss_objectness:0.015  loss_rpn_box_reg:0.012)  GPU=1.0GB  7.4s
+  [8][60/209] loss=1.4035 (loss_classifier:0.362  loss_box_reg:0.553  loss_mask:0.359  loss_objectness:0.054  loss_rpn_box_reg:0.075)  GPU=1.0GB  5.1s
+  [8][70/209] loss=1.2260 (loss_classifier:0.329  loss_box_reg:0.478  loss_mask:0.257  loss_objectness:0.073  loss_rpn_box_reg:0.088)  GPU=1.1GB  0.9s
+  [8][80/209] loss=1.3511 (loss_classifier:0.381  loss_box_reg:0.507  loss_mask:0.292  loss_objectness:0.071  loss_rpn_box_reg:0.100)  GPU=1.1GB  3.5s
+  [8][90/209] loss=1.7256 (loss_classifier:0.509  loss_box_reg:0.639  loss_mask:0.375  loss_objectness:0.063  loss_rpn_box_reg:0.140)  GPU=1.0GB  1.4s
+  [8][100/209] loss=1.4686 (loss_classifier:0.300  loss_box_reg:0.630  loss_mask:0.320  loss_objectness:0.075  loss_rpn_box_reg:0.143)  GPU=1.1GB  3.3s
+  [8][110/209] loss=1.7196 (loss_classifier:0.700  loss_box_reg:0.649  loss_mask:0.259  loss_objectness:0.034  loss_rpn_box_reg:0.077)  GPU=1.0GB  1.6s
+  [8][120/209] loss=1.1741 (loss_classifier:0.284  loss_box_reg:0.459  loss_mask:0.304  loss_objectness:0.037  loss_rpn_box_reg:0.090)  GPU=1.0GB  0.6s
+  [8][130/209] loss=1.7678 (loss_classifier:0.476  loss_box_reg:0.505  loss_mask:0.397  loss_objectness:0.247  loss_rpn_box_reg:0.142)  GPU=2.5GB  7.0s
+  [8][140/209] loss=1.4475 (loss_classifier:0.433  loss_box_reg:0.456  loss_mask:0.315  loss_objectness:0.100  loss_rpn_box_reg:0.144)  GPU=1.2GB  1.3s
+  [8][150/209] loss=1.7449 (loss_classifier:0.501  loss_box_reg:0.557  loss_mask:0.343  loss_objectness:0.163  loss_rpn_box_reg:0.182)  GPU=1.6GB  3.0s
+  [8][160/209] loss=1.6468 (loss_classifier:0.454  loss_box_reg:0.659  loss_mask:0.413  loss_objectness:0.069  loss_rpn_box_reg:0.052)  GPU=1.0GB  0.9s
+  [8][170/209] loss=1.6792 (loss_classifier:0.502  loss_box_reg:0.553  loss_mask:0.325  loss_objectness:0.142  loss_rpn_box_reg:0.157)  GPU=1.3GB  5.6s
+  [8][180/209] loss=1.5249 (loss_classifier:0.433  loss_box_reg:0.525  loss_mask:0.325  loss_objectness:0.131  loss_rpn_box_reg:0.112)  GPU=1.2GB  2.2s
+  [8][190/209] loss=0.9352 (loss_classifier:0.210  loss_box_reg:0.449  loss_mask:0.227  loss_objectness:0.041  loss_rpn_box_reg:0.007)  GPU=1.0GB  1.8s
+  [8][200/209] loss=0.5231 (loss_classifier:0.121  loss_box_reg:0.192  loss_mask:0.167  loss_objectness:0.032  loss_rpn_box_reg:0.012)  GPU=1.0GB  8.8s
+  Train: 1.3697  LR: 9.44e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 9/50 ===
+  [9][10/209] loss=1.3408 (loss_classifier:0.460  loss_box_reg:0.541  loss_mask:0.294  loss_objectness:0.029  loss_rpn_box_reg:0.017)  GPU=1.0GB  5.2s
+  [9][20/209] loss=0.8335 (loss_classifier:0.172  loss_box_reg:0.222  loss_mask:0.392  loss_objectness:0.024  loss_rpn_box_reg:0.023)  GPU=1.0GB  4.1s
+  [9][30/209] loss=1.1412 (loss_classifier:0.410  loss_box_reg:0.327  loss_mask:0.345  loss_objectness:0.036  loss_rpn_box_reg:0.022)  GPU=1.0GB  12.0s
+  [9][40/209] loss=1.5306 (loss_classifier:0.521  loss_box_reg:0.479  loss_mask:0.303  loss_objectness:0.089  loss_rpn_box_reg:0.139)  GPU=1.2GB  0.9s
+  [9][50/209] loss=1.6251 (loss_classifier:0.545  loss_box_reg:0.680  loss_mask:0.361  loss_objectness:0.015  loss_rpn_box_reg:0.024)  GPU=1.0GB  1.7s
+  [9][60/209] loss=1.4364 (loss_classifier:0.470  loss_box_reg:0.562  loss_mask:0.301  loss_objectness:0.059  loss_rpn_box_reg:0.044)  GPU=1.0GB  4.3s
+  [9][70/209] loss=1.3166 (loss_classifier:0.614  loss_box_reg:0.402  loss_mask:0.221  loss_objectness:0.049  loss_rpn_box_reg:0.031)  GPU=1.0GB  5.3s
+  [9][80/209] loss=1.3714 (loss_classifier:0.391  loss_box_reg:0.464  loss_mask:0.317  loss_objectness:0.104  loss_rpn_box_reg:0.095)  GPU=1.2GB  1.2s
+  [9][90/209] loss=1.5741 (loss_classifier:0.387  loss_box_reg:0.564  loss_mask:0.329  loss_objectness:0.135  loss_rpn_box_reg:0.159)  GPU=1.2GB  1.7s
+  [9][100/209] loss=1.3633 (loss_classifier:0.403  loss_box_reg:0.453  loss_mask:0.263  loss_objectness:0.108  loss_rpn_box_reg:0.137)  GPU=1.0GB  6.4s
+  [9][110/209] loss=0.9261 (loss_classifier:0.303  loss_box_reg:0.353  loss_mask:0.245  loss_objectness:0.012  loss_rpn_box_reg:0.013)  GPU=1.0GB  3.0s
+  [9][120/209] loss=1.5696 (loss_classifier:0.370  loss_box_reg:0.537  loss_mask:0.323  loss_objectness:0.190  loss_rpn_box_reg:0.149)  GPU=1.3GB  1.4s
+  [9][130/209] loss=1.5684 (loss_classifier:0.411  loss_box_reg:0.581  loss_mask:0.323  loss_objectness:0.125  loss_rpn_box_reg:0.129)  GPU=1.6GB  3.2s
+  [9][140/209] loss=1.3312 (loss_classifier:0.385  loss_box_reg:0.468  loss_mask:0.224  loss_objectness:0.108  loss_rpn_box_reg:0.145)  GPU=1.1GB  4.9s
+  [9][150/209] loss=1.3887 (loss_classifier:0.417  loss_box_reg:0.463  loss_mask:0.279  loss_objectness:0.117  loss_rpn_box_reg:0.112)  GPU=1.2GB  8.1s
+  [9][160/209] loss=0.5579 (loss_classifier:0.092  loss_box_reg:0.067  loss_mask:0.358  loss_objectness:0.036  loss_rpn_box_reg:0.005)  GPU=1.0GB  2.9s
+  [9][170/209] loss=1.8090 (loss_classifier:0.588  loss_box_reg:0.658  loss_mask:0.508  loss_objectness:0.027  loss_rpn_box_reg:0.028)  GPU=1.0GB  1.8s
+  [9][180/209] loss=1.4263 (loss_classifier:0.391  loss_box_reg:0.476  loss_mask:0.322  loss_objectness:0.142  loss_rpn_box_reg:0.096)  GPU=1.2GB  5.6s
+  [9][190/209] loss=0.7533 (loss_classifier:0.216  loss_box_reg:0.222  loss_mask:0.229  loss_objectness:0.079  loss_rpn_box_reg:0.007)  GPU=1.0GB  6.3s
+  [9][200/209] loss=0.9418 (loss_classifier:0.137  loss_box_reg:0.550  loss_mask:0.216  loss_objectness:0.013  loss_rpn_box_reg:0.026)  GPU=1.0GB  2.4s
+  Train: 1.3414  LR: 9.30e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 10/50 ===
+  [10][10/209] loss=0.4233 (loss_classifier:0.034  loss_box_reg:0.103  loss_mask:0.258  loss_objectness:0.021  loss_rpn_box_reg:0.007)  GPU=1.0GB  10.5s
+  [10][20/209] loss=2.1037 (loss_classifier:0.688  loss_box_reg:0.647  loss_mask:0.447  loss_objectness:0.153  loss_rpn_box_reg:0.169)  GPU=1.1GB  3.0s
+  [10][30/209] loss=0.6349 (loss_classifier:0.154  loss_box_reg:0.263  loss_mask:0.200  loss_objectness:0.010  loss_rpn_box_reg:0.008)  GPU=1.0GB  0.9s
+  [10][40/209] loss=1.4008 (loss_classifier:0.350  loss_box_reg:0.497  loss_mask:0.303  loss_objectness:0.113  loss_rpn_box_reg:0.139)  GPU=1.3GB  3.5s
+  [10][50/209] loss=1.9152 (loss_classifier:0.482  loss_box_reg:0.681  loss_mask:0.371  loss_objectness:0.183  loss_rpn_box_reg:0.200)  GPU=1.2GB  7.7s
+  [10][60/209] loss=1.6921 (loss_classifier:0.374  loss_box_reg:0.681  loss_mask:0.383  loss_objectness:0.137  loss_rpn_box_reg:0.116)  GPU=1.3GB  2.9s
+  [10][70/209] loss=1.3589 (loss_classifier:0.527  loss_box_reg:0.443  loss_mask:0.225  loss_objectness:0.070  loss_rpn_box_reg:0.093)  GPU=1.1GB  6.7s
+  [10][80/209] loss=1.2663 (loss_classifier:0.338  loss_box_reg:0.521  loss_mask:0.252  loss_objectness:0.044  loss_rpn_box_reg:0.111)  GPU=1.0GB  2.6s
+  [10][90/209] loss=1.4145 (loss_classifier:0.363  loss_box_reg:0.580  loss_mask:0.333  loss_objectness:0.085  loss_rpn_box_reg:0.053)  GPU=1.0GB  0.6s
+  [10][100/209] loss=0.4996 (loss_classifier:0.159  loss_box_reg:0.165  loss_mask:0.147  loss_objectness:0.023  loss_rpn_box_reg:0.005)  GPU=1.0GB  2.9s
+  [10][110/209] loss=1.0220 (loss_classifier:0.331  loss_box_reg:0.373  loss_mask:0.236  loss_objectness:0.038  loss_rpn_box_reg:0.043)  GPU=1.0GB  5.1s
+  [10][120/209] loss=0.5942 (loss_classifier:0.078  loss_box_reg:0.247  loss_mask:0.265  loss_objectness:0.001  loss_rpn_box_reg:0.003)  GPU=1.0GB  2.4s
+  [10][130/209] loss=1.3711 (loss_classifier:0.352  loss_box_reg:0.510  loss_mask:0.313  loss_objectness:0.077  loss_rpn_box_reg:0.119)  GPU=1.1GB  4.4s
+  [10][140/209] loss=1.1536 (loss_classifier:0.378  loss_box_reg:0.406  loss_mask:0.228  loss_objectness:0.056  loss_rpn_box_reg:0.086)  GPU=1.2GB  5.1s
+  [10][150/209] loss=1.0497 (loss_classifier:0.333  loss_box_reg:0.352  loss_mask:0.269  loss_objectness:0.058  loss_rpn_box_reg:0.037)  GPU=1.0GB  0.7s
+  [10][160/209] loss=1.4372 (loss_classifier:0.401  loss_box_reg:0.536  loss_mask:0.313  loss_objectness:0.069  loss_rpn_box_reg:0.119)  GPU=1.0GB  10.7s
+  [10][170/209] loss=0.9550 (loss_classifier:0.250  loss_box_reg:0.441  loss_mask:0.219  loss_objectness:0.026  loss_rpn_box_reg:0.019)  GPU=1.0GB  3.8s
+  [10][180/209] loss=1.5148 (loss_classifier:0.578  loss_box_reg:0.547  loss_mask:0.309  loss_objectness:0.033  loss_rpn_box_reg:0.048)  GPU=1.0GB  0.5s
+  [10][190/209] loss=1.0528 (loss_classifier:0.364  loss_box_reg:0.461  loss_mask:0.187  loss_objectness:0.032  loss_rpn_box_reg:0.009)  GPU=1.0GB  5.8s
+  [10][200/209] loss=1.8035 (loss_classifier:0.504  loss_box_reg:0.532  loss_mask:0.364  loss_objectness:0.247  loss_rpn_box_reg:0.156)  GPU=2.0GB  4.1s
+  Train: 1.3006  LR: 9.14e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 11/50 ===
+  [11][10/209] loss=1.4441 (loss_classifier:0.375  loss_box_reg:0.515  loss_mask:0.325  loss_objectness:0.111  loss_rpn_box_reg:0.118)  GPU=1.2GB  2.9s
+  [11][20/209] loss=1.0327 (loss_classifier:0.198  loss_box_reg:0.480  loss_mask:0.328  loss_objectness:0.019  loss_rpn_box_reg:0.008)  GPU=1.0GB  0.7s
+  [11][30/209] loss=1.7180 (loss_classifier:0.383  loss_box_reg:0.583  loss_mask:0.414  loss_objectness:0.187  loss_rpn_box_reg:0.150)  GPU=1.3GB  3.1s
+  [11][40/209] loss=0.7117 (loss_classifier:0.211  loss_box_reg:0.232  loss_mask:0.251  loss_objectness:0.013  loss_rpn_box_reg:0.004)  GPU=1.0GB  5.9s
+  [11][50/209] loss=2.4348 (loss_classifier:0.758  loss_box_reg:0.712  loss_mask:0.464  loss_objectness:0.270  loss_rpn_box_reg:0.231)  GPU=1.1GB  7.6s
+  [11][60/209] loss=1.7397 (loss_classifier:0.530  loss_box_reg:0.545  loss_mask:0.342  loss_objectness:0.153  loss_rpn_box_reg:0.169)  GPU=1.1GB  3.0s
+  [11][70/209] loss=0.9767 (loss_classifier:0.194  loss_box_reg:0.174  loss_mask:0.355  loss_objectness:0.038  loss_rpn_box_reg:0.215)  GPU=1.0GB  0.8s
+  [11][80/209] loss=1.1897 (loss_classifier:0.298  loss_box_reg:0.482  loss_mask:0.232  loss_objectness:0.076  loss_rpn_box_reg:0.102)  GPU=1.1GB  3.1s
+  [11][90/209] loss=1.4464 (loss_classifier:0.553  loss_box_reg:0.570  loss_mask:0.282  loss_objectness:0.019  loss_rpn_box_reg:0.024)  GPU=1.0GB  1.5s
+  [11][100/209] loss=0.6052 (loss_classifier:0.134  loss_box_reg:0.194  loss_mask:0.225  loss_objectness:0.050  loss_rpn_box_reg:0.002)  GPU=1.0GB  0.5s
+  [11][110/209] loss=1.3059 (loss_classifier:0.429  loss_box_reg:0.516  loss_mask:0.327  loss_objectness:0.023  loss_rpn_box_reg:0.011)  GPU=1.0GB  5.1s
+  [11][120/209] loss=0.3976 (loss_classifier:0.030  loss_box_reg:0.104  loss_mask:0.260  loss_objectness:0.001  loss_rpn_box_reg:0.002)  GPU=1.0GB  4.3s
+  [11][130/209] loss=1.2842 (loss_classifier:0.381  loss_box_reg:0.476  loss_mask:0.270  loss_objectness:0.048  loss_rpn_box_reg:0.109)  GPU=1.1GB  2.1s
+  [11][140/209] loss=1.4755 (loss_classifier:0.387  loss_box_reg:0.548  loss_mask:0.301  loss_objectness:0.118  loss_rpn_box_reg:0.122)  GPU=1.5GB  6.7s
+  [11][150/209] loss=1.5475 (loss_classifier:0.800  loss_box_reg:0.448  loss_mask:0.219  loss_objectness:0.070  loss_rpn_box_reg:0.011)  GPU=1.0GB  5.1s
+  [11][160/209] loss=1.5257 (loss_classifier:0.769  loss_box_reg:0.425  loss_mask:0.239  loss_objectness:0.036  loss_rpn_box_reg:0.056)  GPU=1.0GB  1.4s
+  [11][170/209] loss=1.5832 (loss_classifier:0.438  loss_box_reg:0.607  loss_mask:0.329  loss_objectness:0.080  loss_rpn_box_reg:0.129)  GPU=1.2GB  7.1s
+  [11][180/209] loss=1.4677 (loss_classifier:0.407  loss_box_reg:0.521  loss_mask:0.306  loss_objectness:0.120  loss_rpn_box_reg:0.114)  GPU=1.1GB  2.4s
+  [11][190/209] loss=1.0707 (loss_classifier:0.346  loss_box_reg:0.378  loss_mask:0.229  loss_objectness:0.041  loss_rpn_box_reg:0.077)  GPU=1.1GB  11.4s
+  [11][200/209] loss=0.6387 (loss_classifier:0.227  loss_box_reg:0.180  loss_mask:0.144  loss_objectness:0.084  loss_rpn_box_reg:0.004)  GPU=1.0GB  2.6s
+  Train: 1.2714  LR: 8.97e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 12/50 ===
+  [12][10/209] loss=1.4561 (loss_classifier:0.406  loss_box_reg:0.523  loss_mask:0.309  loss_objectness:0.093  loss_rpn_box_reg:0.125)  GPU=1.2GB  1.7s
+  [12][20/209] loss=1.5897 (loss_classifier:0.432  loss_box_reg:0.647  loss_mask:0.381  loss_objectness:0.038  loss_rpn_box_reg:0.092)  GPU=1.0GB  11.0s
+  [12][30/209] loss=1.3131 (loss_classifier:0.366  loss_box_reg:0.532  loss_mask:0.243  loss_objectness:0.049  loss_rpn_box_reg:0.122)  GPU=1.0GB  1.4s
+  [12][40/209] loss=1.5000 (loss_classifier:0.564  loss_box_reg:0.458  loss_mask:0.293  loss_objectness:0.084  loss_rpn_box_reg:0.101)  GPU=1.6GB  5.8s
+  [12][50/209] loss=1.4457 (loss_classifier:0.396  loss_box_reg:0.449  loss_mask:0.332  loss_objectness:0.147  loss_rpn_box_reg:0.122)  GPU=1.2GB  3.5s
+  [12][60/209] loss=1.2258 (loss_classifier:0.469  loss_box_reg:0.430  loss_mask:0.243  loss_objectness:0.040  loss_rpn_box_reg:0.044)  GPU=1.0GB  0.5s
+  [12][70/209] loss=1.0173 (loss_classifier:0.296  loss_box_reg:0.345  loss_mask:0.239  loss_objectness:0.049  loss_rpn_box_reg:0.089)  GPU=1.1GB  2.9s
+  [12][80/209] loss=1.1417 (loss_classifier:0.361  loss_box_reg:0.440  loss_mask:0.208  loss_objectness:0.050  loss_rpn_box_reg:0.082)  GPU=1.1GB  1.4s
+  [12][90/209] loss=0.6130 (loss_classifier:0.160  loss_box_reg:0.226  loss_mask:0.180  loss_objectness:0.007  loss_rpn_box_reg:0.040)  GPU=1.0GB  1.6s
+  [12][100/209] loss=0.5403 (loss_classifier:0.141  loss_box_reg:0.185  loss_mask:0.188  loss_objectness:0.021  loss_rpn_box_reg:0.006)  GPU=1.0GB  1.6s
+  [12][110/209] loss=0.5823 (loss_classifier:0.074  loss_box_reg:0.254  loss_mask:0.250  loss_objectness:0.000  loss_rpn_box_reg:0.003)  GPU=1.0GB  0.8s
+  [12][120/209] loss=1.4477 (loss_classifier:0.374  loss_box_reg:0.528  loss_mask:0.339  loss_objectness:0.119  loss_rpn_box_reg:0.089)  GPU=1.2GB  4.6s
+  [12][130/209] loss=1.0374 (loss_classifier:0.244  loss_box_reg:0.355  loss_mask:0.303  loss_objectness:0.023  loss_rpn_box_reg:0.111)  GPU=1.0GB  2.0s
+  [12][140/209] loss=1.3826 (loss_classifier:0.511  loss_box_reg:0.502  loss_mask:0.244  loss_objectness:0.078  loss_rpn_box_reg:0.048)  GPU=1.0GB  3.6s
+  [12][150/209] loss=0.8234 (loss_classifier:0.209  loss_box_reg:0.340  loss_mask:0.238  loss_objectness:0.026  loss_rpn_box_reg:0.010)  GPU=1.0GB  2.1s
+  [12][160/209] loss=1.7484 (loss_classifier:0.540  loss_box_reg:0.545  loss_mask:0.397  loss_objectness:0.159  loss_rpn_box_reg:0.107)  GPU=1.2GB  2.7s
+  [12][170/209] loss=1.4669 (loss_classifier:0.356  loss_box_reg:0.590  loss_mask:0.345  loss_objectness:0.056  loss_rpn_box_reg:0.119)  GPU=1.0GB  1.2s
+  [12][180/209] loss=1.3097 (loss_classifier:0.360  loss_box_reg:0.458  loss_mask:0.275  loss_objectness:0.113  loss_rpn_box_reg:0.103)  GPU=1.1GB  3.0s
+  [12][190/209] loss=1.5848 (loss_classifier:0.569  loss_box_reg:0.475  loss_mask:0.327  loss_objectness:0.101  loss_rpn_box_reg:0.114)  GPU=2.2GB  11.7s
+  [12][200/209] loss=0.7313 (loss_classifier:0.270  loss_box_reg:0.245  loss_mask:0.196  loss_objectness:0.017  loss_rpn_box_reg:0.004)  GPU=1.0GB  4.1s
+  Train: 1.2573  LR: 8.78e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 13/50 ===
+  [13][10/209] loss=0.7495 (loss_classifier:0.127  loss_box_reg:0.369  loss_mask:0.230  loss_objectness:0.007  loss_rpn_box_reg:0.016)  GPU=1.0GB  4.8s
+  [13][20/209] loss=0.8656 (loss_classifier:0.120  loss_box_reg:0.138  loss_mask:0.388  loss_objectness:0.038  loss_rpn_box_reg:0.181)  GPU=1.0GB  1.5s
+  [13][30/209] loss=1.7856 (loss_classifier:0.557  loss_box_reg:0.561  loss_mask:0.347  loss_objectness:0.178  loss_rpn_box_reg:0.142)  GPU=1.7GB  5.7s
+  [13][40/209] loss=0.4248 (loss_classifier:0.079  loss_box_reg:0.071  loss_mask:0.193  loss_objectness:0.048  loss_rpn_box_reg:0.034)  GPU=1.0GB  0.5s
+  [13][50/209] loss=1.9756 (loss_classifier:0.728  loss_box_reg:0.601  loss_mask:0.360  loss_objectness:0.164  loss_rpn_box_reg:0.122)  GPU=1.3GB  7.5s
+  [13][60/209] loss=0.6621 (loss_classifier:0.120  loss_box_reg:0.189  loss_mask:0.338  loss_objectness:0.008  loss_rpn_box_reg:0.007)  GPU=1.0GB  1.8s
+  [13][70/209] loss=1.3072 (loss_classifier:0.597  loss_box_reg:0.439  loss_mask:0.184  loss_objectness:0.064  loss_rpn_box_reg:0.023)  GPU=1.0GB  0.8s
+  [13][80/209] loss=1.4145 (loss_classifier:0.380  loss_box_reg:0.531  loss_mask:0.303  loss_objectness:0.081  loss_rpn_box_reg:0.119)  GPU=1.3GB  4.7s
+  [13][90/209] loss=1.0992 (loss_classifier:0.262  loss_box_reg:0.499  loss_mask:0.288  loss_objectness:0.022  loss_rpn_box_reg:0.029)  GPU=1.0GB  1.9s
+  [13][100/209] loss=1.1111 (loss_classifier:0.290  loss_box_reg:0.392  loss_mask:0.418  loss_objectness:0.004  loss_rpn_box_reg:0.007)  GPU=1.0GB  5.7s
+  [13][110/209] loss=1.2383 (loss_classifier:0.318  loss_box_reg:0.537  loss_mask:0.236  loss_objectness:0.049  loss_rpn_box_reg:0.099)  GPU=1.2GB  1.8s
+  [13][120/209] loss=1.8796 (loss_classifier:0.510  loss_box_reg:0.481  loss_mask:0.395  loss_objectness:0.313  loss_rpn_box_reg:0.180)  GPU=2.4GB  6.7s
+  [13][130/209] loss=1.3258 (loss_classifier:0.574  loss_box_reg:0.457  loss_mask:0.229  loss_objectness:0.018  loss_rpn_box_reg:0.048)  GPU=1.0GB  2.7s
+  [13][140/209] loss=1.8605 (loss_classifier:0.819  loss_box_reg:0.531  loss_mask:0.329  loss_objectness:0.065  loss_rpn_box_reg:0.116)  GPU=1.1GB  8.2s
+  [13][150/209] loss=1.3876 (loss_classifier:0.564  loss_box_reg:0.463  loss_mask:0.246  loss_objectness:0.036  loss_rpn_box_reg:0.079)  GPU=1.0GB  3.5s
+  [13][160/209] loss=1.4485 (loss_classifier:0.366  loss_box_reg:0.530  loss_mask:0.355  loss_objectness:0.066  loss_rpn_box_reg:0.130)  GPU=1.0GB  0.9s
+  [13][170/209] loss=1.3893 (loss_classifier:0.321  loss_box_reg:0.515  loss_mask:0.352  loss_objectness:0.074  loss_rpn_box_reg:0.128)  GPU=1.1GB  5.4s
+  [13][180/209] loss=1.2815 (loss_classifier:0.379  loss_box_reg:0.540  loss_mask:0.263  loss_objectness:0.080  loss_rpn_box_reg:0.020)  GPU=1.0GB  2.4s
+  [13][190/209] loss=1.0996 (loss_classifier:0.378  loss_box_reg:0.381  loss_mask:0.247  loss_objectness:0.078  loss_rpn_box_reg:0.016)  GPU=1.0GB  11.3s
+  [13][200/209] loss=1.5564 (loss_classifier:0.549  loss_box_reg:0.602  loss_mask:0.350  loss_objectness:0.036  loss_rpn_box_reg:0.020)  GPU=1.0GB  3.4s
+  Train: 1.2316  LR: 8.58e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 14/50 ===
+  [14][10/209] loss=1.4748 (loss_classifier:0.341  loss_box_reg:0.574  loss_mask:0.342  loss_objectness:0.111  loss_rpn_box_reg:0.107)  GPU=1.2GB  7.4s
+  [14][20/209] loss=1.4537 (loss_classifier:0.503  loss_box_reg:0.528  loss_mask:0.341  loss_objectness:0.044  loss_rpn_box_reg:0.038)  GPU=1.0GB  0.7s
+  [14][30/209] loss=1.3882 (loss_classifier:0.425  loss_box_reg:0.521  loss_mask:0.260  loss_objectness:0.084  loss_rpn_box_reg:0.098)  GPU=1.2GB  13.4s
+  [14][40/209] loss=1.2487 (loss_classifier:0.304  loss_box_reg:0.468  loss_mask:0.249  loss_objectness:0.083  loss_rpn_box_reg:0.145)  GPU=1.1GB  0.9s
+  [14][50/209] loss=1.3981 (loss_classifier:0.590  loss_box_reg:0.506  loss_mask:0.257  loss_objectness:0.032  loss_rpn_box_reg:0.013)  GPU=1.0GB  1.9s
+  [14][60/209] loss=1.6059 (loss_classifier:0.496  loss_box_reg:0.474  loss_mask:0.325  loss_objectness:0.164  loss_rpn_box_reg:0.147)  GPU=2.0GB  5.2s
+  [14][70/209] loss=1.0467 (loss_classifier:0.322  loss_box_reg:0.385  loss_mask:0.207  loss_objectness:0.055  loss_rpn_box_reg:0.077)  GPU=1.1GB  0.8s
+  [14][80/209] loss=0.4008 (loss_classifier:0.021  loss_box_reg:0.117  loss_mask:0.253  loss_objectness:0.003  loss_rpn_box_reg:0.006)  GPU=1.0GB  4.5s
+  [14][90/209] loss=0.6452 (loss_classifier:0.137  loss_box_reg:0.188  loss_mask:0.266  loss_objectness:0.050  loss_rpn_box_reg:0.004)  GPU=1.0GB  0.6s
+  [14][100/209] loss=0.9156 (loss_classifier:0.277  loss_box_reg:0.403  loss_mask:0.188  loss_objectness:0.040  loss_rpn_box_reg:0.007)  GPU=1.0GB  4.9s
+  [14][110/209] loss=1.0014 (loss_classifier:0.251  loss_box_reg:0.494  loss_mask:0.237  loss_objectness:0.009  loss_rpn_box_reg:0.010)  GPU=1.0GB  2.2s
+  [14][120/209] loss=1.2142 (loss_classifier:0.343  loss_box_reg:0.467  loss_mask:0.254  loss_objectness:0.070  loss_rpn_box_reg:0.079)  GPU=1.1GB  3.7s
+  [14][130/209] loss=0.4133 (loss_classifier:0.056  loss_box_reg:0.179  loss_mask:0.176  loss_objectness:0.001  loss_rpn_box_reg:0.001)  GPU=1.0GB  0.7s
+  [14][140/209] loss=1.1152 (loss_classifier:0.333  loss_box_reg:0.392  loss_mask:0.256  loss_objectness:0.038  loss_rpn_box_reg:0.095)  GPU=1.1GB  7.1s
+  [14][150/209] loss=1.0107 (loss_classifier:0.281  loss_box_reg:0.396  loss_mask:0.297  loss_objectness:0.030  loss_rpn_box_reg:0.006)  GPU=1.0GB  1.2s
+  [14][160/209] loss=1.7390 (loss_classifier:0.661  loss_box_reg:0.496  loss_mask:0.380  loss_objectness:0.078  loss_rpn_box_reg:0.124)  GPU=1.1GB  2.8s
+  [14][170/209] loss=0.9540 (loss_classifier:0.252  loss_box_reg:0.382  loss_mask:0.255  loss_objectness:0.038  loss_rpn_box_reg:0.026)  GPU=1.0GB  1.6s
+  [14][180/209] loss=0.7401 (loss_classifier:0.246  loss_box_reg:0.268  loss_mask:0.193  loss_objectness:0.023  loss_rpn_box_reg:0.010)  GPU=1.0GB  4.1s
+  [14][190/209] loss=1.1837 (loss_classifier:0.312  loss_box_reg:0.459  loss_mask:0.260  loss_objectness:0.087  loss_rpn_box_reg:0.066)  GPU=1.0GB  5.5s
+  [14][200/209] loss=1.0477 (loss_classifier:0.274  loss_box_reg:0.377  loss_mask:0.244  loss_objectness:0.071  loss_rpn_box_reg:0.082)  GPU=1.1GB  1.4s
+  Train: 1.2406  LR: 8.37e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 15/50 ===
+  [15][10/209] loss=1.8917 (loss_classifier:0.555  loss_box_reg:0.602  loss_mask:0.420  loss_objectness:0.154  loss_rpn_box_reg:0.161)  GPU=1.4GB  6.3s
+  [15][20/209] loss=1.2255 (loss_classifier:0.467  loss_box_reg:0.455  loss_mask:0.284  loss_objectness:0.009  loss_rpn_box_reg:0.010)  GPU=1.0GB  1.2s
+  [15][30/209] loss=1.3139 (loss_classifier:0.474  loss_box_reg:0.377  loss_mask:0.270  loss_objectness:0.071  loss_rpn_box_reg:0.122)  GPU=1.1GB  2.6s
+  [15][40/209] loss=1.7294 (loss_classifier:0.442  loss_box_reg:0.561  loss_mask:0.449  loss_objectness:0.154  loss_rpn_box_reg:0.124)  GPU=2.2GB  6.3s
+  [15][50/209] loss=2.0669 (loss_classifier:0.636  loss_box_reg:0.489  loss_mask:0.446  loss_objectness:0.324  loss_rpn_box_reg:0.171)  GPU=2.5GB  7.2s
+  [15][60/209] loss=1.1178 (loss_classifier:0.189  loss_box_reg:0.529  loss_mask:0.367  loss_objectness:0.019  loss_rpn_box_reg:0.014)  GPU=1.0GB  0.6s
+  [15][70/209] loss=1.2968 (loss_classifier:0.429  loss_box_reg:0.545  loss_mask:0.255  loss_objectness:0.049  loss_rpn_box_reg:0.018)  GPU=1.0GB  3.3s
+  [15][80/209] loss=1.1224 (loss_classifier:0.402  loss_box_reg:0.394  loss_mask:0.231  loss_objectness:0.026  loss_rpn_box_reg:0.070)  GPU=1.1GB  0.8s
+  [15][90/209] loss=0.5477 (loss_classifier:0.071  loss_box_reg:0.266  loss_mask:0.185  loss_objectness:0.002  loss_rpn_box_reg:0.024)  GPU=1.0GB  0.8s
+  [15][100/209] loss=1.2204 (loss_classifier:0.497  loss_box_reg:0.426  loss_mask:0.211  loss_objectness:0.066  loss_rpn_box_reg:0.020)  GPU=1.0GB  5.7s
+  [15][110/209] loss=1.6700 (loss_classifier:0.498  loss_box_reg:0.554  loss_mask:0.340  loss_objectness:0.113  loss_rpn_box_reg:0.166)  GPU=1.1GB  1.3s
+  [15][120/209] loss=0.4344 (loss_classifier:0.058  loss_box_reg:0.151  loss_mask:0.185  loss_objectness:0.039  loss_rpn_box_reg:0.001)  GPU=1.0GB  6.1s
+  [15][130/209] loss=0.6915 (loss_classifier:0.127  loss_box_reg:0.371  loss_mask:0.151  loss_objectness:0.028  loss_rpn_box_reg:0.014)  GPU=1.0GB  1.3s
+  [15][140/209] loss=1.4315 (loss_classifier:0.420  loss_box_reg:0.502  loss_mask:0.302  loss_objectness:0.102  loss_rpn_box_reg:0.105)  GPU=1.5GB  2.8s
+  [15][150/209] loss=1.1473 (loss_classifier:0.321  loss_box_reg:0.388  loss_mask:0.234  loss_objectness:0.091  loss_rpn_box_reg:0.112)  GPU=1.3GB  1.5s
+  [15][160/209] loss=1.1822 (loss_classifier:0.284  loss_box_reg:0.473  loss_mask:0.264  loss_objectness:0.050  loss_rpn_box_reg:0.112)  GPU=1.1GB  10.1s
+  [15][170/209] loss=1.6025 (loss_classifier:0.577  loss_box_reg:0.518  loss_mask:0.282  loss_objectness:0.117  loss_rpn_box_reg:0.108)  GPU=1.1GB  3.6s
+  [15][180/209] loss=1.8109 (loss_classifier:0.498  loss_box_reg:0.520  loss_mask:0.406  loss_objectness:0.222  loss_rpn_box_reg:0.165)  GPU=1.1GB  5.2s
+  [15][190/209] loss=1.2789 (loss_classifier:0.371  loss_box_reg:0.462  loss_mask:0.261  loss_objectness:0.097  loss_rpn_box_reg:0.087)  GPU=1.3GB  1.7s
+  [15][200/209] loss=1.3087 (loss_classifier:0.491  loss_box_reg:0.443  loss_mask:0.230  loss_objectness:0.064  loss_rpn_box_reg:0.080)  GPU=1.3GB  6.5s
+  Train: 1.1831  LR: 8.15e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 16/50 ===
+  [16][10/209] loss=1.3642 (loss_classifier:0.176  loss_box_reg:0.503  loss_mask:0.294  loss_objectness:0.144  loss_rpn_box_reg:0.248)  GPU=1.0GB  3.1s
+  [16][20/209] loss=1.8975 (loss_classifier:0.637  loss_box_reg:0.595  loss_mask:0.402  loss_objectness:0.119  loss_rpn_box_reg:0.145)  GPU=1.2GB  1.0s
+  [16][30/209] loss=1.2019 (loss_classifier:0.242  loss_box_reg:0.478  loss_mask:0.364  loss_objectness:0.017  loss_rpn_box_reg:0.100)  GPU=1.0GB  9.1s
+  [16][40/209] loss=0.7122 (loss_classifier:0.177  loss_box_reg:0.298  loss_mask:0.227  loss_objectness:0.002  loss_rpn_box_reg:0.008)  GPU=1.0GB  0.5s
+  [16][50/209] loss=1.4114 (loss_classifier:0.429  loss_box_reg:0.546  loss_mask:0.296  loss_objectness:0.111  loss_rpn_box_reg:0.029)  GPU=1.0GB  4.8s
+  [16][60/209] loss=1.8317 (loss_classifier:0.962  loss_box_reg:0.451  loss_mask:0.256  loss_objectness:0.088  loss_rpn_box_reg:0.075)  GPU=1.1GB  1.3s
+  [16][70/209] loss=1.5482 (loss_classifier:0.570  loss_box_reg:0.442  loss_mask:0.277  loss_objectness:0.125  loss_rpn_box_reg:0.134)  GPU=1.5GB  2.8s
+  [16][80/209] loss=1.4111 (loss_classifier:0.471  loss_box_reg:0.458  loss_mask:0.300  loss_objectness:0.088  loss_rpn_box_reg:0.095)  GPU=1.2GB  1.8s
+  [16][90/209] loss=0.2871 (loss_classifier:0.079  loss_box_reg:0.063  loss_mask:0.127  loss_objectness:0.017  loss_rpn_box_reg:0.001)  GPU=1.0GB  1.0s
+  [16][100/209] loss=0.6934 (loss_classifier:0.138  loss_box_reg:0.319  loss_mask:0.216  loss_objectness:0.011  loss_rpn_box_reg:0.010)  GPU=1.0GB  8.3s
+  [16][110/209] loss=1.9348 (loss_classifier:0.508  loss_box_reg:0.718  loss_mask:0.358  loss_objectness:0.182  loss_rpn_box_reg:0.169)  GPU=1.8GB  6.4s
+  [16][120/209] loss=0.6552 (loss_classifier:0.120  loss_box_reg:0.317  loss_mask:0.210  loss_objectness:0.003  loss_rpn_box_reg:0.005)  GPU=1.0GB  1.3s
+  [16][130/209] loss=1.6772 (loss_classifier:0.465  loss_box_reg:0.571  loss_mask:0.351  loss_objectness:0.128  loss_rpn_box_reg:0.163)  GPU=1.4GB  2.0s
+  [16][140/209] loss=0.6693 (loss_classifier:0.214  loss_box_reg:0.232  loss_mask:0.208  loss_objectness:0.010  loss_rpn_box_reg:0.006)  GPU=1.0GB  9.8s
+  [16][150/209] loss=1.0646 (loss_classifier:0.240  loss_box_reg:0.385  loss_mask:0.253  loss_objectness:0.101  loss_rpn_box_reg:0.086)  GPU=1.1GB  6.2s
+  [16][160/209] loss=1.3181 (loss_classifier:0.343  loss_box_reg:0.518  loss_mask:0.278  loss_objectness:0.073  loss_rpn_box_reg:0.107)  GPU=1.1GB  2.7s
+  [16][170/209] loss=2.1977 (loss_classifier:0.937  loss_box_reg:0.681  loss_mask:0.490  loss_objectness:0.061  loss_rpn_box_reg:0.028)  GPU=1.0GB  1.2s
+  [16][180/209] loss=1.4531 (loss_classifier:0.329  loss_box_reg:0.441  loss_mask:0.363  loss_objectness:0.163  loss_rpn_box_reg:0.158)  GPU=1.8GB  5.7s
+  [16][190/209] loss=1.0641 (loss_classifier:0.384  loss_box_reg:0.441  loss_mask:0.202  loss_objectness:0.022  loss_rpn_box_reg:0.015)  GPU=1.0GB  1.9s
+  [16][200/209] loss=1.8389 (loss_classifier:0.533  loss_box_reg:0.670  loss_mask:0.364  loss_objectness:0.149  loss_rpn_box_reg:0.123)  GPU=1.5GB  2.9s
+  Train: 1.1946  LR: 7.91e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 17/50 ===
+  [17][10/209] loss=1.1127 (loss_classifier:0.311  loss_box_reg:0.371  loss_mask:0.232  loss_objectness:0.100  loss_rpn_box_reg:0.099)  GPU=1.1GB  2.0s
+  [17][20/209] loss=1.0510 (loss_classifier:0.327  loss_box_reg:0.351  loss_mask:0.348  loss_objectness:0.012  loss_rpn_box_reg:0.012)  GPU=1.0GB  1.6s
+  [17][30/209] loss=0.5226 (loss_classifier:0.069  loss_box_reg:0.119  loss_mask:0.328  loss_objectness:0.002  loss_rpn_box_reg:0.003)  GPU=1.0GB  4.3s
+  [17][40/209] loss=1.3982 (loss_classifier:0.297  loss_box_reg:0.644  loss_mask:0.275  loss_objectness:0.052  loss_rpn_box_reg:0.129)  GPU=1.0GB  1.8s
+  [17][50/209] loss=2.1341 (loss_classifier:0.591  loss_box_reg:0.539  loss_mask:0.415  loss_objectness:0.432  loss_rpn_box_reg:0.158)  GPU=2.5GB  7.6s
+  [17][60/209] loss=1.1561 (loss_classifier:0.300  loss_box_reg:0.407  loss_mask:0.241  loss_objectness:0.114  loss_rpn_box_reg:0.094)  GPU=1.1GB  2.1s
+  [17][70/209] loss=2.1913 (loss_classifier:0.829  loss_box_reg:0.619  loss_mask:0.427  loss_objectness:0.260  loss_rpn_box_reg:0.056)  GPU=1.2GB  3.1s
+  [17][80/209] loss=0.5456 (loss_classifier:0.066  loss_box_reg:0.278  loss_mask:0.196  loss_objectness:0.003  loss_rpn_box_reg:0.003)  GPU=1.0GB  1.2s
+  [17][90/209] loss=1.5865 (loss_classifier:0.460  loss_box_reg:0.543  loss_mask:0.317  loss_objectness:0.121  loss_rpn_box_reg:0.145)  GPU=1.3GB  7.2s
+  [17][100/209] loss=1.2311 (loss_classifier:0.400  loss_box_reg:0.472  loss_mask:0.286  loss_objectness:0.045  loss_rpn_box_reg:0.028)  GPU=1.0GB  1.2s
+  [17][110/209] loss=1.7087 (loss_classifier:0.463  loss_box_reg:0.621  loss_mask:0.385  loss_objectness:0.092  loss_rpn_box_reg:0.147)  GPU=1.4GB  8.0s
+  [17][120/209] loss=1.5371 (loss_classifier:0.529  loss_box_reg:0.406  loss_mask:0.379  loss_objectness:0.110  loss_rpn_box_reg:0.113)  GPU=2.5GB  6.6s
+  [17][130/209] loss=1.2385 (loss_classifier:0.340  loss_box_reg:0.419  loss_mask:0.294  loss_objectness:0.080  loss_rpn_box_reg:0.104)  GPU=1.3GB  1.7s
+  [17][140/209] loss=1.0608 (loss_classifier:0.324  loss_box_reg:0.327  loss_mask:0.245  loss_objectness:0.081  loss_rpn_box_reg:0.083)  GPU=1.6GB  8.1s
+  [17][150/209] loss=1.2610 (loss_classifier:0.527  loss_box_reg:0.375  loss_mask:0.226  loss_objectness:0.114  loss_rpn_box_reg:0.019)  GPU=1.0GB  1.8s
+  [17][160/209] loss=1.6118 (loss_classifier:0.503  loss_box_reg:0.529  loss_mask:0.339  loss_objectness:0.110  loss_rpn_box_reg:0.130)  GPU=1.1GB  9.5s
+  [17][170/209] loss=1.2188 (loss_classifier:0.316  loss_box_reg:0.453  loss_mask:0.263  loss_objectness:0.084  loss_rpn_box_reg:0.102)  GPU=1.1GB  1.7s
+  [17][180/209] loss=1.1859 (loss_classifier:0.384  loss_box_reg:0.454  loss_mask:0.272  loss_objectness:0.039  loss_rpn_box_reg:0.037)  GPU=1.0GB  5.3s
+  [17][190/209] loss=1.4606 (loss_classifier:0.435  loss_box_reg:0.607  loss_mask:0.373  loss_objectness:0.020  loss_rpn_box_reg:0.025)  GPU=1.0GB  1.1s
+  [17][200/209] loss=1.2296 (loss_classifier:0.434  loss_box_reg:0.391  loss_mask:0.226  loss_objectness:0.053  loss_rpn_box_reg:0.126)  GPU=1.2GB  3.3s
+  Train: 1.1777  LR: 7.67e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 18/50 ===
+  [18][10/209] loss=1.4343 (loss_classifier:0.423  loss_box_reg:0.516  loss_mask:0.290  loss_objectness:0.089  loss_rpn_box_reg:0.117)  GPU=1.3GB  7.9s
+  [18][20/209] loss=2.0176 (loss_classifier:0.593  loss_box_reg:0.618  loss_mask:0.413  loss_objectness:0.198  loss_rpn_box_reg:0.195)  GPU=2.1GB  6.0s
+  [18][30/209] loss=0.3807 (loss_classifier:0.103  loss_box_reg:0.110  loss_mask:0.163  loss_objectness:0.002  loss_rpn_box_reg:0.003)  GPU=1.0GB  0.8s
+  [18][40/209] loss=0.9441 (loss_classifier:0.362  loss_box_reg:0.323  loss_mask:0.197  loss_objectness:0.038  loss_rpn_box_reg:0.024)  GPU=1.0GB  1.6s
+  [18][50/209] loss=1.9250 (loss_classifier:0.523  loss_box_reg:0.584  loss_mask:0.432  loss_objectness:0.221  loss_rpn_box_reg:0.164)  GPU=1.3GB  1.7s
+  [18][60/209] loss=1.0670 (loss_classifier:0.244  loss_box_reg:0.501  loss_mask:0.239  loss_objectness:0.051  loss_rpn_box_reg:0.032)  GPU=1.0GB  4.7s
+  [18][70/209] loss=0.9577 (loss_classifier:0.324  loss_box_reg:0.325  loss_mask:0.219  loss_objectness:0.028  loss_rpn_box_reg:0.061)  GPU=1.1GB  3.0s
+  [18][80/209] loss=1.0918 (loss_classifier:0.249  loss_box_reg:0.436  loss_mask:0.273  loss_objectness:0.048  loss_rpn_box_reg:0.086)  GPU=1.1GB  3.8s
+  [18][90/209] loss=1.9196 (loss_classifier:0.525  loss_box_reg:0.637  loss_mask:0.407  loss_objectness:0.181  loss_rpn_box_reg:0.170)  GPU=1.6GB  3.9s
+  [18][100/209] loss=1.3315 (loss_classifier:0.391  loss_box_reg:0.500  loss_mask:0.369  loss_objectness:0.055  loss_rpn_box_reg:0.017)  GPU=1.0GB  4.7s
+  [18][110/209] loss=1.1406 (loss_classifier:0.280  loss_box_reg:0.512  loss_mask:0.281  loss_objectness:0.047  loss_rpn_box_reg:0.021)  GPU=1.0GB  4.1s
+  [18][120/209] loss=0.2572 (loss_classifier:0.034  loss_box_reg:0.039  loss_mask:0.184  loss_objectness:0.000  loss_rpn_box_reg:0.000)  GPU=1.0GB  0.5s
+  [18][130/209] loss=1.2969 (loss_classifier:0.522  loss_box_reg:0.456  loss_mask:0.261  loss_objectness:0.020  loss_rpn_box_reg:0.037)  GPU=1.0GB  3.7s
+  [18][140/209] loss=1.2686 (loss_classifier:0.337  loss_box_reg:0.488  loss_mask:0.274  loss_objectness:0.065  loss_rpn_box_reg:0.105)  GPU=1.2GB  6.7s
+  [18][150/209] loss=1.4852 (loss_classifier:0.523  loss_box_reg:0.545  loss_mask:0.345  loss_objectness:0.040  loss_rpn_box_reg:0.033)  GPU=1.0GB  1.9s
+  [18][160/209] loss=1.1910 (loss_classifier:0.336  loss_box_reg:0.501  loss_mask:0.283  loss_objectness:0.039  loss_rpn_box_reg:0.032)  GPU=1.0GB  0.5s
+  [18][170/209] loss=0.8308 (loss_classifier:0.265  loss_box_reg:0.316  loss_mask:0.197  loss_objectness:0.039  loss_rpn_box_reg:0.014)  GPU=1.0GB  2.3s
+  [18][180/209] loss=0.3793 (loss_classifier:0.090  loss_box_reg:0.128  loss_mask:0.124  loss_objectness:0.033  loss_rpn_box_reg:0.005)  GPU=1.0GB  8.0s
+  [18][190/209] loss=1.2998 (loss_classifier:0.355  loss_box_reg:0.567  loss_mask:0.341  loss_objectness:0.014  loss_rpn_box_reg:0.023)  GPU=1.0GB  0.8s
+  [18][200/209] loss=1.3837 (loss_classifier:0.367  loss_box_reg:0.567  loss_mask:0.292  loss_objectness:0.062  loss_rpn_box_reg:0.096)  GPU=1.1GB  0.9s
+  Train: 1.1532  LR: 7.42e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 19/50 ===
+  [19][10/209] loss=1.0543 (loss_classifier:0.213  loss_box_reg:0.443  loss_mask:0.290  loss_objectness:0.044  loss_rpn_box_reg:0.064)  GPU=1.0GB  1.9s
+  [19][20/209] loss=1.6111 (loss_classifier:0.520  loss_box_reg:0.573  loss_mask:0.331  loss_objectness:0.112  loss_rpn_box_reg:0.075)  GPU=1.0GB  6.7s
+  [19][30/209] loss=1.6647 (loss_classifier:0.675  loss_box_reg:0.459  loss_mask:0.301  loss_objectness:0.098  loss_rpn_box_reg:0.132)  GPU=1.1GB  1.0s
+  [19][40/209] loss=1.6832 (loss_classifier:0.442  loss_box_reg:0.571  loss_mask:0.333  loss_objectness:0.194  loss_rpn_box_reg:0.143)  GPU=2.5GB  9.4s
+  [19][50/209] loss=1.3669 (loss_classifier:0.413  loss_box_reg:0.466  loss_mask:0.274  loss_objectness:0.112  loss_rpn_box_reg:0.102)  GPU=1.1GB  0.9s
+  [19][60/209] loss=0.4711 (loss_classifier:0.063  loss_box_reg:0.193  loss_mask:0.209  loss_objectness:0.004  loss_rpn_box_reg:0.003)  GPU=1.0GB  3.0s
+  [19][70/209] loss=1.3312 (loss_classifier:0.402  loss_box_reg:0.469  loss_mask:0.339  loss_objectness:0.044  loss_rpn_box_reg:0.076)  GPU=1.1GB  2.6s
+  [19][80/209] loss=0.2999 (loss_classifier:0.027  loss_box_reg:0.083  loss_mask:0.185  loss_objectness:0.004  loss_rpn_box_reg:0.001)  GPU=1.0GB  7.6s
+  [19][90/209] loss=1.1632 (loss_classifier:0.349  loss_box_reg:0.471  loss_mask:0.316  loss_objectness:0.006  loss_rpn_box_reg:0.021)  GPU=1.0GB  2.1s
+  [19][100/209] loss=1.2605 (loss_classifier:0.242  loss_box_reg:0.644  loss_mask:0.324  loss_objectness:0.029  loss_rpn_box_reg:0.021)  GPU=1.0GB  5.7s
+  [19][110/209] loss=1.1439 (loss_classifier:0.386  loss_box_reg:0.399  loss_mask:0.254  loss_objectness:0.029  loss_rpn_box_reg:0.077)  GPU=1.3GB  5.6s
+  [19][120/209] loss=1.7555 (loss_classifier:0.605  loss_box_reg:0.489  loss_mask:0.339  loss_objectness:0.160  loss_rpn_box_reg:0.163)  GPU=1.7GB  3.1s
+  [19][130/209] loss=1.3318 (loss_classifier:0.277  loss_box_reg:0.485  loss_mask:0.379  loss_objectness:0.060  loss_rpn_box_reg:0.132)  GPU=1.1GB  3.0s
+  [19][140/209] loss=1.1547 (loss_classifier:0.332  loss_box_reg:0.429  loss_mask:0.228  loss_objectness:0.066  loss_rpn_box_reg:0.099)  GPU=1.1GB  1.3s
+  [19][150/209] loss=1.3508 (loss_classifier:0.289  loss_box_reg:0.625  loss_mask:0.272  loss_objectness:0.067  loss_rpn_box_reg:0.098)  GPU=1.1GB  2.7s
+  [19][160/209] loss=1.3101 (loss_classifier:0.399  loss_box_reg:0.540  loss_mask:0.346  loss_objectness:0.011  loss_rpn_box_reg:0.014)  GPU=1.0GB  11.4s
+  [19][170/209] loss=0.5041 (loss_classifier:0.069  loss_box_reg:0.191  loss_mask:0.233  loss_objectness:0.002  loss_rpn_box_reg:0.009)  GPU=1.0GB  5.3s
+  [19][180/209] loss=0.5288 (loss_classifier:0.112  loss_box_reg:0.147  loss_mask:0.263  loss_objectness:0.004  loss_rpn_box_reg:0.003)  GPU=1.0GB  5.2s
+  [19][190/209] loss=0.6723 (loss_classifier:0.202  loss_box_reg:0.263  loss_mask:0.169  loss_objectness:0.031  loss_rpn_box_reg:0.008)  GPU=1.0GB  0.9s
+  [19][200/209] loss=1.3681 (loss_classifier:0.468  loss_box_reg:0.533  loss_mask:0.216  loss_objectness:0.063  loss_rpn_box_reg:0.088)  GPU=1.1GB  5.0s
+  Train: 1.1463  LR: 7.16e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 20/50 ===
+  [20][10/209] loss=1.0779 (loss_classifier:0.336  loss_box_reg:0.384  loss_mask:0.263  loss_objectness:0.018  loss_rpn_box_reg:0.077)  GPU=1.1GB  1.4s
+  [20][20/209] loss=1.5535 (loss_classifier:0.403  loss_box_reg:0.535  loss_mask:0.358  loss_objectness:0.109  loss_rpn_box_reg:0.149)  GPU=1.4GB  4.0s
+  [20][30/209] loss=1.2833 (loss_classifier:0.374  loss_box_reg:0.452  loss_mask:0.280  loss_objectness:0.060  loss_rpn_box_reg:0.117)  GPU=1.1GB  1.3s
+  [20][40/209] loss=1.6166 (loss_classifier:0.368  loss_box_reg:0.556  loss_mask:0.407  loss_objectness:0.144  loss_rpn_box_reg:0.141)  GPU=2.2GB  5.9s
+  [20][50/209] loss=0.8622 (loss_classifier:0.208  loss_box_reg:0.354  loss_mask:0.276  loss_objectness:0.013  loss_rpn_box_reg:0.010)  GPU=1.0GB  0.8s
+  [20][60/209] loss=1.0666 (loss_classifier:0.341  loss_box_reg:0.413  loss_mask:0.255  loss_objectness:0.023  loss_rpn_box_reg:0.034)  GPU=1.0GB  6.2s
+  [20][70/209] loss=1.1513 (loss_classifier:0.323  loss_box_reg:0.419  loss_mask:0.255  loss_objectness:0.060  loss_rpn_box_reg:0.094)  GPU=1.0GB  9.9s
+  [20][80/209] loss=1.4022 (loss_classifier:0.380  loss_box_reg:0.566  loss_mask:0.327  loss_objectness:0.036  loss_rpn_box_reg:0.094)  GPU=1.2GB  6.8s
+  [20][90/209] loss=0.5865 (loss_classifier:0.101  loss_box_reg:0.191  loss_mask:0.273  loss_objectness:0.013  loss_rpn_box_reg:0.009)  GPU=1.0GB  1.8s
+  [20][100/209] loss=1.9429 (loss_classifier:0.650  loss_box_reg:0.559  loss_mask:0.389  loss_objectness:0.195  loss_rpn_box_reg:0.149)  GPU=3.4GB  10.9s
+  [20][110/209] loss=1.1547 (loss_classifier:0.290  loss_box_reg:0.451  loss_mask:0.303  loss_objectness:0.029  loss_rpn_box_reg:0.081)  GPU=1.1GB  2.9s
+  [20][120/209] loss=1.4208 (loss_classifier:0.384  loss_box_reg:0.551  loss_mask:0.345  loss_objectness:0.050  loss_rpn_box_reg:0.091)  GPU=1.2GB  1.0s
+  [20][130/209] loss=1.2376 (loss_classifier:0.272  loss_box_reg:0.527  loss_mask:0.305  loss_objectness:0.024  loss_rpn_box_reg:0.109)  GPU=1.1GB  3.9s
+  [20][140/209] loss=0.9268 (loss_classifier:0.250  loss_box_reg:0.369  loss_mask:0.244  loss_objectness:0.035  loss_rpn_box_reg:0.030)  GPU=1.0GB  2.0s
+  [20][150/209] loss=1.0733 (loss_classifier:0.269  loss_box_reg:0.408  loss_mask:0.249  loss_objectness:0.046  loss_rpn_box_reg:0.101)  GPU=1.1GB  4.6s
+  [20][160/209] loss=1.3619 (loss_classifier:0.371  loss_box_reg:0.493  loss_mask:0.296  loss_objectness:0.086  loss_rpn_box_reg:0.116)  GPU=1.5GB  2.9s
+  [20][170/209] loss=0.9033 (loss_classifier:0.260  loss_box_reg:0.408  loss_mask:0.197  loss_objectness:0.007  loss_rpn_box_reg:0.030)  GPU=1.0GB  6.2s
+  [20][180/209] loss=0.9352 (loss_classifier:0.210  loss_box_reg:0.395  loss_mask:0.279  loss_objectness:0.018  loss_rpn_box_reg:0.033)  GPU=1.0GB  0.7s
+  [20][190/209] loss=1.2254 (loss_classifier:0.320  loss_box_reg:0.433  loss_mask:0.290  loss_objectness:0.086  loss_rpn_box_reg:0.095)  GPU=1.2GB  4.7s
+  [20][200/209] loss=1.2344 (loss_classifier:0.293  loss_box_reg:0.446  loss_mask:0.321  loss_objectness:0.082  loss_rpn_box_reg:0.093)  GPU=2.0GB  4.7s
+  Train: 1.1135  LR: 6.89e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 21/50 ===
+  [21][10/209] loss=0.8092 (loss_classifier:0.201  loss_box_reg:0.391  loss_mask:0.193  loss_objectness:0.019  loss_rpn_box_reg:0.006)  GPU=1.0GB  6.0s
+  [21][20/209] loss=1.4834 (loss_classifier:0.340  loss_box_reg:0.591  loss_mask:0.390  loss_objectness:0.060  loss_rpn_box_reg:0.103)  GPU=1.1GB  1.9s
+  [21][30/209] loss=1.3925 (loss_classifier:0.480  loss_box_reg:0.469  loss_mask:0.311  loss_objectness:0.053  loss_rpn_box_reg:0.079)  GPU=1.4GB  3.6s
+  [21][40/209] loss=1.2048 (loss_classifier:0.330  loss_box_reg:0.504  loss_mask:0.302  loss_objectness:0.040  loss_rpn_box_reg:0.029)  GPU=1.0GB  10.3s
+  [21][50/209] loss=2.0332 (loss_classifier:0.539  loss_box_reg:0.733  loss_mask:0.400  loss_objectness:0.096  loss_rpn_box_reg:0.266)  GPU=1.0GB  1.4s
+  [21][60/209] loss=0.6461 (loss_classifier:0.118  loss_box_reg:0.329  loss_mask:0.193  loss_objectness:0.001  loss_rpn_box_reg:0.005)  GPU=1.0GB  0.8s
+  [21][70/209] loss=0.7075 (loss_classifier:0.236  loss_box_reg:0.253  loss_mask:0.212  loss_objectness:0.003  loss_rpn_box_reg:0.004)  GPU=1.0GB  1.4s
+  [21][80/209] loss=0.9810 (loss_classifier:0.217  loss_box_reg:0.380  loss_mask:0.238  loss_objectness:0.069  loss_rpn_box_reg:0.077)  GPU=1.1GB  3.4s
+  [21][90/209] loss=1.6192 (loss_classifier:0.459  loss_box_reg:0.572  loss_mask:0.360  loss_objectness:0.102  loss_rpn_box_reg:0.126)  GPU=1.7GB  8.0s
+  [21][100/209] loss=0.9849 (loss_classifier:0.261  loss_box_reg:0.324  loss_mask:0.245  loss_objectness:0.060  loss_rpn_box_reg:0.095)  GPU=1.1GB  2.2s
+  [21][110/209] loss=1.4487 (loss_classifier:0.470  loss_box_reg:0.521  loss_mask:0.299  loss_objectness:0.060  loss_rpn_box_reg:0.099)  GPU=1.4GB  6.0s
+  [21][120/209] loss=0.8973 (loss_classifier:0.319  loss_box_reg:0.355  loss_mask:0.207  loss_objectness:0.006  loss_rpn_box_reg:0.010)  GPU=1.0GB  0.5s
+  [21][130/209] loss=1.3690 (loss_classifier:0.368  loss_box_reg:0.426  loss_mask:0.335  loss_objectness:0.137  loss_rpn_box_reg:0.102)  GPU=2.5GB  6.9s
+  [21][140/209] loss=0.9441 (loss_classifier:0.329  loss_box_reg:0.356  loss_mask:0.186  loss_objectness:0.056  loss_rpn_box_reg:0.017)  GPU=1.0GB  0.6s
+  [21][150/209] loss=0.8097 (loss_classifier:0.116  loss_box_reg:0.434  loss_mask:0.231  loss_objectness:0.007  loss_rpn_box_reg:0.022)  GPU=1.0GB  5.1s
+  [21][160/209] loss=1.5131 (loss_classifier:0.506  loss_box_reg:0.522  loss_mask:0.292  loss_objectness:0.073  loss_rpn_box_reg:0.120)  GPU=1.1GB  1.1s
+  [21][170/209] loss=1.0321 (loss_classifier:0.318  loss_box_reg:0.364  loss_mask:0.243  loss_objectness:0.048  loss_rpn_box_reg:0.060)  GPU=1.0GB  1.3s
+  [21][180/209] loss=0.7405 (loss_classifier:0.132  loss_box_reg:0.347  loss_mask:0.239  loss_objectness:0.004  loss_rpn_box_reg:0.018)  GPU=1.0GB  3.3s
+  [21][190/209] loss=0.6147 (loss_classifier:0.310  loss_box_reg:0.107  loss_mask:0.157  loss_objectness:0.033  loss_rpn_box_reg:0.009)  GPU=1.0GB  10.4s
+  [21][200/209] loss=1.5806 (loss_classifier:0.405  loss_box_reg:0.601  loss_mask:0.333  loss_objectness:0.114  loss_rpn_box_reg:0.128)  GPU=1.3GB  1.4s
+  Train: 1.1102  LR: 6.62e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 22/50 ===
+  [22][10/209] loss=0.7937 (loss_classifier:0.241  loss_box_reg:0.339  loss_mask:0.200  loss_objectness:0.003  loss_rpn_box_reg:0.010)  GPU=1.0GB  1.5s
+  [22][20/209] loss=1.4287 (loss_classifier:0.433  loss_box_reg:0.480  loss_mask:0.322  loss_objectness:0.079  loss_rpn_box_reg:0.114)  GPU=1.2GB  7.1s
+  [22][30/209] loss=1.1026 (loss_classifier:0.249  loss_box_reg:0.474  loss_mask:0.321  loss_objectness:0.051  loss_rpn_box_reg:0.008)  GPU=1.0GB  1.0s
+  [22][40/209] loss=0.8242 (loss_classifier:0.266  loss_box_reg:0.316  loss_mask:0.221  loss_objectness:0.016  loss_rpn_box_reg:0.007)  GPU=1.0GB  4.7s
+  [22][50/209] loss=2.2006 (loss_classifier:0.840  loss_box_reg:0.591  loss_mask:0.406  loss_objectness:0.194  loss_rpn_box_reg:0.170)  GPU=1.0GB  3.0s
+  [22][60/209] loss=0.5711 (loss_classifier:0.126  loss_box_reg:0.225  loss_mask:0.195  loss_objectness:0.019  loss_rpn_box_reg:0.005)  GPU=1.0GB  1.5s
+  [22][70/209] loss=1.6251 (loss_classifier:0.486  loss_box_reg:0.393  loss_mask:0.303  loss_objectness:0.276  loss_rpn_box_reg:0.167)  GPU=1.1GB  4.2s
+  [22][80/209] loss=1.2172 (loss_classifier:0.423  loss_box_reg:0.424  loss_mask:0.256  loss_objectness:0.034  loss_rpn_box_reg:0.080)  GPU=1.1GB  6.7s
+  [22][90/209] loss=0.6824 (loss_classifier:0.133  loss_box_reg:0.340  loss_mask:0.172  loss_objectness:0.017  loss_rpn_box_reg:0.022)  GPU=1.0GB  0.8s
+  [22][100/209] loss=1.0711 (loss_classifier:0.274  loss_box_reg:0.449  loss_mask:0.280  loss_objectness:0.050  loss_rpn_box_reg:0.018)  GPU=1.0GB  4.5s
+  [22][110/209] loss=1.9721 (loss_classifier:0.798  loss_box_reg:0.539  loss_mask:0.365  loss_objectness:0.146  loss_rpn_box_reg:0.125)  GPU=2.2GB  5.5s
+  [22][120/209] loss=0.7828 (loss_classifier:0.239  loss_box_reg:0.345  loss_mask:0.185  loss_objectness:0.003  loss_rpn_box_reg:0.010)  GPU=1.0GB  4.6s
+  [22][130/209] loss=1.0992 (loss_classifier:0.341  loss_box_reg:0.367  loss_mask:0.240  loss_objectness:0.065  loss_rpn_box_reg:0.086)  GPU=1.1GB  7.3s
+  [22][140/209] loss=1.5252 (loss_classifier:0.434  loss_box_reg:0.633  loss_mask:0.410  loss_objectness:0.023  loss_rpn_box_reg:0.026)  GPU=1.0GB  7.6s
+  [22][150/209] loss=0.5819 (loss_classifier:0.115  loss_box_reg:0.211  loss_mask:0.241  loss_objectness:0.009  loss_rpn_box_reg:0.005)  GPU=1.0GB  4.8s
+  [22][160/209] loss=0.9674 (loss_classifier:0.237  loss_box_reg:0.461  loss_mask:0.243  loss_objectness:0.014  loss_rpn_box_reg:0.012)  GPU=1.0GB  1.1s
+  [22][170/209] loss=0.8528 (loss_classifier:0.169  loss_box_reg:0.438  loss_mask:0.231  loss_objectness:0.006  loss_rpn_box_reg:0.009)  GPU=1.0GB  10.0s
+  [22][180/209] loss=1.2181 (loss_classifier:0.359  loss_box_reg:0.430  loss_mask:0.295  loss_objectness:0.043  loss_rpn_box_reg:0.091)  GPU=1.1GB  1.5s
+  [22][190/209] loss=1.1001 (loss_classifier:0.398  loss_box_reg:0.421  loss_mask:0.223  loss_objectness:0.017  loss_rpn_box_reg:0.041)  GPU=1.0GB  0.8s
+  [22][200/209] loss=1.2856 (loss_classifier:0.361  loss_box_reg:0.467  loss_mask:0.256  loss_objectness:0.117  loss_rpn_box_reg:0.084)  GPU=1.3GB  4.9s
+  Train: 1.0991  LR: 6.34e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 23/50 ===
+  [23][10/209] loss=1.3107 (loss_classifier:0.389  loss_box_reg:0.422  loss_mask:0.344  loss_objectness:0.047  loss_rpn_box_reg:0.109)  GPU=1.1GB  3.3s
+  [23][20/209] loss=1.5317 (loss_classifier:0.369  loss_box_reg:0.586  loss_mask:0.401  loss_objectness:0.067  loss_rpn_box_reg:0.110)  GPU=1.1GB  4.2s
+  [23][30/209] loss=1.4598 (loss_classifier:0.451  loss_box_reg:0.514  loss_mask:0.312  loss_objectness:0.068  loss_rpn_box_reg:0.115)  GPU=1.1GB  2.1s
+  [23][40/209] loss=0.6356 (loss_classifier:0.311  loss_box_reg:0.134  loss_mask:0.184  loss_objectness:0.003  loss_rpn_box_reg:0.004)  GPU=1.0GB  1.7s
+  [23][50/209] loss=0.9314 (loss_classifier:0.157  loss_box_reg:0.184  loss_mask:0.332  loss_objectness:0.022  loss_rpn_box_reg:0.236)  GPU=1.0GB  5.0s
+  [23][60/209] loss=0.4972 (loss_classifier:0.043  loss_box_reg:0.136  loss_mask:0.310  loss_objectness:0.003  loss_rpn_box_reg:0.005)  GPU=1.0GB  0.5s
+  [23][70/209] loss=0.6172 (loss_classifier:0.149  loss_box_reg:0.266  loss_mask:0.189  loss_objectness:0.006  loss_rpn_box_reg:0.007)  GPU=1.0GB  6.1s
+  [23][80/209] loss=1.0091 (loss_classifier:0.235  loss_box_reg:0.374  loss_mask:0.268  loss_objectness:0.047  loss_rpn_box_reg:0.086)  GPU=1.3GB  1.4s
+  [23][90/209] loss=1.2481 (loss_classifier:0.311  loss_box_reg:0.482  loss_mask:0.288  loss_objectness:0.052  loss_rpn_box_reg:0.116)  GPU=1.3GB  7.2s
+  [23][100/209] loss=1.0020 (loss_classifier:0.479  loss_box_reg:0.303  loss_mask:0.214  loss_objectness:0.001  loss_rpn_box_reg:0.004)  GPU=1.0GB  0.6s
+  [23][110/209] loss=0.5105 (loss_classifier:0.049  loss_box_reg:0.292  loss_mask:0.158  loss_objectness:0.002  loss_rpn_box_reg:0.009)  GPU=1.0GB  0.9s
+  [23][120/209] loss=1.2214 (loss_classifier:0.435  loss_box_reg:0.380  loss_mask:0.287  loss_objectness:0.029  loss_rpn_box_reg:0.090)  GPU=1.0GB  4.3s
+  [23][130/209] loss=0.8243 (loss_classifier:0.166  loss_box_reg:0.400  loss_mask:0.238  loss_objectness:0.009  loss_rpn_box_reg:0.012)  GPU=1.0GB  3.9s
+  [23][140/209] loss=1.0311 (loss_classifier:0.418  loss_box_reg:0.314  loss_mask:0.224  loss_objectness:0.020  loss_rpn_box_reg:0.055)  GPU=1.1GB  3.8s
+  [23][150/209] loss=1.2083 (loss_classifier:0.303  loss_box_reg:0.442  loss_mask:0.308  loss_objectness:0.060  loss_rpn_box_reg:0.095)  GPU=1.3GB  6.7s
+  [23][160/209] loss=0.7487 (loss_classifier:0.258  loss_box_reg:0.295  loss_mask:0.168  loss_objectness:0.007  loss_rpn_box_reg:0.020)  GPU=1.0GB  10.2s
+  [23][170/209] loss=1.6195 (loss_classifier:0.525  loss_box_reg:0.520  loss_mask:0.348  loss_objectness:0.112  loss_rpn_box_reg:0.114)  GPU=1.8GB  4.8s
+  [23][180/209] loss=1.5524 (loss_classifier:0.476  loss_box_reg:0.438  loss_mask:0.372  loss_objectness:0.122  loss_rpn_box_reg:0.144)  GPU=1.2GB  1.5s
+  [23][190/209] loss=2.1314 (loss_classifier:0.729  loss_box_reg:0.641  loss_mask:0.428  loss_objectness:0.282  loss_rpn_box_reg:0.051)  GPU=1.2GB  1.5s
+  [23][200/209] loss=1.0898 (loss_classifier:0.423  loss_box_reg:0.349  loss_mask:0.208  loss_objectness:0.058  loss_rpn_box_reg:0.051)  GPU=1.0GB  2.0s
+  Train: 1.0754  LR: 6.06e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 24/50 ===
+  [24][10/209] loss=1.1722 (loss_classifier:0.393  loss_box_reg:0.426  loss_mask:0.255  loss_objectness:0.023  loss_rpn_box_reg:0.074)  GPU=1.1GB  2.4s
+  [24][20/209] loss=1.2011 (loss_classifier:0.308  loss_box_reg:0.421  loss_mask:0.333  loss_objectness:0.034  loss_rpn_box_reg:0.105)  GPU=1.0GB  1.5s
+  [24][30/209] loss=1.0809 (loss_classifier:0.395  loss_box_reg:0.409  loss_mask:0.243  loss_objectness:0.018  loss_rpn_box_reg:0.016)  GPU=1.0GB  1.1s
+  [24][40/209] loss=0.7671 (loss_classifier:0.266  loss_box_reg:0.255  loss_mask:0.229  loss_objectness:0.012  loss_rpn_box_reg:0.005)  GPU=1.0GB  2.5s
+  [24][50/209] loss=1.8074 (loss_classifier:0.533  loss_box_reg:0.567  loss_mask:0.389  loss_objectness:0.173  loss_rpn_box_reg:0.146)  GPU=1.5GB  6.5s
+  [24][60/209] loss=1.4966 (loss_classifier:0.505  loss_box_reg:0.392  loss_mask:0.309  loss_objectness:0.169  loss_rpn_box_reg:0.122)  GPU=1.6GB  3.1s
+  [24][70/209] loss=1.2079 (loss_classifier:0.357  loss_box_reg:0.476  loss_mask:0.241  loss_objectness:0.046  loss_rpn_box_reg:0.088)  GPU=1.4GB  8.5s
+  [24][80/209] loss=1.8040 (loss_classifier:0.650  loss_box_reg:0.675  loss_mask:0.347  loss_objectness:0.077  loss_rpn_box_reg:0.056)  GPU=1.2GB  0.8s
+  [24][90/209] loss=1.4158 (loss_classifier:0.422  loss_box_reg:0.491  loss_mask:0.295  loss_objectness:0.116  loss_rpn_box_reg:0.093)  GPU=1.2GB  5.4s
+  [24][100/209] loss=1.3154 (loss_classifier:0.550  loss_box_reg:0.423  loss_mask:0.227  loss_objectness:0.059  loss_rpn_box_reg:0.057)  GPU=1.1GB  1.7s
+  [24][110/209] loss=0.6797 (loss_classifier:0.140  loss_box_reg:0.309  loss_mask:0.192  loss_objectness:0.024  loss_rpn_box_reg:0.015)  GPU=1.0GB  3.0s
+  [24][120/209] loss=1.0719 (loss_classifier:0.336  loss_box_reg:0.388  loss_mask:0.239  loss_objectness:0.028  loss_rpn_box_reg:0.081)  GPU=1.1GB  4.1s
+  [24][130/209] loss=1.6678 (loss_classifier:0.948  loss_box_reg:0.388  loss_mask:0.247  loss_objectness:0.024  loss_rpn_box_reg:0.061)  GPU=1.2GB  11.7s
+  [24][140/209] loss=0.6470 (loss_classifier:0.112  loss_box_reg:0.176  loss_mask:0.289  loss_objectness:0.016  loss_rpn_box_reg:0.054)  GPU=1.0GB  0.8s
+  [24][150/209] loss=0.4099 (loss_classifier:0.076  loss_box_reg:0.185  loss_mask:0.145  loss_objectness:0.003  loss_rpn_box_reg:0.002)  GPU=1.0GB  0.8s
+  [24][160/209] loss=0.7764 (loss_classifier:0.253  loss_box_reg:0.335  loss_mask:0.170  loss_objectness:0.013  loss_rpn_box_reg:0.005)  GPU=1.0GB  5.5s
+  [24][170/209] loss=1.5377 (loss_classifier:0.457  loss_box_reg:0.533  loss_mask:0.327  loss_objectness:0.103  loss_rpn_box_reg:0.117)  GPU=1.1GB  7.8s
+  [24][180/209] loss=1.4719 (loss_classifier:0.412  loss_box_reg:0.527  loss_mask:0.334  loss_objectness:0.095  loss_rpn_box_reg:0.104)  GPU=1.1GB  1.2s
+  [24][190/209] loss=1.2258 (loss_classifier:0.441  loss_box_reg:0.427  loss_mask:0.269  loss_objectness:0.021  loss_rpn_box_reg:0.068)  GPU=1.1GB  6.2s
+  [24][200/209] loss=0.7337 (loss_classifier:0.193  loss_box_reg:0.362  loss_mask:0.156  loss_objectness:0.014  loss_rpn_box_reg:0.009)  GPU=1.0GB  0.5s
+  Train: 1.0946  LR: 5.78e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 25/50 ===
+  [25][10/209] loss=0.6921 (loss_classifier:0.175  loss_box_reg:0.171  loss_mask:0.331  loss_objectness:0.013  loss_rpn_box_reg:0.002)  GPU=1.0GB  6.0s
+  [25][20/209] loss=1.2851 (loss_classifier:0.330  loss_box_reg:0.444  loss_mask:0.334  loss_objectness:0.064  loss_rpn_box_reg:0.114)  GPU=1.2GB  2.2s
+  [25][30/209] loss=1.1641 (loss_classifier:0.383  loss_box_reg:0.470  loss_mask:0.227  loss_objectness:0.059  loss_rpn_box_reg:0.026)  GPU=1.0GB  4.1s
+  [25][40/209] loss=1.9261 (loss_classifier:0.857  loss_box_reg:0.500  loss_mask:0.325  loss_objectness:0.129  loss_rpn_box_reg:0.116)  GPU=1.9GB  4.8s
+  [25][50/209] loss=1.5993 (loss_classifier:0.465  loss_box_reg:0.533  loss_mask:0.350  loss_objectness:0.144  loss_rpn_box_reg:0.107)  GPU=1.2GB  6.9s
+  [25][60/209] loss=1.4618 (loss_classifier:0.510  loss_box_reg:0.571  loss_mask:0.315  loss_objectness:0.042  loss_rpn_box_reg:0.023)  GPU=1.0GB  2.8s
+  [25][70/209] loss=1.8555 (loss_classifier:0.599  loss_box_reg:0.671  loss_mask:0.389  loss_objectness:0.151  loss_rpn_box_reg:0.046)  GPU=1.2GB  2.8s
+  [25][80/209] loss=0.9281 (loss_classifier:0.224  loss_box_reg:0.396  loss_mask:0.224  loss_objectness:0.015  loss_rpn_box_reg:0.069)  GPU=1.0GB  2.3s
+  [25][90/209] loss=1.3101 (loss_classifier:0.341  loss_box_reg:0.474  loss_mask:0.299  loss_objectness:0.103  loss_rpn_box_reg:0.093)  GPU=1.2GB  1.4s
+  [25][100/209] loss=0.6846 (loss_classifier:0.094  loss_box_reg:0.375  loss_mask:0.170  loss_objectness:0.016  loss_rpn_box_reg:0.029)  GPU=1.0GB  4.6s
+  [25][110/209] loss=1.1006 (loss_classifier:0.258  loss_box_reg:0.457  loss_mask:0.276  loss_objectness:0.032  loss_rpn_box_reg:0.078)  GPU=1.0GB  6.0s
+  [25][120/209] loss=1.3079 (loss_classifier:0.499  loss_box_reg:0.455  loss_mask:0.223  loss_objectness:0.070  loss_rpn_box_reg:0.061)  GPU=1.0GB  1.3s
+  [25][130/209] loss=0.5898 (loss_classifier:0.149  loss_box_reg:0.278  loss_mask:0.146  loss_objectness:0.007  loss_rpn_box_reg:0.010)  GPU=1.0GB  2.8s
+  [25][140/209] loss=0.3595 (loss_classifier:0.041  loss_box_reg:0.119  loss_mask:0.196  loss_objectness:0.000  loss_rpn_box_reg:0.003)  GPU=1.0GB  1.9s
+  [25][150/209] loss=1.2272 (loss_classifier:0.294  loss_box_reg:0.460  loss_mask:0.312  loss_objectness:0.075  loss_rpn_box_reg:0.086)  GPU=1.1GB  1.7s
+  [25][160/209] loss=0.6029 (loss_classifier:0.190  loss_box_reg:0.119  loss_mask:0.265  loss_objectness:0.022  loss_rpn_box_reg:0.006)  GPU=1.0GB  6.1s
+  [25][170/209] loss=1.0650 (loss_classifier:0.294  loss_box_reg:0.374  loss_mask:0.266  loss_objectness:0.056  loss_rpn_box_reg:0.075)  GPU=1.1GB  0.7s
+  [25][180/209] loss=1.6185 (loss_classifier:0.433  loss_box_reg:0.576  loss_mask:0.352  loss_objectness:0.121  loss_rpn_box_reg:0.137)  GPU=1.3GB  7.8s
+  [25][190/209] loss=0.3041 (loss_classifier:0.037  loss_box_reg:0.097  loss_mask:0.168  loss_objectness:0.000  loss_rpn_box_reg:0.002)  GPU=1.0GB  1.4s
+  [25][200/209] loss=1.1066 (loss_classifier:0.308  loss_box_reg:0.403  loss_mask:0.254  loss_objectness:0.079  loss_rpn_box_reg:0.062)  GPU=1.2GB  10.4s
+  Train: 1.0679  LR: 5.50e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 26/50 ===
+  [26][10/209] loss=1.2120 (loss_classifier:0.289  loss_box_reg:0.411  loss_mask:0.275  loss_objectness:0.091  loss_rpn_box_reg:0.146)  GPU=1.1GB  1.1s
+  [26][20/209] loss=0.5065 (loss_classifier:0.109  loss_box_reg:0.177  loss_mask:0.215  loss_objectness:0.001  loss_rpn_box_reg:0.004)  GPU=1.0GB  4.5s
+  [26][30/209] loss=0.2565 (loss_classifier:0.070  loss_box_reg:0.031  loss_mask:0.118  loss_objectness:0.038  loss_rpn_box_reg:0.001)  GPU=1.0GB  1.7s
+  [26][40/209] loss=1.1416 (loss_classifier:0.293  loss_box_reg:0.461  loss_mask:0.265  loss_objectness:0.043  loss_rpn_box_reg:0.079)  GPU=1.3GB  1.8s
+  [26][50/209] loss=0.3604 (loss_classifier:0.024  loss_box_reg:0.083  loss_mask:0.232  loss_objectness:0.016  loss_rpn_box_reg:0.004)  GPU=1.0GB  7.2s
+  [26][60/209] loss=0.7862 (loss_classifier:0.083  loss_box_reg:0.397  loss_mask:0.276  loss_objectness:0.008  loss_rpn_box_reg:0.022)  GPU=1.0GB  4.3s
+  [26][70/209] loss=0.9966 (loss_classifier:0.418  loss_box_reg:0.378  loss_mask:0.187  loss_objectness:0.005  loss_rpn_box_reg:0.009)  GPU=1.0GB  1.7s
+  [26][80/209] loss=0.3794 (loss_classifier:0.059  loss_box_reg:0.165  loss_mask:0.140  loss_objectness:0.014  loss_rpn_box_reg:0.002)  GPU=1.0GB  10.7s
+  [26][90/209] loss=1.1890 (loss_classifier:0.315  loss_box_reg:0.457  loss_mask:0.262  loss_objectness:0.037  loss_rpn_box_reg:0.118)  GPU=1.2GB  4.8s
+  [26][100/209] loss=0.3102 (loss_classifier:0.041  loss_box_reg:0.075  loss_mask:0.170  loss_objectness:0.022  loss_rpn_box_reg:0.002)  GPU=1.0GB  1.9s
+  [26][110/209] loss=0.9817 (loss_classifier:0.236  loss_box_reg:0.410  loss_mask:0.231  loss_objectness:0.037  loss_rpn_box_reg:0.069)  GPU=1.4GB  2.8s
+  [26][120/209] loss=0.2385 (loss_classifier:0.024  loss_box_reg:0.070  loss_mask:0.143  loss_objectness:0.000  loss_rpn_box_reg:0.002)  GPU=1.0GB  3.4s
+  [26][130/209] loss=1.0923 (loss_classifier:0.258  loss_box_reg:0.425  loss_mask:0.281  loss_objectness:0.044  loss_rpn_box_reg:0.084)  GPU=1.0GB  5.0s
+  [26][140/209] loss=1.3868 (loss_classifier:0.482  loss_box_reg:0.443  loss_mask:0.275  loss_objectness:0.102  loss_rpn_box_reg:0.084)  GPU=1.2GB  4.1s
+  [26][150/209] loss=1.0571 (loss_classifier:0.256  loss_box_reg:0.403  loss_mask:0.235  loss_objectness:0.070  loss_rpn_box_reg:0.093)  GPU=1.1GB  1.0s
+  [26][160/209] loss=1.3545 (loss_classifier:0.547  loss_box_reg:0.487  loss_mask:0.295  loss_objectness:0.012  loss_rpn_box_reg:0.014)  GPU=1.0GB  2.5s
+  [26][170/209] loss=1.0865 (loss_classifier:0.312  loss_box_reg:0.331  loss_mask:0.284  loss_objectness:0.076  loss_rpn_box_reg:0.084)  GPU=2.4GB  7.9s
+  [26][180/209] loss=1.3499 (loss_classifier:0.507  loss_box_reg:0.455  loss_mask:0.280  loss_objectness:0.052  loss_rpn_box_reg:0.056)  GPU=1.0GB  1.1s
+  [26][190/209] loss=1.0187 (loss_classifier:0.228  loss_box_reg:0.475  loss_mask:0.256  loss_objectness:0.044  loss_rpn_box_reg:0.015)  GPU=1.0GB  5.5s
+  [26][200/209] loss=1.4692 (loss_classifier:0.428  loss_box_reg:0.439  loss_mask:0.279  loss_objectness:0.148  loss_rpn_box_reg:0.175)  GPU=1.1GB  1.7s
+  Train: 1.0472  LR: 5.22e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 27/50 ===
+  [27][10/209] loss=0.6121 (loss_classifier:0.152  loss_box_reg:0.163  loss_mask:0.269  loss_objectness:0.013  loss_rpn_box_reg:0.015)  GPU=1.0GB  2.8s
+  [27][20/209] loss=1.1881 (loss_classifier:0.467  loss_box_reg:0.433  loss_mask:0.250  loss_objectness:0.007  loss_rpn_box_reg:0.031)  GPU=1.0GB  3.7s
+  [27][30/209] loss=0.2777 (loss_classifier:0.100  loss_box_reg:0.024  loss_mask:0.098  loss_objectness:0.055  loss_rpn_box_reg:0.001)  GPU=1.0GB  13.6s
+  [27][40/209] loss=0.9822 (loss_classifier:0.241  loss_box_reg:0.366  loss_mask:0.244  loss_objectness:0.045  loss_rpn_box_reg:0.085)  GPU=1.1GB  1.5s
+  [27][50/209] loss=1.7885 (loss_classifier:0.583  loss_box_reg:0.554  loss_mask:0.355  loss_objectness:0.174  loss_rpn_box_reg:0.123)  GPU=1.7GB  3.7s
+  [27][60/209] loss=1.1832 (loss_classifier:0.290  loss_box_reg:0.433  loss_mask:0.298  loss_objectness:0.049  loss_rpn_box_reg:0.114)  GPU=1.3GB  2.6s
+  [27][70/209] loss=0.7680 (loss_classifier:0.196  loss_box_reg:0.223  loss_mask:0.345  loss_objectness:0.001  loss_rpn_box_reg:0.003)  GPU=1.0GB  3.4s
+  [27][80/209] loss=0.9836 (loss_classifier:0.193  loss_box_reg:0.461  loss_mask:0.297  loss_objectness:0.008  loss_rpn_box_reg:0.025)  GPU=1.0GB  3.9s
+  [27][90/209] loss=1.4015 (loss_classifier:0.389  loss_box_reg:0.499  loss_mask:0.325  loss_objectness:0.067  loss_rpn_box_reg:0.123)  GPU=2.2GB  7.5s
+  [27][100/209] loss=1.8306 (loss_classifier:0.575  loss_box_reg:0.647  loss_mask:0.376  loss_objectness:0.178  loss_rpn_box_reg:0.055)  GPU=1.2GB  0.7s
+  [27][110/209] loss=0.6658 (loss_classifier:0.107  loss_box_reg:0.328  loss_mask:0.217  loss_objectness:0.003  loss_rpn_box_reg:0.011)  GPU=1.0GB  2.8s
+  [27][120/209] loss=1.3176 (loss_classifier:0.351  loss_box_reg:0.508  loss_mask:0.287  loss_objectness:0.075  loss_rpn_box_reg:0.097)  GPU=1.1GB  1.4s
+  [27][130/209] loss=0.4143 (loss_classifier:0.081  loss_box_reg:0.189  loss_mask:0.124  loss_objectness:0.010  loss_rpn_box_reg:0.009)  GPU=1.0GB  1.4s
+  [27][140/209] loss=0.4396 (loss_classifier:0.093  loss_box_reg:0.161  loss_mask:0.177  loss_objectness:0.004  loss_rpn_box_reg:0.004)  GPU=1.0GB  1.8s
+  [27][150/209] loss=1.2427 (loss_classifier:0.517  loss_box_reg:0.411  loss_mask:0.259  loss_objectness:0.034  loss_rpn_box_reg:0.022)  GPU=1.0GB  5.6s
+  [27][160/209] loss=1.3506 (loss_classifier:0.401  loss_box_reg:0.491  loss_mask:0.322  loss_objectness:0.028  loss_rpn_box_reg:0.109)  GPU=1.2GB  1.2s
+  [27][170/209] loss=0.9564 (loss_classifier:0.223  loss_box_reg:0.374  loss_mask:0.247  loss_objectness:0.036  loss_rpn_box_reg:0.077)  GPU=1.1GB  2.7s
+  [27][180/209] loss=1.1856 (loss_classifier:0.297  loss_box_reg:0.430  loss_mask:0.308  loss_objectness:0.047  loss_rpn_box_reg:0.103)  GPU=1.0GB  2.2s
+  [27][190/209] loss=0.2730 (loss_classifier:0.012  loss_box_reg:0.049  loss_mask:0.211  loss_objectness:0.001  loss_rpn_box_reg:0.001)  GPU=1.0GB  0.7s
+  [27][200/209] loss=1.2289 (loss_classifier:0.308  loss_box_reg:0.481  loss_mask:0.309  loss_objectness:0.025  loss_rpn_box_reg:0.105)  GPU=1.2GB  1.8s
+  Train: 1.0507  LR: 4.94e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 28/50 ===
+  [28][10/209] loss=1.2877 (loss_classifier:0.364  loss_box_reg:0.457  loss_mask:0.266  loss_objectness:0.101  loss_rpn_box_reg:0.099)  GPU=1.3GB  1.7s
+  [28][20/209] loss=1.2232 (loss_classifier:0.331  loss_box_reg:0.426  loss_mask:0.287  loss_objectness:0.088  loss_rpn_box_reg:0.092)  GPU=1.1GB  2.4s
+  [28][30/209] loss=1.4321 (loss_classifier:0.412  loss_box_reg:0.468  loss_mask:0.342  loss_objectness:0.086  loss_rpn_box_reg:0.123)  GPU=1.2GB  2.0s
+  [28][40/209] loss=0.5838 (loss_classifier:0.199  loss_box_reg:0.198  loss_mask:0.182  loss_objectness:0.001  loss_rpn_box_reg:0.004)  GPU=1.0GB  3.5s
+  [28][50/209] loss=1.3696 (loss_classifier:0.341  loss_box_reg:0.693  loss_mask:0.297  loss_objectness:0.009  loss_rpn_box_reg:0.029)  GPU=1.0GB  6.2s
+  [28][60/209] loss=1.0968 (loss_classifier:0.232  loss_box_reg:0.514  loss_mask:0.311  loss_objectness:0.014  loss_rpn_box_reg:0.025)  GPU=1.0GB  1.0s
+  [28][70/209] loss=1.2003 (loss_classifier:0.365  loss_box_reg:0.392  loss_mask:0.300  loss_objectness:0.086  loss_rpn_box_reg:0.056)  GPU=1.2GB  5.3s
+  [28][80/209] loss=1.0645 (loss_classifier:0.257  loss_box_reg:0.454  loss_mask:0.257  loss_objectness:0.019  loss_rpn_box_reg:0.078)  GPU=1.0GB  2.3s
+  [28][90/209] loss=1.7207 (loss_classifier:0.489  loss_box_reg:0.506  loss_mask:0.428  loss_objectness:0.156  loss_rpn_box_reg:0.143)  GPU=3.1GB  12.1s
+  [28][100/209] loss=1.2396 (loss_classifier:0.408  loss_box_reg:0.451  loss_mask:0.308  loss_objectness:0.047  loss_rpn_box_reg:0.027)  GPU=1.0GB  0.7s
+  [28][110/209] loss=1.3064 (loss_classifier:0.338  loss_box_reg:0.548  loss_mask:0.356  loss_objectness:0.042  loss_rpn_box_reg:0.023)  GPU=1.0GB  1.4s
+  [28][120/209] loss=0.7624 (loss_classifier:0.207  loss_box_reg:0.327  loss_mask:0.201  loss_objectness:0.012  loss_rpn_box_reg:0.015)  GPU=1.0GB  1.2s
+  [28][130/209] loss=0.6069 (loss_classifier:0.172  loss_box_reg:0.225  loss_mask:0.206  loss_objectness:0.001  loss_rpn_box_reg:0.003)  GPU=1.0GB  1.8s
+  [28][140/209] loss=0.2942 (loss_classifier:0.044  loss_box_reg:0.112  loss_mask:0.134  loss_objectness:0.003  loss_rpn_box_reg:0.001)  GPU=1.0GB  7.6s
+  [28][150/209] loss=1.3925 (loss_classifier:0.420  loss_box_reg:0.446  loss_mask:0.319  loss_objectness:0.096  loss_rpn_box_reg:0.111)  GPU=1.2GB  8.3s
+  [28][160/209] loss=1.0215 (loss_classifier:0.257  loss_box_reg:0.428  loss_mask:0.213  loss_objectness:0.032  loss_rpn_box_reg:0.092)  GPU=1.1GB  3.7s
+  [28][170/209] loss=1.4039 (loss_classifier:0.395  loss_box_reg:0.480  loss_mask:0.308  loss_objectness:0.105  loss_rpn_box_reg:0.116)  GPU=1.3GB  5.1s
+  [28][180/209] loss=0.7730 (loss_classifier:0.232  loss_box_reg:0.328  loss_mask:0.186  loss_objectness:0.014  loss_rpn_box_reg:0.013)  GPU=1.0GB  8.5s
+  [28][190/209] loss=1.0927 (loss_classifier:0.267  loss_box_reg:0.393  loss_mask:0.278  loss_objectness:0.074  loss_rpn_box_reg:0.080)  GPU=1.6GB  3.1s
+  [28][200/209] loss=1.4794 (loss_classifier:0.349  loss_box_reg:0.504  loss_mask:0.235  loss_objectness:0.127  loss_rpn_box_reg:0.265)  GPU=1.0GB  0.5s
+  Train: 1.0557  LR: 4.66e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 29/50 ===
+  [29][10/209] loss=1.3606 (loss_classifier:0.331  loss_box_reg:0.505  loss_mask:0.298  loss_objectness:0.112  loss_rpn_box_reg:0.114)  GPU=1.4GB  7.8s
+  [29][20/209] loss=1.5363 (loss_classifier:0.428  loss_box_reg:0.594  loss_mask:0.348  loss_objectness:0.079  loss_rpn_box_reg:0.087)  GPU=1.1GB  3.4s
+  [29][30/209] loss=1.5204 (loss_classifier:0.436  loss_box_reg:0.505  loss_mask:0.301  loss_objectness:0.137  loss_rpn_box_reg:0.141)  GPU=1.3GB  3.2s
+  [29][40/209] loss=1.1998 (loss_classifier:0.310  loss_box_reg:0.448  loss_mask:0.295  loss_objectness:0.053  loss_rpn_box_reg:0.094)  GPU=1.3GB  6.9s
+  [29][50/209] loss=0.9020 (loss_classifier:0.254  loss_box_reg:0.388  loss_mask:0.231  loss_objectness:0.022  loss_rpn_box_reg:0.007)  GPU=1.0GB  1.9s
+  [29][60/209] loss=1.0110 (loss_classifier:0.297  loss_box_reg:0.346  loss_mask:0.241  loss_objectness:0.048  loss_rpn_box_reg:0.079)  GPU=1.3GB  5.0s
+  [29][70/209] loss=0.4278 (loss_classifier:0.074  loss_box_reg:0.178  loss_mask:0.151  loss_objectness:0.021  loss_rpn_box_reg:0.004)  GPU=1.0GB  3.4s
+  [29][80/209] loss=0.9123 (loss_classifier:0.275  loss_box_reg:0.324  loss_mask:0.206  loss_objectness:0.050  loss_rpn_box_reg:0.058)  GPU=1.2GB  1.1s
+  [29][90/209] loss=1.1713 (loss_classifier:0.235  loss_box_reg:0.458  loss_mask:0.285  loss_objectness:0.077  loss_rpn_box_reg:0.117)  GPU=1.1GB  4.2s
+  [29][100/209] loss=1.0381 (loss_classifier:0.284  loss_box_reg:0.370  loss_mask:0.274  loss_objectness:0.045  loss_rpn_box_reg:0.066)  GPU=2.0GB  4.8s
+  [29][110/209] loss=0.9984 (loss_classifier:0.322  loss_box_reg:0.416  loss_mask:0.242  loss_objectness:0.006  loss_rpn_box_reg:0.013)  GPU=1.0GB  0.7s
+  [29][120/209] loss=0.9016 (loss_classifier:0.225  loss_box_reg:0.366  loss_mask:0.248  loss_objectness:0.028  loss_rpn_box_reg:0.035)  GPU=1.0GB  6.4s
+  [29][130/209] loss=1.3741 (loss_classifier:0.358  loss_box_reg:0.411  loss_mask:0.325  loss_objectness:0.167  loss_rpn_box_reg:0.114)  GPU=1.9GB  7.3s
+  [29][140/209] loss=0.9574 (loss_classifier:0.301  loss_box_reg:0.375  loss_mask:0.243  loss_objectness:0.008  loss_rpn_box_reg:0.032)  GPU=1.0GB  0.9s
+  [29][150/209] loss=1.1750 (loss_classifier:0.217  loss_box_reg:0.489  loss_mask:0.232  loss_objectness:0.022  loss_rpn_box_reg:0.214)  GPU=1.0GB  12.4s
+  [29][160/209] loss=0.4693 (loss_classifier:0.080  loss_box_reg:0.144  loss_mask:0.162  loss_objectness:0.008  loss_rpn_box_reg:0.077)  GPU=1.0GB  1.6s
+  [29][170/209] loss=0.2693 (loss_classifier:0.043  loss_box_reg:0.069  loss_mask:0.141  loss_objectness:0.016  loss_rpn_box_reg:0.000)  GPU=1.0GB  2.8s
+  [29][180/209] loss=1.0352 (loss_classifier:0.444  loss_box_reg:0.283  loss_mask:0.264  loss_objectness:0.034  loss_rpn_box_reg:0.010)  GPU=1.0GB  7.8s
+  [29][190/209] loss=1.0822 (loss_classifier:0.290  loss_box_reg:0.447  loss_mask:0.244  loss_objectness:0.024  loss_rpn_box_reg:0.077)  GPU=1.0GB  1.0s
+  [29][200/209] loss=1.0548 (loss_classifier:0.270  loss_box_reg:0.437  loss_mask:0.298  loss_objectness:0.027  loss_rpn_box_reg:0.023)  GPU=1.0GB  2.9s
+  Train: 1.0257  LR: 4.38e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 30/50 ===
+  [30][10/209] loss=0.8394 (loss_classifier:0.252  loss_box_reg:0.329  loss_mask:0.218  loss_objectness:0.011  loss_rpn_box_reg:0.029)  GPU=1.0GB  6.9s
+  [30][20/209] loss=0.6495 (loss_classifier:0.127  loss_box_reg:0.250  loss_mask:0.240  loss_objectness:0.024  loss_rpn_box_reg:0.010)  GPU=1.0GB  7.4s
+  [30][30/209] loss=1.4240 (loss_classifier:0.332  loss_box_reg:0.561  loss_mask:0.360  loss_objectness:0.064  loss_rpn_box_reg:0.107)  GPU=1.1GB  1.3s
+  [30][40/209] loss=0.7512 (loss_classifier:0.255  loss_box_reg:0.314  loss_mask:0.163  loss_objectness:0.012  loss_rpn_box_reg:0.009)  GPU=1.0GB  0.7s
+  [30][50/209] loss=0.5134 (loss_classifier:0.132  loss_box_reg:0.184  loss_mask:0.180  loss_objectness:0.014  loss_rpn_box_reg:0.004)  GPU=1.0GB  3.0s
+  [30][60/209] loss=1.3565 (loss_classifier:0.343  loss_box_reg:0.511  loss_mask:0.327  loss_objectness:0.084  loss_rpn_box_reg:0.092)  GPU=1.5GB  9.9s
+  [30][70/209] loss=1.5457 (loss_classifier:0.450  loss_box_reg:0.593  loss_mask:0.374  loss_objectness:0.080  loss_rpn_box_reg:0.049)  GPU=1.2GB  5.4s
+  [30][80/209] loss=0.7185 (loss_classifier:0.178  loss_box_reg:0.327  loss_mask:0.190  loss_objectness:0.012  loss_rpn_box_reg:0.012)  GPU=1.0GB  4.4s
+  [30][90/209] loss=1.6689 (loss_classifier:0.504  loss_box_reg:0.585  loss_mask:0.324  loss_objectness:0.105  loss_rpn_box_reg:0.151)  GPU=1.1GB  3.4s
+  [30][100/209] loss=1.1877 (loss_classifier:0.333  loss_box_reg:0.431  loss_mask:0.288  loss_objectness:0.053  loss_rpn_box_reg:0.082)  GPU=1.3GB  5.7s
+  [30][110/209] loss=0.4509 (loss_classifier:0.072  loss_box_reg:0.155  loss_mask:0.214  loss_objectness:0.007  loss_rpn_box_reg:0.003)  GPU=1.0GB  3.9s
+  [30][120/209] loss=1.0177 (loss_classifier:0.336  loss_box_reg:0.384  loss_mask:0.239  loss_objectness:0.021  loss_rpn_box_reg:0.037)  GPU=1.0GB  0.9s
+  [30][130/209] loss=0.4322 (loss_classifier:0.066  loss_box_reg:0.203  loss_mask:0.149  loss_objectness:0.004  loss_rpn_box_reg:0.010)  GPU=1.0GB  3.4s
+  [30][140/209] loss=1.2151 (loss_classifier:0.267  loss_box_reg:0.465  loss_mask:0.339  loss_objectness:0.058  loss_rpn_box_reg:0.086)  GPU=1.2GB  1.4s
+  [30][150/209] loss=0.3428 (loss_classifier:0.072  loss_box_reg:0.085  loss_mask:0.162  loss_objectness:0.023  loss_rpn_box_reg:0.001)  GPU=1.0GB  1.3s
+  [30][160/209] loss=1.4448 (loss_classifier:0.496  loss_box_reg:0.448  loss_mask:0.299  loss_objectness:0.082  loss_rpn_box_reg:0.121)  GPU=1.7GB  5.4s
+  [30][170/209] loss=1.2702 (loss_classifier:0.380  loss_box_reg:0.449  loss_mask:0.272  loss_objectness:0.059  loss_rpn_box_reg:0.110)  GPU=1.1GB  4.9s
+  [30][180/209] loss=1.5588 (loss_classifier:0.402  loss_box_reg:0.519  loss_mask:0.511  loss_objectness:0.069  loss_rpn_box_reg:0.058)  GPU=1.0GB  1.7s
+  [30][190/209] loss=1.1367 (loss_classifier:0.350  loss_box_reg:0.467  loss_mask:0.280  loss_objectness:0.016  loss_rpn_box_reg:0.023)  GPU=1.0GB  1.3s
+  [30][200/209] loss=0.3352 (loss_classifier:0.104  loss_box_reg:0.114  loss_mask:0.105  loss_objectness:0.011  loss_rpn_box_reg:0.001)  GPU=1.0GB  2.0s
+  Train: 1.0255  LR: 4.11e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 31/50 ===
+  [31][10/209] loss=1.2910 (loss_classifier:0.425  loss_box_reg:0.410  loss_mask:0.256  loss_objectness:0.101  loss_rpn_box_reg:0.098)  GPU=1.5GB  6.0s
+  [31][20/209] loss=1.0216 (loss_classifier:0.394  loss_box_reg:0.378  loss_mask:0.200  loss_objectness:0.019  loss_rpn_box_reg:0.031)  GPU=1.0GB  0.6s
+  [31][30/209] loss=0.7936 (loss_classifier:0.234  loss_box_reg:0.219  loss_mask:0.301  loss_objectness:0.033  loss_rpn_box_reg:0.007)  GPU=1.0GB  7.0s
+  [31][40/209] loss=1.4138 (loss_classifier:0.408  loss_box_reg:0.510  loss_mask:0.328  loss_objectness:0.069  loss_rpn_box_reg:0.099)  GPU=1.5GB  4.6s
+  [31][50/209] loss=1.6460 (loss_classifier:0.508  loss_box_reg:0.539  loss_mask:0.369  loss_objectness:0.104  loss_rpn_box_reg:0.126)  GPU=1.1GB  7.3s
+  [31][60/209] loss=1.0649 (loss_classifier:0.224  loss_box_reg:0.416  loss_mask:0.329  loss_objectness:0.020  loss_rpn_box_reg:0.076)  GPU=1.1GB  0.6s
+  [31][70/209] loss=0.9249 (loss_classifier:0.228  loss_box_reg:0.373  loss_mask:0.240  loss_objectness:0.030  loss_rpn_box_reg:0.054)  GPU=1.1GB  6.3s
+  [31][80/209] loss=1.1966 (loss_classifier:0.372  loss_box_reg:0.387  loss_mask:0.272  loss_objectness:0.068  loss_rpn_box_reg:0.097)  GPU=1.2GB  7.1s
+  [31][90/209] loss=1.4563 (loss_classifier:0.366  loss_box_reg:0.546  loss_mask:0.365  loss_objectness:0.066  loss_rpn_box_reg:0.113)  GPU=1.2GB  2.0s
+  [31][100/209] loss=1.0960 (loss_classifier:0.398  loss_box_reg:0.406  loss_mask:0.266  loss_objectness:0.015  loss_rpn_box_reg:0.010)  GPU=1.0GB  0.6s
+  [31][110/209] loss=1.0111 (loss_classifier:0.290  loss_box_reg:0.388  loss_mask:0.231  loss_objectness:0.051  loss_rpn_box_reg:0.051)  GPU=1.1GB  0.6s
+  [31][120/209] loss=0.9573 (loss_classifier:0.383  loss_box_reg:0.349  loss_mask:0.200  loss_objectness:0.012  loss_rpn_box_reg:0.013)  GPU=1.0GB  2.2s
+  [31][130/209] loss=1.0970 (loss_classifier:0.314  loss_box_reg:0.420  loss_mask:0.262  loss_objectness:0.037  loss_rpn_box_reg:0.064)  GPU=1.4GB  5.6s
+  [31][140/209] loss=0.9895 (loss_classifier:0.338  loss_box_reg:0.336  loss_mask:0.209  loss_objectness:0.043  loss_rpn_box_reg:0.063)  GPU=1.3GB  2.4s
+  [31][150/209] loss=1.0297 (loss_classifier:0.270  loss_box_reg:0.426  loss_mask:0.289  loss_objectness:0.012  loss_rpn_box_reg:0.032)  GPU=1.0GB  6.0s
+  [31][160/209] loss=0.6155 (loss_classifier:0.076  loss_box_reg:0.340  loss_mask:0.178  loss_objectness:0.016  loss_rpn_box_reg:0.007)  GPU=1.0GB  1.1s
+  [31][170/209] loss=1.1967 (loss_classifier:0.347  loss_box_reg:0.364  loss_mask:0.310  loss_objectness:0.069  loss_rpn_box_reg:0.107)  GPU=1.2GB  2.1s
+  [31][180/209] loss=0.7967 (loss_classifier:0.156  loss_box_reg:0.329  loss_mask:0.300  loss_objectness:0.002  loss_rpn_box_reg:0.010)  GPU=1.0GB  1.0s
+  [31][190/209] loss=0.8218 (loss_classifier:0.105  loss_box_reg:0.478  loss_mask:0.204  loss_objectness:0.018  loss_rpn_box_reg:0.016)  GPU=1.0GB  4.0s
+  [31][200/209] loss=1.0108 (loss_classifier:0.348  loss_box_reg:0.403  loss_mask:0.205  loss_objectness:0.015  loss_rpn_box_reg:0.039)  GPU=1.0GB  5.6s
+  Train: 1.0373  LR: 3.84e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 32/50 ===
+  [32][10/209] loss=1.5928 (loss_classifier:0.451  loss_box_reg:0.505  loss_mask:0.394  loss_objectness:0.131  loss_rpn_box_reg:0.112)  GPU=2.1GB  5.7s
+  [32][20/209] loss=1.0268 (loss_classifier:0.357  loss_box_reg:0.356  loss_mask:0.289  loss_objectness:0.017  loss_rpn_box_reg:0.008)  GPU=1.0GB  0.6s
+  [32][30/209] loss=1.0817 (loss_classifier:0.304  loss_box_reg:0.407  loss_mask:0.277  loss_objectness:0.053  loss_rpn_box_reg:0.041)  GPU=1.0GB  3.0s
+  [32][40/209] loss=1.5632 (loss_classifier:0.782  loss_box_reg:0.372  loss_mask:0.293  loss_objectness:0.041  loss_rpn_box_reg:0.075)  GPU=1.2GB  1.1s
+  [32][50/209] loss=1.4831 (loss_classifier:0.387  loss_box_reg:0.616  loss_mask:0.356  loss_objectness:0.062  loss_rpn_box_reg:0.062)  GPU=1.0GB  7.6s
+  [32][60/209] loss=1.0602 (loss_classifier:0.252  loss_box_reg:0.453  loss_mask:0.260  loss_objectness:0.051  loss_rpn_box_reg:0.044)  GPU=1.0GB  0.8s
+  [32][70/209] loss=1.1172 (loss_classifier:0.214  loss_box_reg:0.573  loss_mask:0.301  loss_objectness:0.008  loss_rpn_box_reg:0.021)  GPU=1.0GB  7.5s
+  [32][80/209] loss=0.8988 (loss_classifier:0.364  loss_box_reg:0.286  loss_mask:0.218  loss_objectness:0.017  loss_rpn_box_reg:0.014)  GPU=1.0GB  4.0s
+  [32][90/209] loss=0.6415 (loss_classifier:0.100  loss_box_reg:0.299  loss_mask:0.211  loss_objectness:0.023  loss_rpn_box_reg:0.009)  GPU=1.0GB  0.8s
+  [32][100/209] loss=1.7188 (loss_classifier:0.545  loss_box_reg:0.454  loss_mask:0.393  loss_objectness:0.200  loss_rpn_box_reg:0.128)  GPU=3.4GB  11.9s
+  [32][110/209] loss=0.9267 (loss_classifier:0.193  loss_box_reg:0.468  loss_mask:0.246  loss_objectness:0.008  loss_rpn_box_reg:0.012)  GPU=1.0GB  3.5s
+  [32][120/209] loss=1.1914 (loss_classifier:0.304  loss_box_reg:0.481  loss_mask:0.286  loss_objectness:0.046  loss_rpn_box_reg:0.075)  GPU=1.3GB  5.8s
+  [32][130/209] loss=0.6753 (loss_classifier:0.181  loss_box_reg:0.295  loss_mask:0.171  loss_objectness:0.004  loss_rpn_box_reg:0.024)  GPU=1.0GB  4.5s
+  [32][140/209] loss=1.1386 (loss_classifier:0.313  loss_box_reg:0.395  loss_mask:0.258  loss_objectness:0.097  loss_rpn_box_reg:0.076)  GPU=1.1GB  3.3s
+  [32][150/209] loss=1.2555 (loss_classifier:0.344  loss_box_reg:0.451  loss_mask:0.263  loss_objectness:0.108  loss_rpn_box_reg:0.089)  GPU=1.3GB  1.7s
+  [32][160/209] loss=0.3739 (loss_classifier:0.103  loss_box_reg:0.064  loss_mask:0.193  loss_objectness:0.010  loss_rpn_box_reg:0.003)  GPU=1.0GB  3.6s
+  [32][170/209] loss=0.7352 (loss_classifier:0.141  loss_box_reg:0.350  loss_mask:0.208  loss_objectness:0.018  loss_rpn_box_reg:0.019)  GPU=1.0GB  3.6s
+  [32][180/209] loss=1.5836 (loss_classifier:0.553  loss_box_reg:0.494  loss_mask:0.308  loss_objectness:0.137  loss_rpn_box_reg:0.092)  GPU=1.2GB  3.5s
+  [32][190/209] loss=1.1886 (loss_classifier:0.243  loss_box_reg:0.488  loss_mask:0.316  loss_objectness:0.061  loss_rpn_box_reg:0.080)  GPU=1.1GB  1.2s
+  [32][200/209] loss=1.0133 (loss_classifier:0.229  loss_box_reg:0.411  loss_mask:0.275  loss_objectness:0.025  loss_rpn_box_reg:0.074)  GPU=1.3GB  1.3s
+  Train: 1.0124  LR: 3.58e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 33/50 ===
+  [33][10/209] loss=0.9116 (loss_classifier:0.247  loss_box_reg:0.364  loss_mask:0.284  loss_objectness:0.005  loss_rpn_box_reg:0.012)  GPU=1.0GB  5.2s
+  [33][20/209] loss=1.4142 (loss_classifier:0.406  loss_box_reg:0.481  loss_mask:0.315  loss_objectness:0.085  loss_rpn_box_reg:0.126)  GPU=1.2GB  1.5s
+  [33][30/209] loss=1.3652 (loss_classifier:0.334  loss_box_reg:0.498  loss_mask:0.342  loss_objectness:0.072  loss_rpn_box_reg:0.120)  GPU=1.2GB  2.1s
+  [33][40/209] loss=0.8160 (loss_classifier:0.365  loss_box_reg:0.241  loss_mask:0.168  loss_objectness:0.020  loss_rpn_box_reg:0.021)  GPU=1.0GB  2.3s
+  [33][50/209] loss=1.5852 (loss_classifier:0.569  loss_box_reg:0.489  loss_mask:0.331  loss_objectness:0.076  loss_rpn_box_reg:0.120)  GPU=1.6GB  8.0s
+  [33][60/209] loss=0.5540 (loss_classifier:0.112  loss_box_reg:0.242  loss_mask:0.195  loss_objectness:0.002  loss_rpn_box_reg:0.003)  GPU=1.0GB  2.9s
+  [33][70/209] loss=0.9521 (loss_classifier:0.276  loss_box_reg:0.384  loss_mask:0.220  loss_objectness:0.031  loss_rpn_box_reg:0.041)  GPU=1.0GB  3.1s
+  [33][80/209] loss=0.6350 (loss_classifier:0.099  loss_box_reg:0.292  loss_mask:0.204  loss_objectness:0.016  loss_rpn_box_reg:0.025)  GPU=1.0GB  1.2s
+  [33][90/209] loss=0.9950 (loss_classifier:0.208  loss_box_reg:0.407  loss_mask:0.302  loss_objectness:0.027  loss_rpn_box_reg:0.050)  GPU=1.0GB  3.5s
+  [33][100/209] loss=1.3114 (loss_classifier:0.540  loss_box_reg:0.421  loss_mask:0.278  loss_objectness:0.027  loss_rpn_box_reg:0.045)  GPU=1.1GB  0.8s
+  [33][110/209] loss=0.6249 (loss_classifier:0.128  loss_box_reg:0.299  loss_mask:0.189  loss_objectness:0.002  loss_rpn_box_reg:0.007)  GPU=1.0GB  4.6s
+  [33][120/209] loss=0.2747 (loss_classifier:0.019  loss_box_reg:0.090  loss_mask:0.163  loss_objectness:0.000  loss_rpn_box_reg:0.002)  GPU=1.0GB  5.1s
+  [33][130/209] loss=1.5469 (loss_classifier:0.481  loss_box_reg:0.503  loss_mask:0.313  loss_objectness:0.141  loss_rpn_box_reg:0.109)  GPU=1.9GB  5.0s
+  [33][140/209] loss=1.1346 (loss_classifier:0.503  loss_box_reg:0.377  loss_mask:0.202  loss_objectness:0.008  loss_rpn_box_reg:0.046)  GPU=1.0GB  2.7s
+  [33][150/209] loss=1.6796 (loss_classifier:0.574  loss_box_reg:0.497  loss_mask:0.353  loss_objectness:0.197  loss_rpn_box_reg:0.058)  GPU=1.2GB  13.2s
+  [33][160/209] loss=0.6779 (loss_classifier:0.118  loss_box_reg:0.288  loss_mask:0.263  loss_objectness:0.001  loss_rpn_box_reg:0.008)  GPU=1.0GB  1.3s
+  [33][170/209] loss=1.3118 (loss_classifier:0.512  loss_box_reg:0.353  loss_mask:0.265  loss_objectness:0.067  loss_rpn_box_reg:0.114)  GPU=1.1GB  1.2s
+  [33][180/209] loss=1.3521 (loss_classifier:0.342  loss_box_reg:0.520  loss_mask:0.281  loss_objectness:0.114  loss_rpn_box_reg:0.095)  GPU=1.3GB  6.4s
+  [33][190/209] loss=1.0812 (loss_classifier:0.252  loss_box_reg:0.433  loss_mask:0.318  loss_objectness:0.009  loss_rpn_box_reg:0.069)  GPU=1.1GB  4.5s
+  [33][200/209] loss=0.9490 (loss_classifier:0.223  loss_box_reg:0.374  loss_mask:0.205  loss_objectness:0.076  loss_rpn_box_reg:0.071)  GPU=1.1GB  1.4s
+  Train: 1.0188  LR: 3.33e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 34/50 ===
+  [34][10/209] loss=0.2686 (loss_classifier:0.037  loss_box_reg:0.065  loss_mask:0.153  loss_objectness:0.009  loss_rpn_box_reg:0.005)  GPU=1.0GB  2.0s
+  [34][20/209] loss=1.4952 (loss_classifier:0.340  loss_box_reg:0.596  loss_mask:0.385  loss_objectness:0.073  loss_rpn_box_reg:0.101)  GPU=1.1GB  2.6s
+  [34][30/209] loss=1.3084 (loss_classifier:0.330  loss_box_reg:0.503  loss_mask:0.302  loss_objectness:0.072  loss_rpn_box_reg:0.102)  GPU=1.1GB  3.9s
+  [34][40/209] loss=0.2962 (loss_classifier:0.033  loss_box_reg:0.070  loss_mask:0.189  loss_objectness:0.002  loss_rpn_box_reg:0.002)  GPU=1.0GB  2.8s
+  [34][50/209] loss=1.3321 (loss_classifier:0.401  loss_box_reg:0.591  loss_mask:0.275  loss_objectness:0.043  loss_rpn_box_reg:0.023)  GPU=1.0GB  3.4s
+  [34][60/209] loss=0.4718 (loss_classifier:0.090  loss_box_reg:0.168  loss_mask:0.208  loss_objectness:0.001  loss_rpn_box_reg:0.005)  GPU=1.0GB  3.3s
+  [34][70/209] loss=0.8751 (loss_classifier:0.238  loss_box_reg:0.343  loss_mask:0.271  loss_objectness:0.005  loss_rpn_box_reg:0.018)  GPU=1.0GB  11.8s
+  [34][80/209] loss=1.4870 (loss_classifier:0.332  loss_box_reg:0.603  loss_mask:0.392  loss_objectness:0.061  loss_rpn_box_reg:0.098)  GPU=1.1GB  2.0s
+  [34][90/209] loss=1.1660 (loss_classifier:0.296  loss_box_reg:0.451  loss_mask:0.293  loss_objectness:0.036  loss_rpn_box_reg:0.090)  GPU=1.1GB  1.0s
+  [34][100/209] loss=0.9380 (loss_classifier:0.239  loss_box_reg:0.337  loss_mask:0.245  loss_objectness:0.042  loss_rpn_box_reg:0.075)  GPU=1.3GB  1.5s
+  [34][110/209] loss=0.7398 (loss_classifier:0.271  loss_box_reg:0.264  loss_mask:0.180  loss_objectness:0.012  loss_rpn_box_reg:0.013)  GPU=1.0GB  6.2s
+  [34][120/209] loss=0.3779 (loss_classifier:0.032  loss_box_reg:0.143  loss_mask:0.193  loss_objectness:0.002  loss_rpn_box_reg:0.007)  GPU=1.0GB  7.6s
+  [34][130/209] loss=1.2448 (loss_classifier:0.219  loss_box_reg:0.535  loss_mask:0.247  loss_objectness:0.011  loss_rpn_box_reg:0.233)  GPU=1.0GB  1.3s
+  [34][140/209] loss=1.1315 (loss_classifier:0.292  loss_box_reg:0.369  loss_mask:0.310  loss_objectness:0.086  loss_rpn_box_reg:0.075)  GPU=2.5GB  8.9s
+  [34][150/209] loss=0.2678 (loss_classifier:0.069  loss_box_reg:0.068  loss_mask:0.128  loss_objectness:0.003  loss_rpn_box_reg:0.000)  GPU=1.0GB  0.8s
+  [34][160/209] loss=1.1168 (loss_classifier:0.291  loss_box_reg:0.410  loss_mask:0.279  loss_objectness:0.039  loss_rpn_box_reg:0.098)  GPU=1.1GB  0.7s
+  [34][170/209] loss=0.8324 (loss_classifier:0.221  loss_box_reg:0.319  loss_mask:0.223  loss_objectness:0.023  loss_rpn_box_reg:0.047)  GPU=1.0GB  0.7s
+  [34][180/209] loss=1.2301 (loss_classifier:0.317  loss_box_reg:0.427  loss_mask:0.321  loss_objectness:0.077  loss_rpn_box_reg:0.088)  GPU=1.2GB  4.2s
+  [34][190/209] loss=1.1932 (loss_classifier:0.341  loss_box_reg:0.392  loss_mask:0.300  loss_objectness:0.069  loss_rpn_box_reg:0.092)  GPU=2.2GB  6.0s
+  [34][200/209] loss=0.4007 (loss_classifier:0.077  loss_box_reg:0.185  loss_mask:0.109  loss_objectness:0.027  loss_rpn_box_reg:0.003)  GPU=1.0GB  1.3s
+  Train: 0.9977  LR: 3.09e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 35/50 ===
+  [35][10/209] loss=1.0865 (loss_classifier:0.338  loss_box_reg:0.418  loss_mask:0.233  loss_objectness:0.026  loss_rpn_box_reg:0.071)  GPU=1.1GB  8.0s
+  [35][20/209] loss=0.4334 (loss_classifier:0.059  loss_box_reg:0.156  loss_mask:0.211  loss_objectness:0.005  loss_rpn_box_reg:0.003)  GPU=1.0GB  0.6s
+  [35][30/209] loss=1.5915 (loss_classifier:0.400  loss_box_reg:0.533  loss_mask:0.366  loss_objectness:0.153  loss_rpn_box_reg:0.140)  GPU=1.7GB  6.3s
+  [35][40/209] loss=1.8580 (loss_classifier:0.997  loss_box_reg:0.428  loss_mask:0.293  loss_objectness:0.062  loss_rpn_box_reg:0.078)  GPU=1.2GB  7.8s
+  [35][50/209] loss=0.9134 (loss_classifier:0.249  loss_box_reg:0.388  loss_mask:0.240  loss_objectness:0.030  loss_rpn_box_reg:0.007)  GPU=1.0GB  3.1s
+  [35][60/209] loss=0.8182 (loss_classifier:0.130  loss_box_reg:0.431  loss_mask:0.229  loss_objectness:0.016  loss_rpn_box_reg:0.012)  GPU=1.0GB  3.3s
+  [35][70/209] loss=0.5134 (loss_classifier:0.061  loss_box_reg:0.171  loss_mask:0.275  loss_objectness:0.004  loss_rpn_box_reg:0.003)  GPU=1.0GB  2.4s
+  [35][80/209] loss=1.2743 (loss_classifier:0.343  loss_box_reg:0.505  loss_mask:0.315  loss_objectness:0.027  loss_rpn_box_reg:0.084)  GPU=1.2GB  1.2s
+  [35][90/209] loss=1.2958 (loss_classifier:0.394  loss_box_reg:0.455  loss_mask:0.277  loss_objectness:0.073  loss_rpn_box_reg:0.097)  GPU=1.5GB  5.5s
+  [35][100/209] loss=1.2081 (loss_classifier:0.319  loss_box_reg:0.545  loss_mask:0.320  loss_objectness:0.004  loss_rpn_box_reg:0.020)  GPU=1.0GB  2.5s
+  [35][110/209] loss=1.2055 (loss_classifier:0.274  loss_box_reg:0.462  loss_mask:0.316  loss_objectness:0.079  loss_rpn_box_reg:0.074)  GPU=1.2GB  1.0s
+  [35][120/209] loss=1.5760 (loss_classifier:0.804  loss_box_reg:0.410  loss_mask:0.306  loss_objectness:0.036  loss_rpn_box_reg:0.019)  GPU=1.0GB  4.7s
+  [35][130/209] loss=1.6391 (loss_classifier:0.546  loss_box_reg:0.480  loss_mask:0.328  loss_objectness:0.174  loss_rpn_box_reg:0.111)  GPU=1.9GB  13.5s
+  [35][140/209] loss=1.1597 (loss_classifier:0.454  loss_box_reg:0.421  loss_mask:0.219  loss_objectness:0.028  loss_rpn_box_reg:0.038)  GPU=1.0GB  0.6s
+  [35][150/209] loss=1.2427 (loss_classifier:0.400  loss_box_reg:0.397  loss_mask:0.288  loss_objectness:0.084  loss_rpn_box_reg:0.074)  GPU=1.3GB  1.7s
+  [35][160/209] loss=1.1959 (loss_classifier:0.313  loss_box_reg:0.431  loss_mask:0.298  loss_objectness:0.051  loss_rpn_box_reg:0.102)  GPU=1.1GB  1.1s
+  [35][170/209] loss=1.4158 (loss_classifier:0.458  loss_box_reg:0.484  loss_mask:0.300  loss_objectness:0.067  loss_rpn_box_reg:0.107)  GPU=1.1GB  2.9s
+  [35][180/209] loss=0.3003 (loss_classifier:0.044  loss_box_reg:0.133  loss_mask:0.114  loss_objectness:0.004  loss_rpn_box_reg:0.007)  GPU=1.0GB  6.6s
+  [35][190/209] loss=0.7154 (loss_classifier:0.192  loss_box_reg:0.297  loss_mask:0.195  loss_objectness:0.007  loss_rpn_box_reg:0.024)  GPU=1.0GB  6.1s
+  [35][200/209] loss=1.1185 (loss_classifier:0.335  loss_box_reg:0.419  loss_mask:0.251  loss_objectness:0.032  loss_rpn_box_reg:0.082)  GPU=1.1GB  3.7s
+  Train: 1.0029  LR: 2.85e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 36/50 ===
+  [36][10/209] loss=1.1810 (loss_classifier:0.344  loss_box_reg:0.397  loss_mask:0.280  loss_objectness:0.068  loss_rpn_box_reg:0.092)  GPU=1.1GB  3.0s
+  [36][20/209] loss=1.7798 (loss_classifier:0.516  loss_box_reg:0.538  loss_mask:0.394  loss_objectness:0.168  loss_rpn_box_reg:0.163)  GPU=1.4GB  5.9s
+  [36][30/209] loss=1.4564 (loss_classifier:0.404  loss_box_reg:0.486  loss_mask:0.325  loss_objectness:0.109  loss_rpn_box_reg:0.133)  GPU=1.4GB  4.1s
+  [36][40/209] loss=0.9247 (loss_classifier:0.237  loss_box_reg:0.347  loss_mask:0.223  loss_objectness:0.055  loss_rpn_box_reg:0.062)  GPU=1.2GB  5.6s
+  [36][50/209] loss=1.9239 (loss_classifier:0.790  loss_box_reg:0.718  loss_mask:0.373  loss_objectness:0.010  loss_rpn_box_reg:0.033)  GPU=1.0GB  1.6s
+  [36][60/209] loss=0.3683 (loss_classifier:0.022  loss_box_reg:0.110  loss_mask:0.226  loss_objectness:0.007  loss_rpn_box_reg:0.004)  GPU=1.0GB  9.7s
+  [36][70/209] loss=0.5480 (loss_classifier:0.150  loss_box_reg:0.229  loss_mask:0.149  loss_objectness:0.014  loss_rpn_box_reg:0.006)  GPU=1.0GB  3.0s
+  [36][80/209] loss=1.3246 (loss_classifier:0.357  loss_box_reg:0.532  loss_mask:0.330  loss_objectness:0.022  loss_rpn_box_reg:0.084)  GPU=1.1GB  6.5s
+  [36][90/209] loss=1.1146 (loss_classifier:0.326  loss_box_reg:0.385  loss_mask:0.245  loss_objectness:0.064  loss_rpn_box_reg:0.094)  GPU=1.3GB  2.0s
+  [36][100/209] loss=0.8963 (loss_classifier:0.170  loss_box_reg:0.418  loss_mask:0.252  loss_objectness:0.019  loss_rpn_box_reg:0.036)  GPU=1.0GB  0.9s
+  [36][110/209] loss=0.5006 (loss_classifier:0.085  loss_box_reg:0.191  loss_mask:0.217  loss_objectness:0.002  loss_rpn_box_reg:0.006)  GPU=1.0GB  0.8s
+  [36][120/209] loss=0.6192 (loss_classifier:0.104  loss_box_reg:0.312  loss_mask:0.194  loss_objectness:0.001  loss_rpn_box_reg:0.009)  GPU=1.0GB  0.6s
+  [36][130/209] loss=1.1046 (loss_classifier:0.279  loss_box_reg:0.424  loss_mask:0.273  loss_objectness:0.056  loss_rpn_box_reg:0.073)  GPU=1.2GB  1.2s
+  [36][140/209] loss=1.4511 (loss_classifier:0.381  loss_box_reg:0.469  loss_mask:0.294  loss_objectness:0.146  loss_rpn_box_reg:0.161)  GPU=1.1GB  2.3s
+  [36][150/209] loss=1.2197 (loss_classifier:0.498  loss_box_reg:0.432  loss_mask:0.253  loss_objectness:0.022  loss_rpn_box_reg:0.014)  GPU=1.0GB  2.6s
+  [36][160/209] loss=1.1519 (loss_classifier:0.231  loss_box_reg:0.467  loss_mask:0.280  loss_objectness:0.083  loss_rpn_box_reg:0.091)  GPU=1.2GB  11.3s
+  [36][170/209] loss=0.1751 (loss_classifier:0.007  loss_box_reg:0.046  loss_mask:0.119  loss_objectness:0.000  loss_rpn_box_reg:0.002)  GPU=1.0GB  0.8s
+  [36][180/209] loss=0.7045 (loss_classifier:0.160  loss_box_reg:0.107  loss_mask:0.429  loss_objectness:0.005  loss_rpn_box_reg:0.003)  GPU=1.0GB  6.4s
+  [36][190/209] loss=1.1654 (loss_classifier:0.277  loss_box_reg:0.452  loss_mask:0.279  loss_objectness:0.082  loss_rpn_box_reg:0.075)  GPU=1.1GB  1.4s
+  [36][200/209] loss=1.1977 (loss_classifier:0.328  loss_box_reg:0.429  loss_mask:0.263  loss_objectness:0.061  loss_rpn_box_reg:0.116)  GPU=1.1GB  6.3s
+  Train: 0.9753  LR: 2.63e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 37/50 ===
+  [37][10/209] loss=1.2413 (loss_classifier:0.304  loss_box_reg:0.491  loss_mask:0.291  loss_objectness:0.057  loss_rpn_box_reg:0.097)  GPU=1.2GB  2.4s
+  [37][20/209] loss=0.4455 (loss_classifier:0.064  loss_box_reg:0.121  loss_mask:0.206  loss_objectness:0.049  loss_rpn_box_reg:0.005)  GPU=1.0GB  7.8s
+  [37][30/209] loss=1.5681 (loss_classifier:0.493  loss_box_reg:0.592  loss_mask:0.378  loss_objectness:0.031  loss_rpn_box_reg:0.074)  GPU=1.0GB  1.3s
+  [37][40/209] loss=0.4562 (loss_classifier:0.049  loss_box_reg:0.262  loss_mask:0.126  loss_objectness:0.011  loss_rpn_box_reg:0.008)  GPU=1.0GB  3.6s
+  [37][50/209] loss=0.7852 (loss_classifier:0.280  loss_box_reg:0.265  loss_mask:0.221  loss_objectness:0.011  loss_rpn_box_reg:0.008)  GPU=1.0GB  1.8s
+  [37][60/209] loss=1.3647 (loss_classifier:0.340  loss_box_reg:0.464  loss_mask:0.337  loss_objectness:0.117  loss_rpn_box_reg:0.106)  GPU=2.0GB  5.5s
+  [37][70/209] loss=1.0507 (loss_classifier:0.320  loss_box_reg:0.381  loss_mask:0.261  loss_objectness:0.013  loss_rpn_box_reg:0.076)  GPU=1.1GB  2.3s
+  [37][80/209] loss=1.1026 (loss_classifier:0.473  loss_box_reg:0.392  loss_mask:0.216  loss_objectness:0.006  loss_rpn_box_reg:0.016)  GPU=1.0GB  7.2s
+  [37][90/209] loss=1.3653 (loss_classifier:0.417  loss_box_reg:0.483  loss_mask:0.299  loss_objectness:0.056  loss_rpn_box_reg:0.110)  GPU=1.5GB  3.5s
+  [37][100/209] loss=0.2904 (loss_classifier:0.061  loss_box_reg:0.074  loss_mask:0.153  loss_objectness:0.001  loss_rpn_box_reg:0.001)  GPU=1.0GB  2.3s
+  [37][110/209] loss=0.8928 (loss_classifier:0.199  loss_box_reg:0.450  loss_mask:0.217  loss_objectness:0.006  loss_rpn_box_reg:0.021)  GPU=1.0GB  0.7s
+  [37][120/209] loss=0.4344 (loss_classifier:0.070  loss_box_reg:0.113  loss_mask:0.245  loss_objectness:0.005  loss_rpn_box_reg:0.002)  GPU=1.0GB  0.5s
+  [37][130/209] loss=0.9977 (loss_classifier:0.297  loss_box_reg:0.383  loss_mask:0.254  loss_objectness:0.032  loss_rpn_box_reg:0.031)  GPU=1.0GB  4.7s
+  [37][140/209] loss=0.4852 (loss_classifier:0.044  loss_box_reg:0.254  loss_mask:0.157  loss_objectness:0.025  loss_rpn_box_reg:0.005)  GPU=1.0GB  4.6s
+  [37][150/209] loss=0.5846 (loss_classifier:0.096  loss_box_reg:0.295  loss_mask:0.189  loss_objectness:0.001  loss_rpn_box_reg:0.004)  GPU=1.0GB  2.4s
+  [37][160/209] loss=1.3199 (loss_classifier:0.348  loss_box_reg:0.451  loss_mask:0.322  loss_objectness:0.095  loss_rpn_box_reg:0.104)  GPU=1.1GB  1.1s
+  [37][170/209] loss=1.2856 (loss_classifier:0.324  loss_box_reg:0.431  loss_mask:0.297  loss_objectness:0.092  loss_rpn_box_reg:0.142)  GPU=1.4GB  2.5s
+  [37][180/209] loss=1.0743 (loss_classifier:0.350  loss_box_reg:0.332  loss_mask:0.238  loss_objectness:0.067  loss_rpn_box_reg:0.088)  GPU=1.1GB  11.8s
+  [37][190/209] loss=0.5081 (loss_classifier:0.131  loss_box_reg:0.210  loss_mask:0.161  loss_objectness:0.001  loss_rpn_box_reg:0.005)  GPU=1.0GB  2.5s
+  [37][200/209] loss=1.2681 (loss_classifier:0.391  loss_box_reg:0.410  loss_mask:0.296  loss_objectness:0.084  loss_rpn_box_reg:0.086)  GPU=2.2GB  9.0s
+  Train: 0.9722  LR: 2.42e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 38/50 ===
+  [38][10/209] loss=0.9525 (loss_classifier:0.293  loss_box_reg:0.368  loss_mask:0.259  loss_objectness:0.022  loss_rpn_box_reg:0.010)  GPU=1.0GB  1.2s
+  [38][20/209] loss=1.8987 (loss_classifier:0.510  loss_box_reg:0.688  loss_mask:0.454  loss_objectness:0.108  loss_rpn_box_reg:0.138)  GPU=1.1GB  7.1s
+  [38][30/209] loss=1.2831 (loss_classifier:0.380  loss_box_reg:0.441  loss_mask:0.307  loss_objectness:0.055  loss_rpn_box_reg:0.100)  GPU=1.7GB  7.6s
+  [38][40/209] loss=1.4664 (loss_classifier:0.491  loss_box_reg:0.459  loss_mask:0.285  loss_objectness:0.128  loss_rpn_box_reg:0.103)  GPU=2.0GB  9.7s
+  [38][50/209] loss=1.4049 (loss_classifier:0.460  loss_box_reg:0.476  loss_mask:0.315  loss_objectness:0.060  loss_rpn_box_reg:0.093)  GPU=1.1GB  2.0s
+  [38][60/209] loss=1.0885 (loss_classifier:0.297  loss_box_reg:0.427  loss_mask:0.273  loss_objectness:0.025  loss_rpn_box_reg:0.066)  GPU=1.1GB  5.9s
+  [38][70/209] loss=0.7956 (loss_classifier:0.135  loss_box_reg:0.409  loss_mask:0.237  loss_objectness:0.004  loss_rpn_box_reg:0.011)  GPU=1.0GB  1.8s
+  [38][80/209] loss=0.7636 (loss_classifier:0.172  loss_box_reg:0.346  loss_mask:0.215  loss_objectness:0.010  loss_rpn_box_reg:0.020)  GPU=1.0GB  1.1s
+  [38][90/209] loss=1.2696 (loss_classifier:0.319  loss_box_reg:0.534  loss_mask:0.291  loss_objectness:0.026  loss_rpn_box_reg:0.099)  GPU=1.0GB  3.1s
+  [38][100/209] loss=1.4092 (loss_classifier:0.342  loss_box_reg:0.514  loss_mask:0.355  loss_objectness:0.099  loss_rpn_box_reg:0.099)  GPU=1.6GB  2.8s
+  [38][110/209] loss=0.2181 (loss_classifier:0.020  loss_box_reg:0.055  loss_mask:0.143  loss_objectness:0.000  loss_rpn_box_reg:0.001)  GPU=1.0GB  0.6s
+  [38][120/209] loss=1.0138 (loss_classifier:0.292  loss_box_reg:0.365  loss_mask:0.256  loss_objectness:0.027  loss_rpn_box_reg:0.075)  GPU=1.1GB  1.8s
+  [38][130/209] loss=0.4414 (loss_classifier:0.077  loss_box_reg:0.203  loss_mask:0.154  loss_objectness:0.002  loss_rpn_box_reg:0.006)  GPU=1.0GB  8.0s
+  [38][140/209] loss=1.0426 (loss_classifier:0.326  loss_box_reg:0.381  loss_mask:0.273  loss_objectness:0.035  loss_rpn_box_reg:0.027)  GPU=1.0GB  0.8s
+  [38][150/209] loss=0.4397 (loss_classifier:0.057  loss_box_reg:0.142  loss_mask:0.232  loss_objectness:0.005  loss_rpn_box_reg:0.002)  GPU=1.0GB  1.4s
+  [38][160/209] loss=1.6131 (loss_classifier:0.406  loss_box_reg:0.593  loss_mask:0.242  loss_objectness:0.049  loss_rpn_box_reg:0.324)  GPU=1.0GB  2.6s
+  [38][170/209] loss=1.1821 (loss_classifier:0.358  loss_box_reg:0.388  loss_mask:0.278  loss_objectness:0.052  loss_rpn_box_reg:0.106)  GPU=1.1GB  2.4s
+  [38][180/209] loss=0.8590 (loss_classifier:0.237  loss_box_reg:0.362  loss_mask:0.222  loss_objectness:0.018  loss_rpn_box_reg:0.020)  GPU=1.0GB  8.3s
+  [38][190/209] loss=0.2004 (loss_classifier:0.003  loss_box_reg:0.034  loss_mask:0.160  loss_objectness:0.002  loss_rpn_box_reg:0.001)  GPU=1.0GB  0.9s
+  [38][200/209] loss=1.2111 (loss_classifier:0.331  loss_box_reg:0.433  loss_mask:0.282  loss_objectness:0.070  loss_rpn_box_reg:0.095)  GPU=1.6GB  2.7s
+  Train: 0.9912  LR: 2.22e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 39/50 ===
+  [39][10/209] loss=1.2110 (loss_classifier:0.304  loss_box_reg:0.439  loss_mask:0.286  loss_objectness:0.085  loss_rpn_box_reg:0.097)  GPU=2.0GB  6.1s
+  [39][20/209] loss=1.3646 (loss_classifier:0.376  loss_box_reg:0.467  loss_mask:0.302  loss_objectness:0.096  loss_rpn_box_reg:0.123)  GPU=1.2GB  1.2s
+  [39][30/209] loss=1.3236 (loss_classifier:0.371  loss_box_reg:0.477  loss_mask:0.329  loss_objectness:0.061  loss_rpn_box_reg:0.085)  GPU=1.4GB  5.8s
+  [39][40/209] loss=1.0955 (loss_classifier:0.295  loss_box_reg:0.395  loss_mask:0.266  loss_objectness:0.061  loss_rpn_box_reg:0.078)  GPU=1.1GB  1.0s
+  [39][50/209] loss=0.7578 (loss_classifier:0.091  loss_box_reg:0.327  loss_mask:0.321  loss_objectness:0.010  loss_rpn_box_reg:0.009)  GPU=1.0GB  8.0s
+  [39][60/209] loss=0.8823 (loss_classifier:0.250  loss_box_reg:0.340  loss_mask:0.202  loss_objectness:0.034  loss_rpn_box_reg:0.058)  GPU=1.3GB  7.0s
+  [39][70/209] loss=1.6857 (loss_classifier:0.386  loss_box_reg:0.587  loss_mask:0.367  loss_objectness:0.217  loss_rpn_box_reg:0.129)  GPU=1.9GB  5.4s
+  [39][80/209] loss=0.2583 (loss_classifier:0.027  loss_box_reg:0.052  loss_mask:0.176  loss_objectness:0.001  loss_rpn_box_reg:0.003)  GPU=1.0GB  3.6s
+  [39][90/209] loss=1.0225 (loss_classifier:0.164  loss_box_reg:0.477  loss_mask:0.289  loss_objectness:0.041  loss_rpn_box_reg:0.051)  GPU=1.0GB  0.7s
+  [39][100/209] loss=0.9889 (loss_classifier:0.232  loss_box_reg:0.419  loss_mask:0.238  loss_objectness:0.037  loss_rpn_box_reg:0.062)  GPU=1.0GB  5.4s
+  [39][110/209] loss=1.0456 (loss_classifier:0.411  loss_box_reg:0.355  loss_mask:0.219  loss_objectness:0.032  loss_rpn_box_reg:0.029)  GPU=1.0GB  5.2s
+  [39][120/209] loss=1.1884 (loss_classifier:0.267  loss_box_reg:0.412  loss_mask:0.278  loss_objectness:0.128  loss_rpn_box_reg:0.103)  GPU=1.4GB  10.8s
+  [39][130/209] loss=0.9181 (loss_classifier:0.291  loss_box_reg:0.297  loss_mask:0.214  loss_objectness:0.047  loss_rpn_box_reg:0.069)  GPU=1.4GB  2.0s
+  [39][140/209] loss=1.1314 (loss_classifier:0.444  loss_box_reg:0.366  loss_mask:0.266  loss_objectness:0.030  loss_rpn_box_reg:0.025)  GPU=1.0GB  1.0s
+  [39][150/209] loss=0.6251 (loss_classifier:0.058  loss_box_reg:0.160  loss_mask:0.324  loss_objectness:0.015  loss_rpn_box_reg:0.068)  GPU=1.0GB  1.0s
+  [39][160/209] loss=1.3018 (loss_classifier:0.367  loss_box_reg:0.514  loss_mask:0.310  loss_objectness:0.035  loss_rpn_box_reg:0.077)  GPU=1.2GB  1.3s
+  [39][170/209] loss=1.2136 (loss_classifier:0.356  loss_box_reg:0.441  loss_mask:0.263  loss_objectness:0.053  loss_rpn_box_reg:0.100)  GPU=1.2GB  2.9s
+  [39][180/209] loss=1.6000 (loss_classifier:0.442  loss_box_reg:0.530  loss_mask:0.342  loss_objectness:0.159  loss_rpn_box_reg:0.127)  GPU=2.2GB  9.1s
+  [39][190/209] loss=0.6158 (loss_classifier:0.132  loss_box_reg:0.278  loss_mask:0.197  loss_objectness:0.004  loss_rpn_box_reg:0.004)  GPU=1.0GB  0.7s
+  [39][200/209] loss=0.5523 (loss_classifier:0.145  loss_box_reg:0.219  loss_mask:0.174  loss_objectness:0.009  loss_rpn_box_reg:0.005)  GPU=1.0GB  0.7s
+  Train: 0.9739  LR: 2.03e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 40/50 ===
+  [40][10/209] loss=1.0368 (loss_classifier:0.289  loss_box_reg:0.445  loss_mask:0.253  loss_objectness:0.029  loss_rpn_box_reg:0.022)  GPU=1.0GB  7.8s
+  [40][20/209] loss=0.8517 (loss_classifier:0.240  loss_box_reg:0.332  loss_mask:0.252  loss_objectness:0.003  loss_rpn_box_reg:0.025)  GPU=1.0GB  0.8s
+  [40][30/209] loss=1.3290 (loss_classifier:0.333  loss_box_reg:0.489  loss_mask:0.302  loss_objectness:0.101  loss_rpn_box_reg:0.104)  GPU=1.1GB  1.3s
+  [40][40/209] loss=0.9113 (loss_classifier:0.187  loss_box_reg:0.377  loss_mask:0.244  loss_objectness:0.032  loss_rpn_box_reg:0.072)  GPU=1.0GB  2.1s
+  [40][50/209] loss=1.5435 (loss_classifier:0.434  loss_box_reg:0.557  loss_mask:0.354  loss_objectness:0.066  loss_rpn_box_reg:0.132)  GPU=1.1GB  6.9s
+  [40][60/209] loss=1.0546 (loss_classifier:0.205  loss_box_reg:0.485  loss_mask:0.286  loss_objectness:0.058  loss_rpn_box_reg:0.020)  GPU=1.0GB  1.6s
+  [40][70/209] loss=1.1580 (loss_classifier:0.322  loss_box_reg:0.456  loss_mask:0.270  loss_objectness:0.047  loss_rpn_box_reg:0.064)  GPU=1.2GB  1.1s
+  [40][80/209] loss=0.8752 (loss_classifier:0.379  loss_box_reg:0.310  loss_mask:0.163  loss_objectness:0.006  loss_rpn_box_reg:0.017)  GPU=1.0GB  2.6s
+  [40][90/209] loss=1.3274 (loss_classifier:0.456  loss_box_reg:0.526  loss_mask:0.274  loss_objectness:0.036  loss_rpn_box_reg:0.036)  GPU=1.0GB  3.5s
+  [40][100/209] loss=0.4919 (loss_classifier:0.081  loss_box_reg:0.215  loss_mask:0.183  loss_objectness:0.011  loss_rpn_box_reg:0.003)  GPU=1.0GB  3.5s
+  [40][110/209] loss=1.1661 (loss_classifier:0.362  loss_box_reg:0.433  loss_mask:0.248  loss_objectness:0.046  loss_rpn_box_reg:0.077)  GPU=1.2GB  5.0s
+  [40][120/209] loss=1.0285 (loss_classifier:0.260  loss_box_reg:0.371  loss_mask:0.250  loss_objectness:0.068  loss_rpn_box_reg:0.080)  GPU=1.2GB  6.3s
+  [40][130/209] loss=0.6569 (loss_classifier:0.103  loss_box_reg:0.335  loss_mask:0.204  loss_objectness:0.004  loss_rpn_box_reg:0.012)  GPU=1.0GB  2.3s
+  [40][140/209] loss=1.2309 (loss_classifier:0.370  loss_box_reg:0.421  loss_mask:0.295  loss_objectness:0.063  loss_rpn_box_reg:0.082)  GPU=1.6GB  7.2s
+  [40][150/209] loss=1.3127 (loss_classifier:0.361  loss_box_reg:0.483  loss_mask:0.335  loss_objectness:0.052  loss_rpn_box_reg:0.082)  GPU=1.2GB  5.5s
+  [40][160/209] loss=0.9292 (loss_classifier:0.239  loss_box_reg:0.351  loss_mask:0.204  loss_objectness:0.058  loss_rpn_box_reg:0.078)  GPU=1.3GB  1.4s
+  [40][170/209] loss=0.6773 (loss_classifier:0.255  loss_box_reg:0.249  loss_mask:0.166  loss_objectness:0.003  loss_rpn_box_reg:0.005)  GPU=1.0GB  7.8s
+  [40][180/209] loss=1.0308 (loss_classifier:0.327  loss_box_reg:0.384  loss_mask:0.269  loss_objectness:0.024  loss_rpn_box_reg:0.027)  GPU=1.0GB  5.3s
+  [40][190/209] loss=0.5411 (loss_classifier:0.086  loss_box_reg:0.263  loss_mask:0.185  loss_objectness:0.003  loss_rpn_box_reg:0.004)  GPU=1.0GB  1.3s
+  [40][200/209] loss=1.1416 (loss_classifier:0.298  loss_box_reg:0.445  loss_mask:0.299  loss_objectness:0.029  loss_rpn_box_reg:0.070)  GPU=1.2GB  5.0s
+  Train: 0.9670  LR: 1.86e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 41/50 ===
+  [41][10/209] loss=0.9480 (loss_classifier:0.187  loss_box_reg:0.367  loss_mask:0.255  loss_objectness:0.050  loss_rpn_box_reg:0.089)  GPU=1.1GB  3.1s
+  [41][20/209] loss=1.8480 (loss_classifier:0.548  loss_box_reg:0.592  loss_mask:0.406  loss_objectness:0.130  loss_rpn_box_reg:0.171)  GPU=1.4GB  5.9s
+  [41][30/209] loss=1.4444 (loss_classifier:0.418  loss_box_reg:0.496  loss_mask:0.356  loss_objectness:0.053  loss_rpn_box_reg:0.121)  GPU=1.2GB  6.4s
+  [41][40/209] loss=0.3476 (loss_classifier:0.049  loss_box_reg:0.124  loss_mask:0.168  loss_objectness:0.003  loss_rpn_box_reg:0.004)  GPU=1.0GB  1.2s
+  [41][50/209] loss=1.8517 (loss_classifier:0.575  loss_box_reg:0.496  loss_mask:0.422  loss_objectness:0.212  loss_rpn_box_reg:0.148)  GPU=2.0GB  4.5s
+  [41][60/209] loss=1.1435 (loss_classifier:0.357  loss_box_reg:0.378  loss_mask:0.291  loss_objectness:0.038  loss_rpn_box_reg:0.080)  GPU=1.1GB  0.7s
+  [41][70/209] loss=1.5475 (loss_classifier:0.355  loss_box_reg:0.686  loss_mask:0.405  loss_objectness:0.053  loss_rpn_box_reg:0.049)  GPU=1.2GB  8.9s
+  [41][80/209] loss=0.7586 (loss_classifier:0.241  loss_box_reg:0.261  loss_mask:0.193  loss_objectness:0.017  loss_rpn_box_reg:0.047)  GPU=1.1GB  0.7s
+  [41][90/209] loss=1.1427 (loss_classifier:0.366  loss_box_reg:0.409  loss_mask:0.253  loss_objectness:0.048  loss_rpn_box_reg:0.066)  GPU=1.1GB  5.2s
+  [41][100/209] loss=0.6376 (loss_classifier:0.072  loss_box_reg:0.364  loss_mask:0.174  loss_objectness:0.005  loss_rpn_box_reg:0.023)  GPU=1.0GB  6.8s
+  [41][110/209] loss=1.0657 (loss_classifier:0.346  loss_box_reg:0.440  loss_mask:0.250  loss_objectness:0.013  loss_rpn_box_reg:0.017)  GPU=1.0GB  0.9s
+  [41][120/209] loss=1.0134 (loss_classifier:0.236  loss_box_reg:0.415  loss_mask:0.261  loss_objectness:0.023  loss_rpn_box_reg:0.078)  GPU=1.1GB  3.4s
+  [41][130/209] loss=0.6232 (loss_classifier:0.136  loss_box_reg:0.282  loss_mask:0.183  loss_objectness:0.004  loss_rpn_box_reg:0.018)  GPU=1.0GB  1.1s
+  [41][140/209] loss=1.7326 (loss_classifier:0.458  loss_box_reg:0.589  loss_mask:0.414  loss_objectness:0.152  loss_rpn_box_reg:0.118)  GPU=3.4GB  13.3s
+  [41][150/209] loss=0.5185 (loss_classifier:0.074  loss_box_reg:0.208  loss_mask:0.222  loss_objectness:0.012  loss_rpn_box_reg:0.002)  GPU=1.0GB  0.8s
+  [41][160/209] loss=1.7608 (loss_classifier:0.472  loss_box_reg:0.611  loss_mask:0.291  loss_objectness:0.105  loss_rpn_box_reg:0.282)  GPU=1.0GB  1.1s
+  [41][170/209] loss=0.8216 (loss_classifier:0.137  loss_box_reg:0.415  loss_mask:0.244  loss_objectness:0.010  loss_rpn_box_reg:0.015)  GPU=1.0GB  6.6s
+  [41][180/209] loss=0.7222 (loss_classifier:0.217  loss_box_reg:0.160  loss_mask:0.320  loss_objectness:0.018  loss_rpn_box_reg:0.008)  GPU=1.0GB  2.6s
+  [41][190/209] loss=1.0383 (loss_classifier:0.301  loss_box_reg:0.351  loss_mask:0.257  loss_objectness:0.065  loss_rpn_box_reg:0.065)  GPU=1.1GB  7.2s
+  [41][200/209] loss=1.1039 (loss_classifier:0.262  loss_box_reg:0.440  loss_mask:0.296  loss_objectness:0.025  loss_rpn_box_reg:0.082)  GPU=1.1GB  1.6s
+  Train: 0.9653  LR: 1.70e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 42/50 ===
+  [42][10/209] loss=1.1752 (loss_classifier:0.305  loss_box_reg:0.426  loss_mask:0.294  loss_objectness:0.069  loss_rpn_box_reg:0.081)  GPU=2.2GB  7.6s
+  [42][20/209] loss=1.6171 (loss_classifier:0.469  loss_box_reg:0.576  loss_mask:0.369  loss_objectness:0.111  loss_rpn_box_reg:0.091)  GPU=1.2GB  5.6s
+  [42][30/209] loss=0.4551 (loss_classifier:0.035  loss_box_reg:0.014  loss_mask:0.392  loss_objectness:0.010  loss_rpn_box_reg:0.005)  GPU=1.0GB  0.8s
+  [42][40/209] loss=1.1714 (loss_classifier:0.305  loss_box_reg:0.433  loss_mask:0.287  loss_objectness:0.059  loss_rpn_box_reg:0.087)  GPU=1.3GB  4.2s
+  [42][50/209] loss=1.4784 (loss_classifier:0.345  loss_box_reg:0.615  loss_mask:0.357  loss_objectness:0.047  loss_rpn_box_reg:0.115)  GPU=1.0GB  7.0s
+  [42][60/209] loss=1.1652 (loss_classifier:0.419  loss_box_reg:0.434  loss_mask:0.263  loss_objectness:0.013  loss_rpn_box_reg:0.035)  GPU=1.0GB  10.8s
+  [42][70/209] loss=1.1279 (loss_classifier:0.259  loss_box_reg:0.442  loss_mask:0.264  loss_objectness:0.092  loss_rpn_box_reg:0.072)  GPU=1.1GB  1.4s
+  [42][80/209] loss=0.8421 (loss_classifier:0.194  loss_box_reg:0.381  loss_mask:0.229  loss_objectness:0.023  loss_rpn_box_reg:0.015)  GPU=1.0GB  0.5s
+  [42][90/209] loss=1.2353 (loss_classifier:0.295  loss_box_reg:0.494  loss_mask:0.318  loss_objectness:0.022  loss_rpn_box_reg:0.105)  GPU=1.0GB  5.1s
+  [42][100/209] loss=0.9562 (loss_classifier:0.246  loss_box_reg:0.395  loss_mask:0.216  loss_objectness:0.029  loss_rpn_box_reg:0.070)  GPU=1.1GB  0.7s
+  [42][110/209] loss=0.9214 (loss_classifier:0.269  loss_box_reg:0.371  loss_mask:0.230  loss_objectness:0.013  loss_rpn_box_reg:0.038)  GPU=1.0GB  6.5s
+  [42][120/209] loss=1.1782 (loss_classifier:0.276  loss_box_reg:0.440  loss_mask:0.299  loss_objectness:0.060  loss_rpn_box_reg:0.105)  GPU=1.1GB  2.4s
+  [42][130/209] loss=1.1354 (loss_classifier:0.295  loss_box_reg:0.459  loss_mask:0.264  loss_objectness:0.035  loss_rpn_box_reg:0.083)  GPU=1.2GB  4.2s
+  [42][140/209] loss=0.9981 (loss_classifier:0.316  loss_box_reg:0.368  loss_mask:0.218  loss_objectness:0.035  loss_rpn_box_reg:0.061)  GPU=1.4GB  1.9s
+  [42][150/209] loss=1.3911 (loss_classifier:0.368  loss_box_reg:0.458  loss_mask:0.330  loss_objectness:0.143  loss_rpn_box_reg:0.094)  GPU=2.5GB  6.9s
+  [42][160/209] loss=1.1668 (loss_classifier:0.281  loss_box_reg:0.489  loss_mask:0.292  loss_objectness:0.033  loss_rpn_box_reg:0.071)  GPU=1.2GB  2.0s
+  [42][170/209] loss=1.0579 (loss_classifier:0.242  loss_box_reg:0.369  loss_mask:0.234  loss_objectness:0.113  loss_rpn_box_reg:0.100)  GPU=1.0GB  5.5s
+  [42][180/209] loss=1.2007 (loss_classifier:0.336  loss_box_reg:0.469  loss_mask:0.285  loss_objectness:0.027  loss_rpn_box_reg:0.085)  GPU=1.4GB  2.7s
+  [42][190/209] loss=0.5338 (loss_classifier:0.102  loss_box_reg:0.234  loss_mask:0.190  loss_objectness:0.005  loss_rpn_box_reg:0.004)  GPU=1.0GB  0.7s
+  [42][200/209] loss=1.6575 (loss_classifier:0.577  loss_box_reg:0.536  loss_mask:0.348  loss_objectness:0.080  loss_rpn_box_reg:0.117)  GPU=1.4GB  2.7s
+  Train: 0.9721  LR: 1.56e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 43/50 ===
+  [43][10/209] loss=0.5092 (loss_classifier:0.042  loss_box_reg:0.217  loss_mask:0.238  loss_objectness:0.005  loss_rpn_box_reg:0.008)  GPU=1.0GB  10.3s
+  [43][20/209] loss=1.4029 (loss_classifier:0.357  loss_box_reg:0.482  loss_mask:0.323  loss_objectness:0.111  loss_rpn_box_reg:0.130)  GPU=1.4GB  2.6s
+  [43][30/209] loss=1.0140 (loss_classifier:0.324  loss_box_reg:0.420  loss_mask:0.257  loss_objectness:0.002  loss_rpn_box_reg:0.012)  GPU=1.0GB  3.8s
+  [43][40/209] loss=1.2801 (loss_classifier:0.370  loss_box_reg:0.437  loss_mask:0.283  loss_objectness:0.088  loss_rpn_box_reg:0.103)  GPU=1.2GB  7.0s
+  [43][50/209] loss=1.1064 (loss_classifier:0.290  loss_box_reg:0.377  loss_mask:0.283  loss_objectness:0.063  loss_rpn_box_reg:0.093)  GPU=1.1GB  1.1s
+  [43][60/209] loss=1.0833 (loss_classifier:0.224  loss_box_reg:0.441  loss_mask:0.314  loss_objectness:0.019  loss_rpn_box_reg:0.085)  GPU=1.1GB  3.7s
+  [43][70/209] loss=1.1757 (loss_classifier:0.324  loss_box_reg:0.442  loss_mask:0.271  loss_objectness:0.069  loss_rpn_box_reg:0.069)  GPU=1.3GB  1.8s
+  [43][80/209] loss=0.7743 (loss_classifier:0.121  loss_box_reg:0.363  loss_mask:0.269  loss_objectness:0.007  loss_rpn_box_reg:0.015)  GPU=1.0GB  5.1s
+  [43][90/209] loss=1.0773 (loss_classifier:0.283  loss_box_reg:0.404  loss_mask:0.249  loss_objectness:0.044  loss_rpn_box_reg:0.098)  GPU=1.2GB  1.6s
+  [43][100/209] loss=1.0963 (loss_classifier:0.281  loss_box_reg:0.379  loss_mask:0.310  loss_objectness:0.046  loss_rpn_box_reg:0.080)  GPU=1.2GB  1.4s
+  [43][110/209] loss=0.4744 (loss_classifier:0.056  loss_box_reg:0.216  loss_mask:0.199  loss_objectness:0.001  loss_rpn_box_reg:0.003)  GPU=1.0GB  1.7s
+  [43][120/209] loss=0.4550 (loss_classifier:0.069  loss_box_reg:0.167  loss_mask:0.213  loss_objectness:0.002  loss_rpn_box_reg:0.003)  GPU=1.0GB  5.1s
+  [43][130/209] loss=0.2312 (loss_classifier:0.023  loss_box_reg:0.079  loss_mask:0.123  loss_objectness:0.002  loss_rpn_box_reg:0.004)  GPU=1.0GB  1.1s
+  [43][140/209] loss=1.0605 (loss_classifier:0.260  loss_box_reg:0.395  loss_mask:0.281  loss_objectness:0.045  loss_rpn_box_reg:0.079)  GPU=1.1GB  3.1s
+  [43][150/209] loss=0.9239 (loss_classifier:0.241  loss_box_reg:0.331  loss_mask:0.252  loss_objectness:0.035  loss_rpn_box_reg:0.064)  GPU=1.1GB  4.9s
+  [43][160/209] loss=1.1758 (loss_classifier:0.311  loss_box_reg:0.433  loss_mask:0.267  loss_objectness:0.064  loss_rpn_box_reg:0.101)  GPU=1.1GB  4.0s
+  [43][170/209] loss=0.8868 (loss_classifier:0.198  loss_box_reg:0.377  loss_mask:0.284  loss_objectness:0.018  loss_rpn_box_reg:0.009)  GPU=1.0GB  0.7s
+  [43][180/209] loss=0.8777 (loss_classifier:0.212  loss_box_reg:0.373  loss_mask:0.253  loss_objectness:0.020  loss_rpn_box_reg:0.019)  GPU=1.0GB  17.0s
+  [43][190/209] loss=0.9776 (loss_classifier:0.267  loss_box_reg:0.370  loss_mask:0.234  loss_objectness:0.041  loss_rpn_box_reg:0.066)  GPU=1.3GB  1.5s
+  [43][200/209] loss=1.0965 (loss_classifier:0.523  loss_box_reg:0.313  loss_mask:0.212  loss_objectness:0.035  loss_rpn_box_reg:0.014)  GPU=1.0GB  3.9s
+  Train: 0.9487  LR: 1.43e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 44/50 ===
+  [44][10/209] loss=1.2097 (loss_classifier:0.354  loss_box_reg:0.469  loss_mask:0.292  loss_objectness:0.045  loss_rpn_box_reg:0.049)  GPU=1.0GB  3.2s
+  [44][20/209] loss=0.3077 (loss_classifier:0.034  loss_box_reg:0.092  loss_mask:0.180  loss_objectness:0.001  loss_rpn_box_reg:0.002)  GPU=1.0GB  1.1s
+  [44][30/209] loss=0.8120 (loss_classifier:0.197  loss_box_reg:0.330  loss_mask:0.253  loss_objectness:0.022  loss_rpn_box_reg:0.011)  GPU=1.0GB  6.8s
+  [44][40/209] loss=1.1014 (loss_classifier:0.359  loss_box_reg:0.384  loss_mask:0.235  loss_objectness:0.064  loss_rpn_box_reg:0.059)  GPU=1.1GB  6.1s
+  [44][50/209] loss=0.8696 (loss_classifier:0.226  loss_box_reg:0.379  loss_mask:0.225  loss_objectness:0.018  loss_rpn_box_reg:0.022)  GPU=1.0GB  2.7s
+  [44][60/209] loss=1.1978 (loss_classifier:0.304  loss_box_reg:0.477  loss_mask:0.292  loss_objectness:0.038  loss_rpn_box_reg:0.087)  GPU=1.1GB  1.8s
+  [44][70/209] loss=0.2969 (loss_classifier:0.028  loss_box_reg:0.115  loss_mask:0.152  loss_objectness:0.001  loss_rpn_box_reg:0.001)  GPU=1.0GB  1.3s
+  [44][80/209] loss=0.4387 (loss_classifier:0.042  loss_box_reg:0.256  loss_mask:0.136  loss_objectness:0.000  loss_rpn_box_reg:0.004)  GPU=1.0GB  1.1s
+  [44][90/209] loss=1.1851 (loss_classifier:0.352  loss_box_reg:0.447  loss_mask:0.270  loss_objectness:0.033  loss_rpn_box_reg:0.082)  GPU=1.1GB  11.7s
+  [44][100/209] loss=0.6033 (loss_classifier:0.138  loss_box_reg:0.309  loss_mask:0.140  loss_objectness:0.005  loss_rpn_box_reg:0.012)  GPU=1.0GB  6.7s
+  [44][110/209] loss=0.7748 (loss_classifier:0.161  loss_box_reg:0.314  loss_mask:0.224  loss_objectness:0.017  loss_rpn_box_reg:0.058)  GPU=1.0GB  6.5s
+  [44][120/209] loss=1.1588 (loss_classifier:0.342  loss_box_reg:0.496  loss_mask:0.191  loss_objectness:0.018  loss_rpn_box_reg:0.112)  GPU=1.0GB  4.1s
+  [44][130/209] loss=0.8991 (loss_classifier:0.239  loss_box_reg:0.309  loss_mask:0.248  loss_objectness:0.042  loss_rpn_box_reg:0.062)  GPU=1.1GB  1.6s
+  [44][140/209] loss=1.3891 (loss_classifier:0.430  loss_box_reg:0.464  loss_mask:0.306  loss_objectness:0.086  loss_rpn_box_reg:0.103)  GPU=1.8GB  4.5s
+  [44][150/209] loss=1.1112 (loss_classifier:0.265  loss_box_reg:0.420  loss_mask:0.279  loss_objectness:0.069  loss_rpn_box_reg:0.079)  GPU=1.1GB  1.1s
+  [44][160/209] loss=0.1902 (loss_classifier:0.007  loss_box_reg:0.050  loss_mask:0.131  loss_objectness:0.000  loss_rpn_box_reg:0.002)  GPU=1.0GB  4.1s
+  [44][170/209] loss=1.1046 (loss_classifier:0.314  loss_box_reg:0.341  loss_mask:0.282  loss_objectness:0.096  loss_rpn_box_reg:0.072)  GPU=2.4GB  8.7s
+  [44][180/209] loss=1.3760 (loss_classifier:0.332  loss_box_reg:0.609  loss_mask:0.360  loss_objectness:0.038  loss_rpn_box_reg:0.038)  GPU=1.0GB  2.4s
+  [44][190/209] loss=0.4579 (loss_classifier:0.095  loss_box_reg:0.166  loss_mask:0.188  loss_objectness:0.006  loss_rpn_box_reg:0.002)  GPU=1.0GB  3.4s
+  [44][200/209] loss=0.8481 (loss_classifier:0.271  loss_box_reg:0.320  loss_mask:0.210  loss_objectness:0.030  loss_rpn_box_reg:0.017)  GPU=1.0GB  1.5s
+  Train: 0.9536  LR: 1.32e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 45/50 ===
+  [45][10/209] loss=1.1969 (loss_classifier:0.285  loss_box_reg:0.501  loss_mask:0.357  loss_objectness:0.027  loss_rpn_box_reg:0.027)  GPU=1.0GB  3.6s
+  [45][20/209] loss=0.5231 (loss_classifier:0.108  loss_box_reg:0.205  loss_mask:0.189  loss_objectness:0.009  loss_rpn_box_reg:0.013)  GPU=1.0GB  1.7s
+  [45][30/209] loss=1.3135 (loss_classifier:0.329  loss_box_reg:0.574  loss_mask:0.386  loss_objectness:0.010  loss_rpn_box_reg:0.015)  GPU=1.0GB  13.7s
+  [45][40/209] loss=0.8440 (loss_classifier:0.214  loss_box_reg:0.375  loss_mask:0.239  loss_objectness:0.004  loss_rpn_box_reg:0.012)  GPU=1.0GB  0.8s
+  [45][50/209] loss=0.4028 (loss_classifier:0.073  loss_box_reg:0.155  loss_mask:0.161  loss_objectness:0.009  loss_rpn_box_reg:0.003)  GPU=1.0GB  8.5s
+  [45][60/209] loss=0.6809 (loss_classifier:0.040  loss_box_reg:0.348  loss_mask:0.262  loss_objectness:0.021  loss_rpn_box_reg:0.010)  GPU=1.0GB  0.6s
+  [45][70/209] loss=1.0059 (loss_classifier:0.233  loss_box_reg:0.417  loss_mask:0.264  loss_objectness:0.018  loss_rpn_box_reg:0.073)  GPU=1.0GB  6.8s
+  [45][80/209] loss=1.4461 (loss_classifier:0.481  loss_box_reg:0.590  loss_mask:0.321  loss_objectness:0.032  loss_rpn_box_reg:0.023)  GPU=1.0GB  1.1s
+  [45][90/209] loss=0.7902 (loss_classifier:0.150  loss_box_reg:0.378  loss_mask:0.251  loss_objectness:0.004  loss_rpn_box_reg:0.008)  GPU=1.0GB  0.7s
+  [45][100/209] loss=1.3147 (loss_classifier:0.395  loss_box_reg:0.438  loss_mask:0.323  loss_objectness:0.080  loss_rpn_box_reg:0.079)  GPU=1.5GB  2.3s
+  [45][110/209] loss=0.8237 (loss_classifier:0.320  loss_box_reg:0.288  loss_mask:0.199  loss_objectness:0.005  loss_rpn_box_reg:0.012)  GPU=1.0GB  2.3s
+  [45][120/209] loss=1.0043 (loss_classifier:0.375  loss_box_reg:0.330  loss_mask:0.232  loss_objectness:0.033  loss_rpn_box_reg:0.034)  GPU=1.0GB  0.8s
+  [45][130/209] loss=0.7676 (loss_classifier:0.105  loss_box_reg:0.380  loss_mask:0.264  loss_objectness:0.008  loss_rpn_box_reg:0.011)  GPU=1.0GB  2.9s
+  [45][140/209] loss=0.9340 (loss_classifier:0.261  loss_box_reg:0.336  loss_mask:0.256  loss_objectness:0.026  loss_rpn_box_reg:0.055)  GPU=1.6GB  6.5s
+  [45][150/209] loss=1.0135 (loss_classifier:0.166  loss_box_reg:0.358  loss_mask:0.268  loss_objectness:0.048  loss_rpn_box_reg:0.174)  GPU=1.0GB  1.9s
+  [45][160/209] loss=0.5294 (loss_classifier:0.106  loss_box_reg:0.190  loss_mask:0.205  loss_objectness:0.019  loss_rpn_box_reg:0.010)  GPU=1.0GB  3.5s
+  [45][170/209] loss=1.1476 (loss_classifier:0.314  loss_box_reg:0.399  loss_mask:0.270  loss_objectness:0.082  loss_rpn_box_reg:0.083)  GPU=1.1GB  1.1s
+  [45][180/209] loss=0.9179 (loss_classifier:0.241  loss_box_reg:0.402  loss_mask:0.247  loss_objectness:0.006  loss_rpn_box_reg:0.022)  GPU=1.0GB  2.8s
+  [45][190/209] loss=0.2768 (loss_classifier:0.020  loss_box_reg:0.128  loss_mask:0.122  loss_objectness:0.004  loss_rpn_box_reg:0.003)  GPU=1.0GB  1.7s
+  [45][200/209] loss=1.0123 (loss_classifier:0.213  loss_box_reg:0.367  loss_mask:0.196  loss_objectness:0.044  loss_rpn_box_reg:0.192)  GPU=1.0GB  1.0s
+  Train: 0.9531  LR: 1.22e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 46/50 ===
+  [46][10/209] loss=1.1913 (loss_classifier:0.351  loss_box_reg:0.424  loss_mask:0.274  loss_objectness:0.050  loss_rpn_box_reg:0.091)  GPU=2.0GB  10.3s
+  [46][20/209] loss=1.3326 (loss_classifier:0.381  loss_box_reg:0.452  loss_mask:0.271  loss_objectness:0.115  loss_rpn_box_reg:0.114)  GPU=1.2GB  1.6s
+  [46][30/209] loss=0.8545 (loss_classifier:0.252  loss_box_reg:0.318  loss_mask:0.240  loss_objectness:0.016  loss_rpn_box_reg:0.028)  GPU=1.0GB  1.6s
+  [46][40/209] loss=0.3117 (loss_classifier:0.022  loss_box_reg:0.134  loss_mask:0.132  loss_objectness:0.009  loss_rpn_box_reg:0.015)  GPU=1.0GB  12.9s
+  [46][50/209] loss=1.4359 (loss_classifier:0.433  loss_box_reg:0.527  loss_mask:0.307  loss_objectness:0.059  loss_rpn_box_reg:0.110)  GPU=1.0GB  0.9s
+  [46][60/209] loss=0.2407 (loss_classifier:0.037  loss_box_reg:0.038  loss_mask:0.163  loss_objectness:0.002  loss_rpn_box_reg:0.001)  GPU=1.0GB  0.7s
+  [46][70/209] loss=0.9234 (loss_classifier:0.343  loss_box_reg:0.295  loss_mask:0.209  loss_objectness:0.031  loss_rpn_box_reg:0.044)  GPU=1.2GB  2.0s
+  [46][80/209] loss=0.6814 (loss_classifier:0.123  loss_box_reg:0.226  loss_mask:0.216  loss_objectness:0.014  loss_rpn_box_reg:0.102)  GPU=1.0GB  2.0s
+  [46][90/209] loss=1.1186 (loss_classifier:0.305  loss_box_reg:0.428  loss_mask:0.243  loss_objectness:0.073  loss_rpn_box_reg:0.070)  GPU=1.1GB  4.7s
+  [46][100/209] loss=0.6001 (loss_classifier:0.211  loss_box_reg:0.221  loss_mask:0.155  loss_objectness:0.008  loss_rpn_box_reg:0.005)  GPU=1.0GB  1.4s
+  [46][110/209] loss=0.7863 (loss_classifier:0.228  loss_box_reg:0.298  loss_mask:0.198  loss_objectness:0.018  loss_rpn_box_reg:0.045)  GPU=1.1GB  1.2s
+  [46][120/209] loss=1.3354 (loss_classifier:0.322  loss_box_reg:0.494  loss_mask:0.364  loss_objectness:0.067  loss_rpn_box_reg:0.088)  GPU=1.1GB  4.7s
+  [46][130/209] loss=0.2136 (loss_classifier:0.008  loss_box_reg:0.071  loss_mask:0.131  loss_objectness:0.001  loss_rpn_box_reg:0.003)  GPU=1.0GB  1.0s
+  [46][140/209] loss=0.3409 (loss_classifier:0.026  loss_box_reg:0.129  loss_mask:0.182  loss_objectness:0.002  loss_rpn_box_reg:0.003)  GPU=1.0GB  1.3s
+  [46][150/209] loss=0.5663 (loss_classifier:0.115  loss_box_reg:0.254  loss_mask:0.176  loss_objectness:0.016  loss_rpn_box_reg:0.005)  GPU=1.0GB  5.8s
+  [46][160/209] loss=1.0848 (loss_classifier:0.266  loss_box_reg:0.402  loss_mask:0.298  loss_objectness:0.037  loss_rpn_box_reg:0.082)  GPU=2.2GB  7.2s
+  [46][170/209] loss=1.1991 (loss_classifier:0.358  loss_box_reg:0.430  loss_mask:0.275  loss_objectness:0.048  loss_rpn_box_reg:0.087)  GPU=1.5GB  2.9s
+  [46][180/209] loss=0.4652 (loss_classifier:0.059  loss_box_reg:0.161  loss_mask:0.240  loss_objectness:0.002  loss_rpn_box_reg:0.003)  GPU=1.0GB  0.8s
+  [46][190/209] loss=0.5577 (loss_classifier:0.093  loss_box_reg:0.246  loss_mask:0.183  loss_objectness:0.032  loss_rpn_box_reg:0.003)  GPU=1.0GB  2.6s
+  [46][200/209] loss=0.3498 (loss_classifier:0.070  loss_box_reg:0.100  loss_mask:0.136  loss_objectness:0.003  loss_rpn_box_reg:0.041)  GPU=1.0GB  5.0s
+  Train: 0.9492  LR: 1.14e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 47/50 ===
+  [47][10/209] loss=0.2837 (loss_classifier:0.024  loss_box_reg:0.086  loss_mask:0.160  loss_objectness:0.011  loss_rpn_box_reg:0.003)  GPU=1.0GB  4.1s
+  [47][20/209] loss=0.5624 (loss_classifier:0.091  loss_box_reg:0.037  loss_mask:0.415  loss_objectness:0.020  loss_rpn_box_reg:0.000)  GPU=1.0GB  0.6s
+  [47][30/209] loss=0.8605 (loss_classifier:0.230  loss_box_reg:0.357  loss_mask:0.256  loss_objectness:0.005  loss_rpn_box_reg:0.011)  GPU=1.0GB  1.1s
+  [47][40/209] loss=0.5349 (loss_classifier:0.211  loss_box_reg:0.175  loss_mask:0.129  loss_objectness:0.018  loss_rpn_box_reg:0.003)  GPU=1.0GB  5.4s
+  [47][50/209] loss=0.6910 (loss_classifier:0.165  loss_box_reg:0.196  loss_mask:0.310  loss_objectness:0.016  loss_rpn_box_reg:0.004)  GPU=1.0GB  12.1s
+  [47][60/209] loss=1.3037 (loss_classifier:0.354  loss_box_reg:0.535  loss_mask:0.337  loss_objectness:0.042  loss_rpn_box_reg:0.035)  GPU=1.1GB  2.8s
+  [47][70/209] loss=0.6336 (loss_classifier:0.071  loss_box_reg:0.340  loss_mask:0.197  loss_objectness:0.020  loss_rpn_box_reg:0.005)  GPU=1.0GB  8.1s
+  [47][80/209] loss=0.9735 (loss_classifier:0.245  loss_box_reg:0.365  loss_mask:0.276  loss_objectness:0.028  loss_rpn_box_reg:0.060)  GPU=1.2GB  0.9s
+  [47][90/209] loss=1.4270 (loss_classifier:0.387  loss_box_reg:0.548  loss_mask:0.358  loss_objectness:0.036  loss_rpn_box_reg:0.099)  GPU=1.2GB  5.2s
+  [47][100/209] loss=1.1360 (loss_classifier:0.345  loss_box_reg:0.387  loss_mask:0.302  loss_objectness:0.026  loss_rpn_box_reg:0.076)  GPU=1.2GB  1.7s
+  [47][110/209] loss=1.3914 (loss_classifier:0.398  loss_box_reg:0.479  loss_mask:0.318  loss_objectness:0.110  loss_rpn_box_reg:0.087)  GPU=1.4GB  2.6s
+  [47][120/209] loss=1.3316 (loss_classifier:0.297  loss_box_reg:0.621  loss_mask:0.375  loss_objectness:0.012  loss_rpn_box_reg:0.027)  GPU=1.0GB  1.6s
+  [47][130/209] loss=1.1563 (loss_classifier:0.339  loss_box_reg:0.414  loss_mask:0.255  loss_objectness:0.072  loss_rpn_box_reg:0.077)  GPU=1.2GB  6.1s
+  [47][140/209] loss=1.3871 (loss_classifier:0.426  loss_box_reg:0.457  loss_mask:0.296  loss_objectness:0.124  loss_rpn_box_reg:0.083)  GPU=2.0GB  5.9s
+  [47][150/209] loss=0.6039 (loss_classifier:0.173  loss_box_reg:0.242  loss_mask:0.177  loss_objectness:0.009  loss_rpn_box_reg:0.002)  GPU=1.0GB  1.7s
+  [47][160/209] loss=1.2443 (loss_classifier:0.333  loss_box_reg:0.462  loss_mask:0.356  loss_objectness:0.012  loss_rpn_box_reg:0.082)  GPU=1.0GB  3.5s
+  [47][170/209] loss=0.2532 (loss_classifier:0.005  loss_box_reg:0.100  loss_mask:0.139  loss_objectness:0.007  loss_rpn_box_reg:0.002)  GPU=1.0GB  5.8s
+  [47][180/209] loss=0.4430 (loss_classifier:0.081  loss_box_reg:0.132  loss_mask:0.219  loss_objectness:0.004  loss_rpn_box_reg:0.007)  GPU=1.0GB  1.2s
+  [47][190/209] loss=0.5898 (loss_classifier:0.122  loss_box_reg:0.235  loss_mask:0.224  loss_objectness:0.005  loss_rpn_box_reg:0.004)  GPU=1.0GB  8.0s
+  [47][200/209] loss=0.7337 (loss_classifier:0.159  loss_box_reg:0.346  loss_mask:0.216  loss_objectness:0.003  loss_rpn_box_reg:0.009)  GPU=1.0GB  0.8s
+  Train: 0.9577  LR: 1.08e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 48/50 ===
+  [48][10/209] loss=1.1811 (loss_classifier:0.318  loss_box_reg:0.460  loss_mask:0.279  loss_objectness:0.049  loss_rpn_box_reg:0.075)  GPU=1.1GB  3.0s
+  [48][20/209] loss=0.8481 (loss_classifier:0.247  loss_box_reg:0.375  loss_mask:0.212  loss_objectness:0.004  loss_rpn_box_reg:0.010)  GPU=1.0GB  6.4s
+  [48][30/209] loss=0.6406 (loss_classifier:0.111  loss_box_reg:0.100  loss_mask:0.409  loss_objectness:0.018  loss_rpn_box_reg:0.003)  GPU=1.0GB  4.8s
+  [48][40/209] loss=0.5152 (loss_classifier:0.088  loss_box_reg:0.256  loss_mask:0.161  loss_objectness:0.001  loss_rpn_box_reg:0.009)  GPU=1.0GB  5.3s
+  [48][50/209] loss=1.4773 (loss_classifier:0.384  loss_box_reg:0.525  loss_mask:0.350  loss_objectness:0.103  loss_rpn_box_reg:0.115)  GPU=1.3GB  1.6s
+  [48][60/209] loss=0.3547 (loss_classifier:0.025  loss_box_reg:0.131  loss_mask:0.196  loss_objectness:0.001  loss_rpn_box_reg:0.002)  GPU=1.0GB  3.7s
+  [48][70/209] loss=1.0487 (loss_classifier:0.161  loss_box_reg:0.438  loss_mask:0.228  loss_objectness:0.023  loss_rpn_box_reg:0.198)  GPU=1.0GB  2.4s
+  [48][80/209] loss=0.7946 (loss_classifier:0.217  loss_box_reg:0.315  loss_mask:0.200  loss_objectness:0.027  loss_rpn_box_reg:0.035)  GPU=1.1GB  1.0s
+  [48][90/209] loss=1.1776 (loss_classifier:0.294  loss_box_reg:0.441  loss_mask:0.284  loss_objectness:0.067  loss_rpn_box_reg:0.090)  GPU=1.4GB  3.8s
+  [48][100/209] loss=0.7523 (loss_classifier:0.126  loss_box_reg:0.368  loss_mask:0.196  loss_objectness:0.047  loss_rpn_box_reg:0.014)  GPU=1.0GB  2.8s
+  [48][110/209] loss=1.2829 (loss_classifier:0.374  loss_box_reg:0.402  loss_mask:0.273  loss_objectness:0.142  loss_rpn_box_reg:0.091)  GPU=2.0GB  7.8s
+  [48][120/209] loss=0.9388 (loss_classifier:0.226  loss_box_reg:0.394  loss_mask:0.255  loss_objectness:0.010  loss_rpn_box_reg:0.054)  GPU=1.0GB  6.1s
+  [48][130/209] loss=0.1775 (loss_classifier:0.006  loss_box_reg:0.050  loss_mask:0.115  loss_objectness:0.003  loss_rpn_box_reg:0.003)  GPU=1.0GB  2.9s
+  [48][140/209] loss=0.3254 (loss_classifier:0.033  loss_box_reg:0.102  loss_mask:0.186  loss_objectness:0.004  loss_rpn_box_reg:0.001)  GPU=1.0GB  10.9s
+  [48][150/209] loss=1.1439 (loss_classifier:0.483  loss_box_reg:0.372  loss_mask:0.224  loss_objectness:0.027  loss_rpn_box_reg:0.038)  GPU=1.0GB  0.8s
+  [48][160/209] loss=1.0023 (loss_classifier:0.229  loss_box_reg:0.427  loss_mask:0.254  loss_objectness:0.024  loss_rpn_box_reg:0.069)  GPU=1.0GB  1.4s
+  [48][170/209] loss=0.6380 (loss_classifier:0.122  loss_box_reg:0.280  loss_mask:0.221  loss_objectness:0.006  loss_rpn_box_reg:0.009)  GPU=1.0GB  6.2s
+  [48][180/209] loss=1.1050 (loss_classifier:0.340  loss_box_reg:0.406  loss_mask:0.268  loss_objectness:0.016  loss_rpn_box_reg:0.076)  GPU=1.1GB  0.5s
+  [48][190/209] loss=1.0421 (loss_classifier:0.426  loss_box_reg:0.346  loss_mask:0.214  loss_objectness:0.050  loss_rpn_box_reg:0.007)  GPU=1.0GB  7.6s
+  [48][200/209] loss=0.9564 (loss_classifier:0.223  loss_box_reg:0.370  loss_mask:0.257  loss_objectness:0.044  loss_rpn_box_reg:0.062)  GPU=1.1GB  1.0s
+  Train: 0.9442  LR: 1.04e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 49/50 ===
+  [49][10/209] loss=1.0019 (loss_classifier:0.222  loss_box_reg:0.447  loss_mask:0.272  loss_objectness:0.010  loss_rpn_box_reg:0.050)  GPU=1.0GB  10.3s
+  [49][20/209] loss=0.3937 (loss_classifier:0.065  loss_box_reg:0.122  loss_mask:0.198  loss_objectness:0.005  loss_rpn_box_reg:0.003)  GPU=1.0GB  0.6s
+  [49][30/209] loss=0.7263 (loss_classifier:0.120  loss_box_reg:0.285  loss_mask:0.303  loss_objectness:0.005  loss_rpn_box_reg:0.013)  GPU=1.0GB  3.3s
+  [49][40/209] loss=1.1142 (loss_classifier:0.286  loss_box_reg:0.403  loss_mask:0.315  loss_objectness:0.039  loss_rpn_box_reg:0.071)  GPU=1.1GB  1.3s
+  [49][50/209] loss=0.6375 (loss_classifier:0.133  loss_box_reg:0.245  loss_mask:0.239  loss_objectness:0.010  loss_rpn_box_reg:0.010)  GPU=1.0GB  1.4s
+  [49][60/209] loss=1.1477 (loss_classifier:0.318  loss_box_reg:0.437  loss_mask:0.283  loss_objectness:0.033  loss_rpn_box_reg:0.076)  GPU=1.3GB  2.9s
+  [49][70/209] loss=0.2484 (loss_classifier:0.030  loss_box_reg:0.069  loss_mask:0.149  loss_objectness:0.000  loss_rpn_box_reg:0.001)  GPU=1.0GB  5.6s
+  [49][80/209] loss=1.0494 (loss_classifier:0.344  loss_box_reg:0.400  loss_mask:0.252  loss_objectness:0.028  loss_rpn_box_reg:0.025)  GPU=1.0GB  2.7s
+  [49][90/209] loss=0.6265 (loss_classifier:0.171  loss_box_reg:0.278  loss_mask:0.165  loss_objectness:0.003  loss_rpn_box_reg:0.009)  GPU=1.0GB  1.5s
+  [49][100/209] loss=1.2517 (loss_classifier:0.364  loss_box_reg:0.475  loss_mask:0.281  loss_objectness:0.055  loss_rpn_box_reg:0.076)  GPU=1.2GB  4.3s
+  [49][110/209] loss=0.8730 (loss_classifier:0.415  loss_box_reg:0.256  loss_mask:0.197  loss_objectness:0.001  loss_rpn_box_reg:0.004)  GPU=1.0GB  1.6s
+  [49][120/209] loss=0.9717 (loss_classifier:0.211  loss_box_reg:0.384  loss_mask:0.264  loss_objectness:0.054  loss_rpn_box_reg:0.059)  GPU=1.2GB  4.0s
+  [49][130/209] loss=1.1079 (loss_classifier:0.282  loss_box_reg:0.434  loss_mask:0.288  loss_objectness:0.035  loss_rpn_box_reg:0.069)  GPU=1.1GB  4.1s
+  [49][140/209] loss=0.9848 (loss_classifier:0.248  loss_box_reg:0.393  loss_mask:0.230  loss_objectness:0.055  loss_rpn_box_reg:0.059)  GPU=1.3GB  3.8s
+  [49][150/209] loss=1.0816 (loss_classifier:0.254  loss_box_reg:0.366  loss_mask:0.242  loss_objectness:0.132  loss_rpn_box_reg:0.088)  GPU=1.1GB  2.1s
+  [49][160/209] loss=0.7705 (loss_classifier:0.227  loss_box_reg:0.272  loss_mask:0.253  loss_objectness:0.011  loss_rpn_box_reg:0.009)  GPU=1.0GB  10.3s
+  [49][170/209] loss=1.4546 (loss_classifier:0.509  loss_box_reg:0.554  loss_mask:0.330  loss_objectness:0.042  loss_rpn_box_reg:0.019)  GPU=1.0GB  2.8s
+  [49][180/209] loss=0.8713 (loss_classifier:0.225  loss_box_reg:0.375  loss_mask:0.240  loss_objectness:0.011  loss_rpn_box_reg:0.020)  GPU=1.0GB  1.2s
+  [49][190/209] loss=0.7499 (loss_classifier:0.223  loss_box_reg:0.254  loss_mask:0.208  loss_objectness:0.027  loss_rpn_box_reg:0.038)  GPU=1.1GB  0.8s
+  [49][200/209] loss=1.0908 (loss_classifier:0.453  loss_box_reg:0.367  loss_mask:0.203  loss_objectness:0.023  loss_rpn_box_reg:0.045)  GPU=1.0GB  4.8s
+  Train: 0.9469  LR: 1.01e-06
+  📊 Curves saved → ./checkpoints/
+
+=== Epoch 50/50 ===
+  [50][10/209] loss=1.0543 (loss_classifier:0.247  loss_box_reg:0.410  loss_mask:0.260  loss_objectness:0.041  loss_rpn_box_reg:0.095)  GPU=1.1GB  3.3s
+  [50][20/209] loss=1.2402 (loss_classifier:0.289  loss_box_reg:0.490  loss_mask:0.323  loss_objectness:0.044  loss_rpn_box_reg:0.094)  GPU=1.1GB  4.4s
+  [50][30/209] loss=1.2650 (loss_classifier:0.339  loss_box_reg:0.497  loss_mask:0.348  loss_objectness:0.017  loss_rpn_box_reg:0.064)  GPU=1.0GB  4.7s
+  [50][40/209] loss=1.2454 (loss_classifier:0.344  loss_box_reg:0.409  loss_mask:0.289  loss_objectness:0.110  loss_rpn_box_reg:0.095)  GPU=2.4GB  7.8s
+  [50][50/209] loss=0.4603 (loss_classifier:0.055  loss_box_reg:0.151  loss_mask:0.194  loss_objectness:0.009  loss_rpn_box_reg:0.051)  GPU=1.0GB  4.9s
+  [50][60/209] loss=0.2969 (loss_classifier:0.021  loss_box_reg:0.116  loss_mask:0.159  loss_objectness:0.000  loss_rpn_box_reg:0.001)  GPU=1.0GB  6.8s
+  [50][70/209] loss=1.0269 (loss_classifier:0.264  loss_box_reg:0.360  loss_mask:0.258  loss_objectness:0.044  loss_rpn_box_reg:0.100)  GPU=1.2GB  1.4s
+  [50][80/209] loss=0.9753 (loss_classifier:0.289  loss_box_reg:0.421  loss_mask:0.219  loss_objectness:0.009  loss_rpn_box_reg:0.037)  GPU=1.0GB  5.7s
+  [50][90/209] loss=0.8251 (loss_classifier:0.256  loss_box_reg:0.341  loss_mask:0.206  loss_objectness:0.005  loss_rpn_box_reg:0.018)  GPU=1.0GB  3.4s
+  [50][100/209] loss=0.4918 (loss_classifier:0.088  loss_box_reg:0.252  loss_mask:0.135  loss_objectness:0.006  loss_rpn_box_reg:0.011)  GPU=1.0GB  1.9s
+  [50][110/209] loss=0.7955 (loss_classifier:0.227  loss_box_reg:0.304  loss_mask:0.203  loss_objectness:0.024  loss_rpn_box_reg:0.038)  GPU=1.1GB  7.7s
+  [50][120/209] loss=0.6392 (loss_classifier:0.154  loss_box_reg:0.287  loss_mask:0.182  loss_objectness:0.004  loss_rpn_box_reg:0.011)  GPU=1.0GB  3.8s
+  [50][130/209] loss=0.8723 (loss_classifier:0.229  loss_box_reg:0.320  loss_mask:0.249  loss_objectness:0.014  loss_rpn_box_reg:0.061)  GPU=1.0GB  0.7s
+  [50][140/209] loss=0.6387 (loss_classifier:0.077  loss_box_reg:0.342  loss_mask:0.198  loss_objectness:0.002  loss_rpn_box_reg:0.020)  GPU=1.0GB  3.9s
+  [50][150/209] loss=0.8362 (loss_classifier:0.241  loss_box_reg:0.352  loss_mask:0.220  loss_objectness:0.005  loss_rpn_box_reg:0.018)  GPU=1.0GB  12.7s
+  [50][160/209] loss=0.9788 (loss_classifier:0.258  loss_box_reg:0.410  loss_mask:0.289  loss_objectness:0.002  loss_rpn_box_reg:0.020)  GPU=1.0GB  1.4s
+  [50][170/209] loss=1.1112 (loss_classifier:0.310  loss_box_reg:0.385  loss_mask:0.279  loss_objectness:0.067  loss_rpn_box_reg:0.070)  GPU=1.3GB  3.7s
+  [50][180/209] loss=1.5429 (loss_classifier:0.378  loss_box_reg:0.507  loss_mask:0.359  loss_objectness:0.182  loss_rpn_box_reg:0.117)  GPU=1.5GB  3.5s
+  [50][190/209] loss=0.3901 (loss_classifier:0.049  loss_box_reg:0.181  loss_mask:0.151  loss_objectness:0.003  loss_rpn_box_reg:0.006)  GPU=1.0GB  2.5s
+  [50][200/209] loss=0.6121 (loss_classifier:0.175  loss_box_reg:0.218  loss_mask:0.215  loss_objectness:0.001  loss_rpn_box_reg:0.003)  GPU=1.0GB  1.8s
+  Train: 0.9449  LR: 1.00e-06
+  📊 Curves saved → ./checkpoints/
+
+✅ Done. Final train loss: 0.9449
+Checkpoints saved: last_model.pth + ckpt_ep{10,20,...}.pth
+Tip: try ckpt_ep30, ckpt_ep40, last_model for inference and pick best AP50
+
+Cleaning up GPU memory...
